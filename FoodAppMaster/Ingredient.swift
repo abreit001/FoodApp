@@ -12,7 +12,7 @@ import os.log
 class Ingredient: NSObject, NSCoding {
     
     //MARK: Properties
-    
+    // FUCK CARL'S COMMENT
     var name: String
     var selected: Bool
     var shoppingListed: Bool
