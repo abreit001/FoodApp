@@ -12,15 +12,6 @@ import os.log
 class Ingredient: NSObject, NSCoding {
     
     //MARK: Properties
-    // FUCK CARL'S COMMENT
-    // COLTON RULES CARL AND ABBY DROOL (MOSTLY ABBY BUT ALSO CARL)
-    // OKAY NEW NEW NEW COMMENT
-    // OKAY NEW NEW NEW NEW COMMENT FROM COLTON
-    // I AM CONFLICTING
-    // LOL
-    // I ADD A COMMENT
-    // I ADD THIS COMMENT 2
-    // AM I IN?
     var name: String
     var selected: Bool
     var shoppingListed: Bool
