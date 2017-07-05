@@ -12,7 +12,7 @@ import os.log
 class Ingredient: NSObject, NSCoding {
     
     //MARK: Properties
-    
+    // THIS IS MY CHANGE- CARL SUN
     var name: String
     var selected: Bool
     var shoppingListed: Bool
