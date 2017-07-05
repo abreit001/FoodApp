@@ -20,6 +20,7 @@ class Ingredient: NSObject, NSCoding {
     // LOL
     // I ADD A COMMENT
     // I ADD THIS COMMENT 2
+    // AM I IN?
     var name: String
     var selected: Bool
     var shoppingListed: Bool
