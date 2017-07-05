@@ -1,0 +1,63 @@
+Absinthe
+Amaretto
+Anisette
+Apple Juice
+Beer 
+Bitters
+Bloody Mary
+Bourbon
+Brandy
+Burgundy Wine
+Cabernet Sauvignon
+Champagne
+Chocolate Liqueur
+Ciclon
+Club Soda
+Coffee
+Cognac
+Coke
+Cooking Wine
+Cranberry
+Crème de Menthe
+Curacao
+Dessert Wine
+Espresso
+Frangelico
+Fruit Juice
+Gin
+Ginger Ale
+Grand Marnier
+Grappa
+Green Tea
+Grenadine
+Irish Cream
+Juice
+Kahlua
+Lemonade
+Limoncello
+Liqueur
+Madeira Wine
+Margarita Mix
+Masala
+Orange Juice
+Ouzo
+Pineapple Juice 
+Port Wine
+Raspberry Liquor 
+Red Wine
+Rum
+Sake
+Schnapps
+Shaoxing Wine
+Sherry
+Sparkling Wine
+Sprite
+Tea
+Tequila
+Tomato Juice
+Triple Sec
+Vermouth
+Vodka
+Whiskey
+Whisky
+White Wine

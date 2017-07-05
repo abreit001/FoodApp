@@ -1,0 +1,48 @@
+American Cheese, 3942000
+Asiago, 2419000
+Blue Cheese, 518400
+Brie, 604800
+Butter, 2628000
+Buttermilk, 1512000
+Cheddar, 604800
+Cheese Soup, 126100000
+Colby Cheese, 518400
+Condensed Milk, 31540000
+Cottage Cheese, 777600
+Cream, 432000
+Cream Cheese, 907200
+Crème Fraiche, 2628000
+Custard, 432000
+Eggs, 2722000
+Evaporated Milk, 55190000
+Feta, 518400
+Frosting, 121000
+Goat Cheese, 1512000
+Gouda, 518400
+Gruyere, 518400
+Half and Half, 518400
+Hard Cheese, 31540000
+Havarti Cheese, 518400
+Ice Cream, 7884000
+Mascarpone, 5256000
+Milk, 518400
+Monterey Jack Cheese, 2117000
+Mozzarella, 604800
+Muenster, 518400
+Neufchatel, 1210000
+Parmesan (Grated), 27594000
+Parmesan (Shredded or Sliced), 518400
+Pecorino Cheese, 2419000
+Pepper Jack Cheese, 2117000
+Powdered Milk, 7884000
+Provolone, 518400
+Queso Fresco Cheese, 1210000
+Ricotta, 907200
+Romano (Grated), 7884000
+Romano (Shredded), 518400
+Soft Cheese, 518400
+Sour Cream, 1210000
+Swiss Cheese, 518400
+Velveeta, 3629000
+Whipped Cream, 2117000
+Yogurt, 907200

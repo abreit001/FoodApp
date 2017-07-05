@@ -1,0 +1,48 @@
+Bacon
+Beef Liver
+Beef Ribs
+Beef Roast
+Beef Shank
+Beef Steak
+Bologna
+Bratwurst
+Chicken Breast
+Chicken Giblets
+Chicken Leg
+Chicken Roast
+Chicken Thighs
+Chicken Wings
+Coirizo
+Cooked Chicken
+Corned Beef
+Cornish Hen
+Duck
+Ground Beef
+Ground Chicken
+Ground Lamb
+Ground Pork
+Ground Turkey
+Ham
+Hot Dog
+Lamb
+Lamb Chips
+Lamb Shank 
+Lamb Shoulder
+Leg of Lamb
+Pancetta
+Pepperoni
+Polish Sausage
+Pork
+Pork Belly 
+Pork Chops
+Pork Ribs
+Pork Roast
+Pork Shoulder
+Prosciutto
+Salami
+Sausage
+Spam
+Turkey
+Veal
+Venison
+Whole Chicken

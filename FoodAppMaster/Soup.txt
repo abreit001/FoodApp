@@ -1,0 +1,10 @@
+Beef Broth
+Celery Soup
+Chicken Broth
+Chicken Soup
+Dashi
+Mushroom Soup
+Onion Soup
+Tomato Soup
+Vegetable Soup
+Vegetable Stock

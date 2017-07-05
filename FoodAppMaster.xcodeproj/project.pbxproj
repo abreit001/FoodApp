@@ -1,0 +1,729 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2842F6F01F02B572002CBEB8 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2842F6D41F02B572002CBEB8 /* Ingredient.swift */; };
+		2842F6F11F02B572002CBEB8 /* IngredientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2842F6D51F02B572002CBEB8 /* IngredientTableViewCell.swift */; };
+		2842F6F21F02B572002CBEB8 /* IngredientTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2842F6D61F02B572002CBEB8 /* IngredientTableViewController.swift */; };
+		2842F6F31F02B572002CBEB8 /* InventoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2842F6D71F02B572002CBEB8 /* InventoryTableViewCell.swift */; };
+		2842F6F41F02B572002CBEB8 /* InventoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2842F6D81F02B572002CBEB8 /* InventoryTableViewController.swift */; };
+		2842F6F51F02B572002CBEB8 /* Legumes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2842F6D91F02B572002CBEB8 /* Legumes.txt */; };
+		2842F6F61F02B572002CBEB8 /* Meat.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2842F6DA1F02B572002CBEB8 /* Meat.txt */; };
+		2842F6F71F02B572002CBEB8 /* Nuts and Seeds.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2842F6DB1F02B572002CBEB8 /* Nuts and Seeds.txt */; };
+		2842F6F81F02B572002CBEB8 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2842F6DC1F02B572002CBEB8 /* Recipe.swift */; };
+		2842F6F91F02B572002CBEB8 /* RecipeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2842F6DD1F02B572002CBEB8 /* RecipeAPI.swift */; };
+		2842F6FA1F02B572002CBEB8 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2842F6DE1F02B572002CBEB8 /* RecipeCell.swift */; };
+		2842F6FB1F02B572002CBEB8 /* RecipeDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2842F6DF1F02B572002CBEB8 /* RecipeDetailCell.swift */; };
+		2842F6FC1F02B572002CBEB8 /* RecipeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2842F6E01F02B572002CBEB8 /* RecipeDetailViewController.swift */; };
+		2842F6FD1F02B572002CBEB8 /* RecipeDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2842F6E11F02B572002CBEB8 /* RecipeDetailViewModel.swift */; };
+		2842F6FE1F02B572002CBEB8 /* RecipeImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2842F6E21F02B572002CBEB8 /* RecipeImageCell.swift */; };
+		2842F6FF1F02B572002CBEB8 /* RecipeIngredientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2842F6E31F02B572002CBEB8 /* RecipeIngredientCell.swift */; };
+		2842F7001F02B572002CBEB8 /* RecipeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2842F6E41F02B572002CBEB8 /* RecipeListViewModel.swift */; };
+		2842F7011F02B572002CBEB8 /* RecipesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2842F6E51F02B572002CBEB8 /* RecipesListViewController.swift */; };
+		2842F7021F02B572002CBEB8 /* RecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2842F6E61F02B572002CBEB8 /* RecipeTableViewCell.swift */; };
+		2842F7031F02B572002CBEB8 /* RecipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2842F6E71F02B572002CBEB8 /* RecipeTableViewController.swift */; };
+		2842F7041F02B572002CBEB8 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2842F6E81F02B572002CBEB8 /* Setting.swift */; };
+		2842F7051F02B572002CBEB8 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2842F6E91F02B572002CBEB8 /* SettingsTableViewCell.swift */; };
+		2842F7061F02B572002CBEB8 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2842F6EA1F02B572002CBEB8 /* SettingsTableViewController.swift */; };
+		2842F7071F02B572002CBEB8 /* ShoppingListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2842F6EB1F02B572002CBEB8 /* ShoppingListTableViewCell.swift */; };
+		2842F7081F02B572002CBEB8 /* ShoppingListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2842F6EC1F02B572002CBEB8 /* ShoppingListTableViewController.swift */; };
+		2842F7091F02B572002CBEB8 /* Soup.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2842F6ED1F02B572002CBEB8 /* Soup.txt */; };
+		2842F70A1F02B572002CBEB8 /* Spices and Seasonings.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2842F6EE1F02B572002CBEB8 /* Spices and Seasonings.txt */; };
+		2842F70B1F02B572002CBEB8 /* Vegetables.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2842F6EF1F02B572002CBEB8 /* Vegetables.txt */; };
+		2842F7161F02B5B7002CBEB8 /* AddTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2842F70C1F02B5B7002CBEB8 /* AddTableViewCell.swift */; };
+		2842F7171F02B5B7002CBEB8 /* AddTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2842F70D1F02B5B7002CBEB8 /* AddTableViewController.swift */; };
+		2842F7181F02B5B7002CBEB8 /* Baking and Grains.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2842F70E1F02B5B7002CBEB8 /* Baking and Grains.txt */; };
+		2842F7191F02B5B7002CBEB8 /* Beverages and Alcohol.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2842F70F1F02B5B7002CBEB8 /* Beverages and Alcohol.txt */; };
+		2842F71A1F02B5B7002CBEB8 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2842F7101F02B5B7002CBEB8 /* Category.swift */; };
+		2842F71B1F02B5B7002CBEB8 /* Condiments and Sauces.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2842F7111F02B5B7002CBEB8 /* Condiments and Sauces.txt */; };
+		2842F71C1F02B5B7002CBEB8 /* Dairy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2842F7121F02B5B7002CBEB8 /* Dairy.txt */; };
+		2842F71D1F02B5B7002CBEB8 /* Desserts and Snacks.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2842F7131F02B5B7002CBEB8 /* Desserts and Snacks.txt */; };
+		2842F71E1F02B5B7002CBEB8 /* Fish and Seafood.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2842F7141F02B5B7002CBEB8 /* Fish and Seafood.txt */; };
+		2842F71F1F02B5B7002CBEB8 /* Fruits.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2842F7151F02B5B7002CBEB8 /* Fruits.txt */; };
+		2842F7261F06D19D002CBEB8 /* NotificationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2842F7251F06D19D002CBEB8 /* NotificationList.swift */; };
+		2842F7281F0D45D1002CBEB8 /* PublicMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2842F7271F0D45D1002CBEB8 /* PublicMethods.swift */; };
+		284906D11F02B4A000A175A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284906D01F02B4A000A175A1 /* AppDelegate.swift */; };
+		284906D61F02B4A000A175A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 284906D41F02B4A000A175A1 /* Main.storyboard */; };
+		284906D81F02B4A000A175A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 284906D71F02B4A000A175A1 /* Assets.xcassets */; };
+		284906DB1F02B4A000A175A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 284906D91F02B4A000A175A1 /* LaunchScreen.storyboard */; };
+		284906E61F02B4A000A175A1 /* FoodAppMasterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284906E51F02B4A000A175A1 /* FoodAppMasterTests.swift */; };
+		284906F11F02B4A000A175A1 /* FoodAppMasterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284906F01F02B4A000A175A1 /* FoodAppMasterUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		284906E21F02B4A000A175A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 284906C51F02B4A000A175A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 284906CC1F02B4A000A175A1;
+			remoteInfo = FoodAppMaster;
+		};
+		284906ED1F02B4A000A175A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 284906C51F02B4A000A175A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 284906CC1F02B4A000A175A1;
+			remoteInfo = FoodAppMaster;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2842F6D41F02B572002CBEB8 /* Ingredient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		2842F6D51F02B572002CBEB8 /* IngredientTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientTableViewCell.swift; sourceTree = "<group>"; };
+		2842F6D61F02B572002CBEB8 /* IngredientTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientTableViewController.swift; sourceTree = "<group>"; };
+		2842F6D71F02B572002CBEB8 /* InventoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InventoryTableViewCell.swift; sourceTree = "<group>"; };
+		2842F6D81F02B572002CBEB8 /* InventoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InventoryTableViewController.swift; sourceTree = "<group>"; };
+		2842F6D91F02B572002CBEB8 /* Legumes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Legumes.txt; sourceTree = "<group>"; };
+		2842F6DA1F02B572002CBEB8 /* Meat.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Meat.txt; sourceTree = "<group>"; };
+		2842F6DB1F02B572002CBEB8 /* Nuts and Seeds.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Nuts and Seeds.txt"; sourceTree = "<group>"; };
+		2842F6DC1F02B572002CBEB8 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		2842F6DD1F02B572002CBEB8 /* RecipeAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeAPI.swift; sourceTree = "<group>"; };
+		2842F6DE1F02B572002CBEB8 /* RecipeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
+		2842F6DF1F02B572002CBEB8 /* RecipeDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeDetailCell.swift; sourceTree = "<group>"; };
+		2842F6E01F02B572002CBEB8 /* RecipeDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewController.swift; sourceTree = "<group>"; };
+		2842F6E11F02B572002CBEB8 /* RecipeDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewModel.swift; sourceTree = "<group>"; };
+		2842F6E21F02B572002CBEB8 /* RecipeImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeImageCell.swift; sourceTree = "<group>"; };
+		2842F6E31F02B572002CBEB8 /* RecipeIngredientCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeIngredientCell.swift; sourceTree = "<group>"; };
+		2842F6E41F02B572002CBEB8 /* RecipeListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeListViewModel.swift; sourceTree = "<group>"; };
+		2842F6E51F02B572002CBEB8 /* RecipesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipesListViewController.swift; sourceTree = "<group>"; };
+		2842F6E61F02B572002CBEB8 /* RecipeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeTableViewCell.swift; sourceTree = "<group>"; };
+		2842F6E71F02B572002CBEB8 /* RecipeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeTableViewController.swift; sourceTree = "<group>"; };
+		2842F6E81F02B572002CBEB8 /* Setting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
+		2842F6E91F02B572002CBEB8 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
+		2842F6EA1F02B572002CBEB8 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		2842F6EB1F02B572002CBEB8 /* ShoppingListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingListTableViewCell.swift; sourceTree = "<group>"; };
+		2842F6EC1F02B572002CBEB8 /* ShoppingListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingListTableViewController.swift; sourceTree = "<group>"; };
+		2842F6ED1F02B572002CBEB8 /* Soup.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Soup.txt; sourceTree = "<group>"; };
+		2842F6EE1F02B572002CBEB8 /* Spices and Seasonings.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Spices and Seasonings.txt"; sourceTree = "<group>"; };
+		2842F6EF1F02B572002CBEB8 /* Vegetables.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Vegetables.txt; sourceTree = "<group>"; };
+		2842F70C1F02B5B7002CBEB8 /* AddTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTableViewCell.swift; sourceTree = "<group>"; };
+		2842F70D1F02B5B7002CBEB8 /* AddTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTableViewController.swift; sourceTree = "<group>"; };
+		2842F70E1F02B5B7002CBEB8 /* Baking and Grains.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Baking and Grains.txt"; sourceTree = "<group>"; };
+		2842F70F1F02B5B7002CBEB8 /* Beverages and Alcohol.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Beverages and Alcohol.txt"; sourceTree = "<group>"; };
+		2842F7101F02B5B7002CBEB8 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		2842F7111F02B5B7002CBEB8 /* Condiments and Sauces.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Condiments and Sauces.txt"; sourceTree = "<group>"; };
+		2842F7121F02B5B7002CBEB8 /* Dairy.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Dairy.txt; sourceTree = "<group>"; };
+		2842F7131F02B5B7002CBEB8 /* Desserts and Snacks.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Desserts and Snacks.txt"; sourceTree = "<group>"; };
+		2842F7141F02B5B7002CBEB8 /* Fish and Seafood.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Fish and Seafood.txt"; sourceTree = "<group>"; };
+		2842F7151F02B5B7002CBEB8 /* Fruits.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Fruits.txt; sourceTree = "<group>"; };
+		2842F7251F06D19D002CBEB8 /* NotificationList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationList.swift; sourceTree = "<group>"; };
+		2842F7271F0D45D1002CBEB8 /* PublicMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicMethods.swift; sourceTree = "<group>"; };
+		284906CD1F02B4A000A175A1 /* FoodAppMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodAppMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		284906D01F02B4A000A175A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		284906D51F02B4A000A175A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		284906D71F02B4A000A175A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		284906DA1F02B4A000A175A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		284906DC1F02B4A000A175A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		284906E11F02B4A000A175A1 /* FoodAppMasterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodAppMasterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		284906E51F02B4A000A175A1 /* FoodAppMasterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodAppMasterTests.swift; sourceTree = "<group>"; };
+		284906E71F02B4A000A175A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		284906EC1F02B4A000A175A1 /* FoodAppMasterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodAppMasterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		284906F01F02B4A000A175A1 /* FoodAppMasterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodAppMasterUITests.swift; sourceTree = "<group>"; };
+		284906F21F02B4A000A175A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		284906CA1F02B4A000A175A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		284906DE1F02B4A000A175A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		284906E91F02B4A000A175A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2842F7201F02B625002CBEB8 /* Text Files */ = {
+			isa = PBXGroup;
+			children = (
+				2842F70E1F02B5B7002CBEB8 /* Baking and Grains.txt */,
+				2842F70F1F02B5B7002CBEB8 /* Beverages and Alcohol.txt */,
+				2842F7111F02B5B7002CBEB8 /* Condiments and Sauces.txt */,
+				2842F7121F02B5B7002CBEB8 /* Dairy.txt */,
+				2842F7131F02B5B7002CBEB8 /* Desserts and Snacks.txt */,
+				2842F7141F02B5B7002CBEB8 /* Fish and Seafood.txt */,
+				2842F7151F02B5B7002CBEB8 /* Fruits.txt */,
+				2842F6D91F02B572002CBEB8 /* Legumes.txt */,
+				2842F6DA1F02B572002CBEB8 /* Meat.txt */,
+				2842F6DB1F02B572002CBEB8 /* Nuts and Seeds.txt */,
+				2842F6ED1F02B572002CBEB8 /* Soup.txt */,
+				2842F6EE1F02B572002CBEB8 /* Spices and Seasonings.txt */,
+				2842F6EF1F02B572002CBEB8 /* Vegetables.txt */,
+			);
+			name = "Text Files";
+			sourceTree = "<group>";
+		};
+		2842F7211F02B63B002CBEB8 /* Inventory Tab */ = {
+			isa = PBXGroup;
+			children = (
+				2842F7101F02B5B7002CBEB8 /* Category.swift */,
+				2842F6D41F02B572002CBEB8 /* Ingredient.swift */,
+				2842F6D81F02B572002CBEB8 /* InventoryTableViewController.swift */,
+				2842F6D71F02B572002CBEB8 /* InventoryTableViewCell.swift */,
+				2842F6D61F02B572002CBEB8 /* IngredientTableViewController.swift */,
+				2842F6D51F02B572002CBEB8 /* IngredientTableViewCell.swift */,
+				2842F70D1F02B5B7002CBEB8 /* AddTableViewController.swift */,
+				2842F70C1F02B5B7002CBEB8 /* AddTableViewCell.swift */,
+			);
+			name = "Inventory Tab";
+			sourceTree = "<group>";
+		};
+		2842F7221F02B65C002CBEB8 /* Recipes Tab */ = {
+			isa = PBXGroup;
+			children = (
+				2842F6DC1F02B572002CBEB8 /* Recipe.swift */,
+				2842F6DD1F02B572002CBEB8 /* RecipeAPI.swift */,
+				2842F6DE1F02B572002CBEB8 /* RecipeCell.swift */,
+				2842F6DF1F02B572002CBEB8 /* RecipeDetailCell.swift */,
+				2842F6E01F02B572002CBEB8 /* RecipeDetailViewController.swift */,
+				2842F6E11F02B572002CBEB8 /* RecipeDetailViewModel.swift */,
+				2842F6E21F02B572002CBEB8 /* RecipeImageCell.swift */,
+				2842F6E31F02B572002CBEB8 /* RecipeIngredientCell.swift */,
+				2842F6E41F02B572002CBEB8 /* RecipeListViewModel.swift */,
+				2842F6E51F02B572002CBEB8 /* RecipesListViewController.swift */,
+				2842F6E61F02B572002CBEB8 /* RecipeTableViewCell.swift */,
+				2842F6E71F02B572002CBEB8 /* RecipeTableViewController.swift */,
+			);
+			name = "Recipes Tab";
+			sourceTree = "<group>";
+		};
+		2842F7231F02B668002CBEB8 /* Settings Tab */ = {
+			isa = PBXGroup;
+			children = (
+				2842F6E81F02B572002CBEB8 /* Setting.swift */,
+				2842F6E91F02B572002CBEB8 /* SettingsTableViewCell.swift */,
+				2842F6EA1F02B572002CBEB8 /* SettingsTableViewController.swift */,
+				2842F7251F06D19D002CBEB8 /* NotificationList.swift */,
+			);
+			name = "Settings Tab";
+			sourceTree = "<group>";
+		};
+		2842F7241F02B682002CBEB8 /* Shopping List Tab */ = {
+			isa = PBXGroup;
+			children = (
+				2842F6EB1F02B572002CBEB8 /* ShoppingListTableViewCell.swift */,
+				2842F6EC1F02B572002CBEB8 /* ShoppingListTableViewController.swift */,
+			);
+			name = "Shopping List Tab";
+			sourceTree = "<group>";
+		};
+		284906C41F02B4A000A175A1 = {
+			isa = PBXGroup;
+			children = (
+				284906CF1F02B4A000A175A1 /* FoodAppMaster */,
+				284906E41F02B4A000A175A1 /* FoodAppMasterTests */,
+				284906EF1F02B4A000A175A1 /* FoodAppMasterUITests */,
+				284906CE1F02B4A000A175A1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		284906CE1F02B4A000A175A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				284906CD1F02B4A000A175A1 /* FoodAppMaster.app */,
+				284906E11F02B4A000A175A1 /* FoodAppMasterTests.xctest */,
+				284906EC1F02B4A000A175A1 /* FoodAppMasterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		284906CF1F02B4A000A175A1 /* FoodAppMaster */ = {
+			isa = PBXGroup;
+			children = (
+				284906D01F02B4A000A175A1 /* AppDelegate.swift */,
+				2842F7271F0D45D1002CBEB8 /* PublicMethods.swift */,
+				2842F7211F02B63B002CBEB8 /* Inventory Tab */,
+				2842F7221F02B65C002CBEB8 /* Recipes Tab */,
+				2842F7231F02B668002CBEB8 /* Settings Tab */,
+				2842F7241F02B682002CBEB8 /* Shopping List Tab */,
+				284906D71F02B4A000A175A1 /* Assets.xcassets */,
+				284906D41F02B4A000A175A1 /* Main.storyboard */,
+				284906D91F02B4A000A175A1 /* LaunchScreen.storyboard */,
+				284906DC1F02B4A000A175A1 /* Info.plist */,
+				2842F7201F02B625002CBEB8 /* Text Files */,
+			);
+			path = FoodAppMaster;
+			sourceTree = "<group>";
+		};
+		284906E41F02B4A000A175A1 /* FoodAppMasterTests */ = {
+			isa = PBXGroup;
+			children = (
+				284906E51F02B4A000A175A1 /* FoodAppMasterTests.swift */,
+				284906E71F02B4A000A175A1 /* Info.plist */,
+			);
+			path = FoodAppMasterTests;
+			sourceTree = "<group>";
+		};
+		284906EF1F02B4A000A175A1 /* FoodAppMasterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				284906F01F02B4A000A175A1 /* FoodAppMasterUITests.swift */,
+				284906F21F02B4A000A175A1 /* Info.plist */,
+			);
+			path = FoodAppMasterUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		284906CC1F02B4A000A175A1 /* FoodAppMaster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 284906F51F02B4A000A175A1 /* Build configuration list for PBXNativeTarget "FoodAppMaster" */;
+			buildPhases = (
+				284906C91F02B4A000A175A1 /* Sources */,
+				284906CA1F02B4A000A175A1 /* Frameworks */,
+				284906CB1F02B4A000A175A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FoodAppMaster;
+			productName = FoodAppMaster;
+			productReference = 284906CD1F02B4A000A175A1 /* FoodAppMaster.app */;
+			productType = "com.apple.product-type.application";
+		};
+		284906E01F02B4A000A175A1 /* FoodAppMasterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 284906F81F02B4A000A175A1 /* Build configuration list for PBXNativeTarget "FoodAppMasterTests" */;
+			buildPhases = (
+				284906DD1F02B4A000A175A1 /* Sources */,
+				284906DE1F02B4A000A175A1 /* Frameworks */,
+				284906DF1F02B4A000A175A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				284906E31F02B4A000A175A1 /* PBXTargetDependency */,
+			);
+			name = FoodAppMasterTests;
+			productName = FoodAppMasterTests;
+			productReference = 284906E11F02B4A000A175A1 /* FoodAppMasterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		284906EB1F02B4A000A175A1 /* FoodAppMasterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 284906FB1F02B4A000A175A1 /* Build configuration list for PBXNativeTarget "FoodAppMasterUITests" */;
+			buildPhases = (
+				284906E81F02B4A000A175A1 /* Sources */,
+				284906E91F02B4A000A175A1 /* Frameworks */,
+				284906EA1F02B4A000A175A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				284906EE1F02B4A000A175A1 /* PBXTargetDependency */,
+			);
+			name = FoodAppMasterUITests;
+			productName = FoodAppMasterUITests;
+			productReference = 284906EC1F02B4A000A175A1 /* FoodAppMasterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		284906C51F02B4A000A175A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Princeton University";
+				TargetAttributes = {
+					284906CC1F02B4A000A175A1 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					284906E01F02B4A000A175A1 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 284906CC1F02B4A000A175A1;
+					};
+					284906EB1F02B4A000A175A1 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 284906CC1F02B4A000A175A1;
+					};
+				};
+			};
+			buildConfigurationList = 284906C81F02B4A000A175A1 /* Build configuration list for PBXProject "FoodAppMaster" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 284906C41F02B4A000A175A1;
+			productRefGroup = 284906CE1F02B4A000A175A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				284906CC1F02B4A000A175A1 /* FoodAppMaster */,
+				284906E01F02B4A000A175A1 /* FoodAppMasterTests */,
+				284906EB1F02B4A000A175A1 /* FoodAppMasterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		284906CB1F02B4A000A175A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2842F6F61F02B572002CBEB8 /* Meat.txt in Resources */,
+				2842F7091F02B572002CBEB8 /* Soup.txt in Resources */,
+				2842F71D1F02B5B7002CBEB8 /* Desserts and Snacks.txt in Resources */,
+				2842F71B1F02B5B7002CBEB8 /* Condiments and Sauces.txt in Resources */,
+				2842F71E1F02B5B7002CBEB8 /* Fish and Seafood.txt in Resources */,
+				2842F71F1F02B5B7002CBEB8 /* Fruits.txt in Resources */,
+				284906DB1F02B4A000A175A1 /* LaunchScreen.storyboard in Resources */,
+				2842F7191F02B5B7002CBEB8 /* Beverages and Alcohol.txt in Resources */,
+				2842F70A1F02B572002CBEB8 /* Spices and Seasonings.txt in Resources */,
+				2842F7181F02B5B7002CBEB8 /* Baking and Grains.txt in Resources */,
+				284906D81F02B4A000A175A1 /* Assets.xcassets in Resources */,
+				284906D61F02B4A000A175A1 /* Main.storyboard in Resources */,
+				2842F6F51F02B572002CBEB8 /* Legumes.txt in Resources */,
+				2842F70B1F02B572002CBEB8 /* Vegetables.txt in Resources */,
+				2842F6F71F02B572002CBEB8 /* Nuts and Seeds.txt in Resources */,
+				2842F71C1F02B5B7002CBEB8 /* Dairy.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		284906DF1F02B4A000A175A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		284906EA1F02B4A000A175A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		284906C91F02B4A000A175A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2842F7011F02B572002CBEB8 /* RecipesListViewController.swift in Sources */,
+				2842F7281F0D45D1002CBEB8 /* PublicMethods.swift in Sources */,
+				2842F7071F02B572002CBEB8 /* ShoppingListTableViewCell.swift in Sources */,
+				2842F6F01F02B572002CBEB8 /* Ingredient.swift in Sources */,
+				284906D11F02B4A000A175A1 /* AppDelegate.swift in Sources */,
+				2842F6F81F02B572002CBEB8 /* Recipe.swift in Sources */,
+				2842F6FA1F02B572002CBEB8 /* RecipeCell.swift in Sources */,
+				2842F6FE1F02B572002CBEB8 /* RecipeImageCell.swift in Sources */,
+				2842F6F41F02B572002CBEB8 /* InventoryTableViewController.swift in Sources */,
+				2842F6FF1F02B572002CBEB8 /* RecipeIngredientCell.swift in Sources */,
+				2842F71A1F02B5B7002CBEB8 /* Category.swift in Sources */,
+				2842F7171F02B5B7002CBEB8 /* AddTableViewController.swift in Sources */,
+				2842F6FD1F02B572002CBEB8 /* RecipeDetailViewModel.swift in Sources */,
+				2842F7031F02B572002CBEB8 /* RecipeTableViewController.swift in Sources */,
+				2842F7261F06D19D002CBEB8 /* NotificationList.swift in Sources */,
+				2842F7001F02B572002CBEB8 /* RecipeListViewModel.swift in Sources */,
+				2842F6F91F02B572002CBEB8 /* RecipeAPI.swift in Sources */,
+				2842F6FB1F02B572002CBEB8 /* RecipeDetailCell.swift in Sources */,
+				2842F6FC1F02B572002CBEB8 /* RecipeDetailViewController.swift in Sources */,
+				2842F6F31F02B572002CBEB8 /* InventoryTableViewCell.swift in Sources */,
+				2842F6F21F02B572002CBEB8 /* IngredientTableViewController.swift in Sources */,
+				2842F7041F02B572002CBEB8 /* Setting.swift in Sources */,
+				2842F7021F02B572002CBEB8 /* RecipeTableViewCell.swift in Sources */,
+				2842F7051F02B572002CBEB8 /* SettingsTableViewCell.swift in Sources */,
+				2842F6F11F02B572002CBEB8 /* IngredientTableViewCell.swift in Sources */,
+				2842F7161F02B5B7002CBEB8 /* AddTableViewCell.swift in Sources */,
+				2842F7081F02B572002CBEB8 /* ShoppingListTableViewController.swift in Sources */,
+				2842F7061F02B572002CBEB8 /* SettingsTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		284906DD1F02B4A000A175A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				284906E61F02B4A000A175A1 /* FoodAppMasterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		284906E81F02B4A000A175A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				284906F11F02B4A000A175A1 /* FoodAppMasterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		284906E31F02B4A000A175A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 284906CC1F02B4A000A175A1 /* FoodAppMaster */;
+			targetProxy = 284906E21F02B4A000A175A1 /* PBXContainerItemProxy */;
+		};
+		284906EE1F02B4A000A175A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 284906CC1F02B4A000A175A1 /* FoodAppMaster */;
+			targetProxy = 284906ED1F02B4A000A175A1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		284906D41F02B4A000A175A1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				284906D51F02B4A000A175A1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		284906D91F02B4A000A175A1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				284906DA1F02B4A000A175A1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		284906F31F02B4A000A175A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		284906F41F02B4A000A175A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		284906F61F02B4A000A175A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FoodAppMaster/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SPE.FoodAppMaster;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		284906F71F02B4A000A175A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FoodAppMaster/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SPE.FoodAppMaster;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		284906F91F02B4A000A175A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FoodAppMasterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SPE.FoodAppMasterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FoodAppMaster.app/FoodAppMaster";
+			};
+			name = Debug;
+		};
+		284906FA1F02B4A000A175A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FoodAppMasterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SPE.FoodAppMasterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FoodAppMaster.app/FoodAppMaster";
+			};
+			name = Release;
+		};
+		284906FC1F02B4A000A175A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = FoodAppMasterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SPE.FoodAppMasterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = FoodAppMaster;
+			};
+			name = Debug;
+		};
+		284906FD1F02B4A000A175A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = FoodAppMasterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SPE.FoodAppMasterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = FoodAppMaster;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		284906C81F02B4A000A175A1 /* Build configuration list for PBXProject "FoodAppMaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				284906F31F02B4A000A175A1 /* Debug */,
+				284906F41F02B4A000A175A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		284906F51F02B4A000A175A1 /* Build configuration list for PBXNativeTarget "FoodAppMaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				284906F61F02B4A000A175A1 /* Debug */,
+				284906F71F02B4A000A175A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		284906F81F02B4A000A175A1 /* Build configuration list for PBXNativeTarget "FoodAppMasterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				284906F91F02B4A000A175A1 /* Debug */,
+				284906FA1F02B4A000A175A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		284906FB1F02B4A000A175A1 /* Build configuration list for PBXNativeTarget "FoodAppMasterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				284906FC1F02B4A000A175A1 /* Debug */,
+				284906FD1F02B4A000A175A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 284906C51F02B4A000A175A1 /* Project object */;
+}
