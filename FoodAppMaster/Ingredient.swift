@@ -16,6 +16,7 @@ class Ingredient: NSObject, NSCoding {
     // COLTON RULES CARL AND ABBY DROOL (MOSTLY ABBY BUT ALSO CARL)
     // OKAY NEW NEW NEW COMMENT
     // OKAY NEW NEW NEW NEW COMMENT FROM COLTON
+    // I AM CONFLICTING
     var name: String
     var selected: Bool
     var shoppingListed: Bool
