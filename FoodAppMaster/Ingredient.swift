@@ -18,6 +18,8 @@ class Ingredient: NSObject, NSCoding {
     // OKAY NEW NEW NEW NEW COMMENT FROM COLTON
     // I AM CONFLICTING
     // LOL
+    // I ADD A COMMENT
+    // I ADD THIS COMMENT 2
     var name: String
     var selected: Bool
     var shoppingListed: Bool
