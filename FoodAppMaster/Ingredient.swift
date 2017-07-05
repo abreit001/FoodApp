@@ -14,7 +14,7 @@ class Ingredient: NSObject, NSCoding {
     //MARK: Properties
     // FUCK CARL'S COMMENT
     // COLTON RULES CARL AND ABBY DROOL (MOSTLY ABBY BUT ALSO CARL)
-    // NEW COMMENT HEY HEY HEY
+    // OKAY NEW NEW NEW COMMENT
     var name: String
     var selected: Bool
     var shoppingListed: Bool
