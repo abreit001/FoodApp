@@ -16,6 +16,7 @@ class PublicMethods {
     //MARK: Properties
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     var sections = [String]()
+    var owned = [Ingredient]()
     
     // Instance for use in other classes
     class var sharedInstance : PublicMethods {
@@ -40,9 +41,12 @@ class PublicMethods {
         let notificationDuration = (item.expDuration!) * 0.7
         item.notificationDate = Date(timeIntervalSinceNow: notificationDuration)
         
+        // add to owned
+        owned.append(item)
+        
         print(Date(timeIntervalSinceNow: 0))
-        print(item.exp as Any)
-        print(item.notificationDate as Any)
+        print(item.exp!)
+        print(item.notificationDate!)
         
         // create the notifcation
         NotificationList.sharedInstance.addNotification(item)

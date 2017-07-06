@@ -16,6 +16,7 @@ class IngredientTableViewController: UITableViewController {
     var ingredientCategory: Int?
     var ingredients = [Ingredient]()
     var sections = [String]()
+    var timer: Timer?
     let app = PublicMethods.sharedInstance
 
     override func viewDidLoad() {
@@ -28,14 +29,18 @@ class IngredientTableViewController: UITableViewController {
         // Change the title of the scene
         navigationItem.title = sections[ingredientCategory!]
         
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
+    }
+    
+    // Helper function to reload all tableView rows
+    func reload() {
+        tableView.reloadData()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         // Load any saved items
         ingredients = app.loadIngredients(section: ingredientCategory!)!
         tableView.reloadData()
+        timer = Timer.scheduledTimer(timeInterval: 30, target: self, selector: #selector(reload), userInfo: nil, repeats: true)
     }
 
     override func didReceiveMemoryWarning() {
@@ -69,10 +74,28 @@ class IngredientTableViewController: UITableViewController {
         let formatter = DateFormatter()
         formatter.dateStyle = DateFormatter.Style.medium
         cell.exp.text = formatter.string(from: current.exp!)
-        
+        // turn red after the user has been notified of its impending expiration
+        if current.notificationDate!.compare(Date.init()) == .orderedAscending {
+            cell.exp.textColor = .red
+        }
+        else {
+            cell.exp.textColor = .black
+        }
         return cell
     }
 
+    override func tableView(_ tableView: UITableView, willBeginEditingRowAt indexPath: IndexPath) {
+        // Stop the timer
+        timer!.invalidate()
+        timer = nil
+        print ("STOPPING TIMER")
+    }
+    
+    override func tableView(_ tableView: UITableView, didEndEditingRowAt indexPath: IndexPath?) {
+        print("FINISHED EDITING")
+        timer = Timer.scheduledTimer(timeInterval: 30, target: self, selector: #selector(reload), userInfo: nil, repeats: true)
+    }
+    
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
@@ -85,6 +108,10 @@ class IngredientTableViewController: UITableViewController {
                 tableView.reloadRows(at: [indexPath], with: .fade)
                 // Add to shopping list
                 self.ingredients[indexPath.row].shoppingListed = true
+                // Reset expiration and notification dates
+                self.ingredients[indexPath.row].exp = Date(timeIntervalSinceReferenceDate: 0)
+                self.ingredients[indexPath.row].notificationDate = Date(timeIntervalSinceReferenceDate: 0)
+                // Save data
                 self.app.saveIngredients(section: self.ingredientCategory!, ingredients: self.ingredients)
             })
             alertController.addAction(shoppingListAction)
@@ -93,6 +120,10 @@ class IngredientTableViewController: UITableViewController {
                 // Delete the row from the data source
                 self.ingredients[indexPath.row].selected = false
                 tableView.reloadRows(at: [indexPath], with: .fade)
+                // Reset expiration and notification dates
+                self.ingredients[indexPath.row].exp = Date(timeIntervalSinceReferenceDate: 0)
+                self.ingredients[indexPath.row].notificationDate = Date(timeIntervalSinceReferenceDate: 0)
+                // Save data
                 self.app.saveIngredients(section: self.ingredientCategory!, ingredients: self.ingredients)
             })
             alertController.addAction(deleteAction)
