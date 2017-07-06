@@ -12,7 +12,7 @@ import os.log
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    //CAN YOU SEE THIS
     var window: UIWindow?
     let sections = ["Dairy", "Meat", "Vegetables", "Fruits", "Fish and Seafood", "Baking and Grains", "Spices and Seasonings", "Nuts and Seeds", "Legumes", "Condiments and Sauces", "Desserts and Snacks", "Soup", "Beverages and Alcohol"]
     var ingredients = [[Ingredient]]()
@@ -90,7 +90,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let foods = foodList.components(separatedBy:.newlines)
             for food in foods {
                 if (food != "") {
-                    guard let item = Ingredient(name: food, expDuration: 30) else {
+                    let itemData = food.components(separatedBy: ", ")
+                    guard let item = Ingredient(name: itemData[0], expDuration: Double(itemData[1])!) else {
                         fatalError("Unable to instantiate item")
                     }
                     ingredients[i].append(item)

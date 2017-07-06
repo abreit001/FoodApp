@@ -33,7 +33,7 @@ Ground Nutmeg, 63070000
 Herbes de Provence, 63070000
 Herbs, 63070000
 Hoisin Sauce, 63070000
-Italian Herbs, 63070000 
+Italian Herbs, 63070000
 Italian Seasoning, 63070000
 Italian Spice, 63070000
 Liquid Smoke, 63070000

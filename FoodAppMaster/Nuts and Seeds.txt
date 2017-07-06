@@ -8,7 +8,7 @@ Hazelnut, 2628000
 Macadamia, 2628000
 Macaroon, 2628000
 Peanut, 2628000
-Peanut Butter
+Peanut Butter, 63070000
 Pecan, 2628000
 Pine Nut, 2628000
 Pistachio, 2628000

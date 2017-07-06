@@ -31,16 +31,10 @@ class IngredientTableViewController: UITableViewController {
         
     }
     
-    // Helper function to reload all tableView rows
-    func reload() {
-        tableView.reloadData()
-    }
-    
     override func viewDidAppear(_ animated: Bool) {
         // Load any saved items
         ingredients = app.loadIngredients(section: ingredientCategory!)!
         tableView.reloadData()
-        timer = Timer.scheduledTimer(timeInterval: 30, target: self, selector: #selector(reload), userInfo: nil, repeats: true)
     }
 
     override func didReceiveMemoryWarning() {
@@ -75,25 +69,13 @@ class IngredientTableViewController: UITableViewController {
         formatter.dateStyle = DateFormatter.Style.medium
         cell.exp.text = formatter.string(from: current.exp!)
         // turn red after the user has been notified of its impending expiration
-        if current.notificationDate!.compare(Date.init()) == .orderedAscending {
+        if Calendar.current.component(.day, from: current.notificationDate!) <= Calendar.current.component(.day, from: Date.init()) {
             cell.exp.textColor = .red
         }
         else {
             cell.exp.textColor = .black
         }
         return cell
-    }
-
-    override func tableView(_ tableView: UITableView, willBeginEditingRowAt indexPath: IndexPath) {
-        // Stop the timer
-        timer!.invalidate()
-        timer = nil
-        print ("STOPPING TIMER")
-    }
-    
-    override func tableView(_ tableView: UITableView, didEndEditingRowAt indexPath: IndexPath?) {
-        print("FINISHED EDITING")
-        timer = Timer.scheduledTimer(timeInterval: 30, target: self, selector: #selector(reload), userInfo: nil, repeats: true)
     }
     
     // Override to support editing the table view.

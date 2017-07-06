@@ -1,23 +1,23 @@
 Asparagus, 604800
 Avocado, 604800
 Basil, 604800
-Beet, , 604800
+Beet, 604800
 Bell Pepper, 604800
 Broccoli, 604800
 Cabbage, 604800
 Carrot, 604800
-Cauliflower
+Cauliflower, 604800
 Celery, 604800
-Chili Pepper
+Chili Pepper, 604800
 Cilantro, 604800
 Corn, 604800
 Cucumber, 604800
-Dill, 1204800 
+Dill, 1204800
 Frozen Vegetables, 31540000
-Garlic, HALF YEAR
+Garlic, 15770000
 Ginger, 1804800
 Green Beans, 604800
-Horseradish
+Horseradish, 31540000
 Kale, 604800
 Mint, 5004800
 Mixed Vegetable, 604800

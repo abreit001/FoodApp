@@ -1,8 +1,8 @@
-Anchovies
+Anchovies, 47300000
 Barramundi, 345600
 Bluefish, 345600
 Canned Salmon, 554345600
-Canned Tuna, , 542345600
+Canned Tuna, 542345600
 Carp, 345600
 Catfish, 345600
 Caviar, 345600
