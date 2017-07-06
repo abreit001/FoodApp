@@ -25,9 +25,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         // Load any saved items, otherwise load sample data.
-        if let saved = PublicMethods.sharedInstance.loadAllIngredients() {
-            print("Found saved data")
-            self.ingredients = saved
+        if false {//let saved = PublicMethods.sharedInstance.loadAllIngredients() {
+            //print("Found saved data")
+            //self.ingredients = saved
         }
         else {
             // Load the sample data.
@@ -90,7 +90,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let foods = foodList.components(separatedBy:.newlines)
             for food in foods {
                 if (food != "") {
-                    guard let item = Ingredient(name: food, expDuration: 30) else {
+                    let itemData = food.components(separatedBy: ", ")
+                    print(itemData[0])
+                    print(itemData[1])
+                    guard let item = Ingredient(name: itemData[0], expDuration: Double(itemData[1])!) else {
                         fatalError("Unable to instantiate item")
                     }
                     ingredients[i].append(item)
