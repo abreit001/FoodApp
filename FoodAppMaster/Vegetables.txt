@@ -1,42 +1,42 @@
-Asparagus
-Avocado
-Basil
-Beet
-Bell Pepper
-Broccoli
-Cabbage
-Carrot
+Asparagus, 604800
+Avocado, 604800
+Basil, 604800
+Beet, , 604800
+Bell Pepper, 604800
+Broccoli, 604800
+Cabbage, 604800
+Carrot, 604800
 Cauliflower
-Celery
+Celery, 604800
 Chili Pepper
-Cilantro
-Corn
-Cucumber
-Dill 
-Frozen Vegetables
-Garlic 
-Ginger
-Green Beans
+Cilantro, 604800
+Corn, 604800
+Cucumber, 604800
+Dill, 1204800 
+Frozen Vegetables, 31540000
+Garlic, HALF YEAR
+Ginger, 1804800
+Green Beans, 604800
 Horseradish
-Kale
-Mint
-Mixed Vegetable
-Mushroom
-Olive
-Onion
-Parsley
-Pickle
-Potato
-Pumpkin
-Red Onion
-Rosemary
-Salad Greens
-Scallion
-Shallot
-Spinach
-Squash
-Sun Dried Tomato
-Sweet Corn
-Sweet Potato
-Tomato
-Zucchini
+Kale, 604800
+Mint, 5004800
+Mixed Vegetable, 604800
+Mushroom, 604800
+Olive, 31540000
+Onion, 7504800
+Parsley, 604800
+Pickle, 31540000
+Potato, 5004800
+Pumpkin, 604800
+Red Onion, 7504800
+Rosemary, 1204800
+Salad Greens, 604800
+Scallion, 604800
+Shallot, 2404800
+Spinach, 604800
+Squash, 604800
+Sun Dried Tomato, 604800
+Sweet Corn, 604800
+Sweet Potato, 5004800
+Tomato, 604800
+Zucchini, 604800

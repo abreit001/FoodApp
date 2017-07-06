@@ -1,36 +1,36 @@
 Anchovies
-Barramundi 
-Bluefish
-Canned Salmon
-Canned Tuna
-Carp
-Catfish
-Caviar
-Cod
-Cuttlefish
-Eel
-Fish Fillets
-Flounder
-Grouper
-Haddock
-Halibut
-Herring
-Lemon Sole
-Mackerel
-Mahi Mahi
-Monkfish
-Perch
-Pike
-Pollock
-Red Snapper
-Rockfish
-Salmon
-Sardines
-Sea Bas
-Smoked Salmon
-Sole
-Swordfish
-Tilapia
-Trout
-Tuna Steak
-Whitefish
+Barramundi, 345600
+Bluefish, 345600
+Canned Salmon, 554345600
+Canned Tuna, , 542345600
+Carp, 345600
+Catfish, 345600
+Caviar, 345600
+Cod, 345600
+Cuttlefish, 345600
+Eel, 345600
+Fish Fillets, 345600
+Flounder, 345600
+Grouper, 345600
+Haddock, 345600
+Halibut, 345600
+Herring, 345600
+Lemon Sole, 345600
+Mackerel, 345600
+Mahi Mahi, 345600
+Monkfish, 345600
+Perch, 345600
+Pike, 345600
+Pollock, 345600
+Red Snapper, 345600
+Rockfish, 345600
+Salmon, 345600
+Sardines, 345600
+Sea Bas, 345600
+Smoked Salmon, 345600
+Sole, 345600
+Swordfish, 345600
+Tilapia, 345600
+Trout, 345600
+Tuna Steak, 345600
+Whitefish, 345600

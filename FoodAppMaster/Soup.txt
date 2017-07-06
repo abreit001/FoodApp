@@ -1,10 +1,10 @@
-Beef Broth
-Celery Soup
-Chicken Broth
-Chicken Soup
-Dashi
-Mushroom Soup
-Onion Soup
-Tomato Soup
-Vegetable Soup
-Vegetable Stock
+Beef Broth, 63070000
+Celery Soup, 63070000
+Chicken Broth, 63070000
+Chicken Soup, 63070000
+Dashi, 63070000
+Mushroom Soup, 63070000
+Onion Soup, 63070000
+Tomato Soup, 63070000
+Vegetable Soup, 63070000
+Vegetable Stock, 63070000

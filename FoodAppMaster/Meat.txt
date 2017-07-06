@@ -1,48 +1,48 @@
-Bacon
-Beef Liver
-Beef Ribs
-Beef Roast
-Beef Shank
-Beef Steak
-Bologna
-Bratwurst
-Chicken Breast
-Chicken Giblets
-Chicken Leg
-Chicken Roast
-Chicken Thighs
-Chicken Wings
-Coirizo
-Cooked Chicken
-Corned Beef
-Cornish Hen
-Duck
-Ground Beef
-Ground Chicken
-Ground Lamb
-Ground Pork
-Ground Turkey
-Ham
-Hot Dog
-Lamb
-Lamb Chips
-Lamb Shank 
-Lamb Shoulder
-Leg of Lamb
-Pancetta
-Pepperoni
-Polish Sausage
-Pork
-Pork Belly 
-Pork Chops
-Pork Ribs
-Pork Roast
-Pork Shoulder
-Prosciutto
-Salami
-Sausage
-Spam
-Turkey
-Veal
-Venison
-Whole Chicken
+Bacon, 604800
+Beef Liver, 259200
+Beef Ribs, 259200
+Beef Roast, 259200
+Beef Shank, 259200
+Beef Steak, 259200
+Bologna, 604800
+Bratwurst, 604800
+Chicken Breast, 259200
+Chicken Giblets, 259200
+Chicken Leg, 259200
+Chicken Roast, 259200
+Chicken Thighs, 259200
+Chicken Wings, 259200
+Coirizo, 259200
+Cooked Chicken, 604800
+Corned Beef, 259200
+Cornish Hen, 604800
+Duck, 259200
+Ground Beef, 604800
+Ground Chicken, 604800
+Ground Lamb, 604800
+Ground Pork, 604800
+Ground Turkey, 604800
+Ham, 604800
+Hot Dog, 1210000
+Lamb, 259200
+Lamb Chips, 259200
+Lamb Shank, 259200
+Lamb Shoulder, 259200
+Leg of Lamb, 259200
+Pancetta, 604800
+Pepperoni, 604800
+Polish Sausage, 604800
+Pork, 604800
+Pork Belly, 259200
+Pork Chops, 259200
+Pork Ribs, 259200
+Pork Roast, 259200
+Pork Shoulder, 259200
+Prosciutto, 604800
+Salami, 604800
+Sausage, 604800
+Spam, 63070000
+Turkey, 259200
+Veal, 259200
+Venison, 259200
+Whole Chicken, 259200

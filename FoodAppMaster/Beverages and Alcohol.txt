@@ -1,63 +1,63 @@
-Absinthe
-Amaretto
-Anisette
-Apple Juice
-Beer 
-Bitters
-Bloody Mary
-Bourbon
-Brandy
-Burgundy Wine
-Cabernet Sauvignon
-Champagne
-Chocolate Liqueur
-Ciclon
-Club Soda
-Coffee
-Cognac
-Coke
-Cooking Wine
-Cranberry
-Crème de Menthe
-Curacao
-Dessert Wine
-Espresso
-Frangelico
-Fruit Juice
-Gin
-Ginger Ale
-Grand Marnier
-Grappa
-Green Tea
-Grenadine
-Irish Cream
-Juice
-Kahlua
-Lemonade
-Limoncello
-Liqueur
-Madeira Wine
-Margarita Mix
-Masala
-Orange Juice
-Ouzo
-Pineapple Juice 
-Port Wine
-Raspberry Liquor 
-Red Wine
-Rum
-Sake
-Schnapps
-Shaoxing Wine
-Sherry
-Sparkling Wine
-Sprite
-Tea
-Tequila
-Tomato Juice
-Triple Sec
-Vermouth
-Vodka
-Whiskey
-Whisky
-White Wine
+Absinthe, 315400000
+Amaretto, 315400000
+Anisette, 315400000
+Apple Juice, 31540000
+Beer, 315400000
+Bitters, 315400000
+Bloody Mary, 315400000
+Bourbon, 315400000
+Brandy, 315400000
+Burgundy Wine, 315400000
+Cabernet Sauvignon, 315400000
+Champagne, 315400000
+Chocolate Liqueur, 315400000
+Ciclon, 315400000
+Club Soda, 315400000
+Coffee, 315400000
+Cognac, 315400000
+Coke, 315400000
+Cooking Wine, 315400000
+Cranberry, 31540000
+Crème de Menthe, 315400000
+Curacao, 315400000
+Dessert Wine, 315400000
+Espresso, 315400000
+Frangelico, 315400000
+Fruit Juice, 31540000
+Gin, 315400000
+Ginger Ale, 315400000
+Grand Marnier, 315400000
+Grappa, 315400000
+Green Tea, 315400000
+Grenadine, 315400000
+Irish Cream, 315400000
+Juice, 31540000
+Kahlua, 315400000
+Lemonade, 31540000
+Limoncello, 31540000
+Liqueur, 315400000
+Madeira Wine, 315400000
+Margarita Mix, 315400000
+Masala, 315400000
+Orange Juice, 31540000
+Ouzo, 315400000
+Pineapple Juice, 31540000
+Port Wine, 315400000
+Raspberry Liquor, 315400000
+Red Wine, 315400000
+Rum, 315400000
+Sake, 315400000
+Schnapps, 315400000
+Shaoxing Wine, 315400000
+Sherry, 315400000
+Sparkling Wine, 315400000
+Sprite, 315400000
+Tea, 1540000
+Tequila, 315400000
+Tomato Juice, 1540000
+Triple Sec, 315400000
+Vermouth, 315400000
+Vodka, 315400000
+Whiskey, 315400000
+Whisky, 315400000
+White Wine, 315400000

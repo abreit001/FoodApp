@@ -1,50 +1,49 @@
-Apple
-Apple Butter
-Apricot
-Banana
-Berries
-Blackberries
-Blueberries
-Boysenberry
-Cantaloupe
-Cherry
-Clementine
-Coconut
-Cranberries
-Currant
-Date
-Fig
-Grape
-Grapefruit
-Guava
-Kiwi
-Kumquat
-Lemon
-Lime
-Lingonberry 
-Lychee
-Mandarin
-Mango
-Nectarine
-Orange
-Papaya
-Passion Fruit
-Peach
-Pear 
-Persimmons
-Pineapple 
-Plantain
-Plum
-Pomegranate
-Prunes
-Quince
-Raisin
-Raisins
-Raspberries
-Rhubarb
-Star Fruit
-Strawberries
-Sultanas
-Tangelos
-Tangerine
-Watermelon
+Apple, 1210000
+Apple Butter, 63080000
+Apricot, 604800
+Banana, 604800
+Berries, 604800
+Blackberries, 604800
+Blueberries, 604800
+Boysenberry, 604800
+Cantaloupe, 604800
+Cherry, 604800
+Clementine, 604800
+Coconut, 604800
+Cranberries, 604800
+Currant, 604800
+Date, 604800
+Fig, 604800
+Grape, 604800
+Grapefruit, 604800
+Guava, 604800
+Kiwi, 604800
+Kumquat, 604800
+Lemon, 604800
+Lime, 604800
+Lingonberry, 604800
+Lychee, 604800
+Mandarin, 604800
+Mango, 604800
+Nectarine, 604800
+Orange, 604800
+Papaya, 604800
+Passion Fruit, 604800
+Peach, 604800
+Pear, 604800
+Persimmons, 604800
+Pineapple, 604800
+Plantain, 604800
+Plum, 604800
+Pomegranate, 604800
+Prunes, 604800
+Quince, 604800
+Raisins, 31540000
+Raspberries, 604800
+Rhubarb, 604800
+Star Fruit, 604800
+Strawberries, 604800
+Sultanas, 604800
+Tangelos, 604800
+Tangerine, 604800
+Watermelon, 604800

@@ -1,16 +1,16 @@
-Almond
-Almond Meal
-Almond Paste
-Cashew
-Chestnut
-Flax
-Hazelnut
-Macadamia
-Macaroon
-Peanut
+Almond, 2628000
+Almond Meal, 63070000
+Almond Paste, 63070000
+Cashew, 2628000
+Chestnut, 2628000
+Flax, 8070000
+Hazelnut, 2628000
+Macadamia, 2628000
+Macaroon, 2628000
+Peanut, 2628000
 Peanut Butter
-Pecan
-Pine Nut
-Pistachio
-Praline
-Walnut
+Pecan, 2628000
+Pine Nut, 2628000
+Pistachio, 2628000
+Praline, 2628000
+Walnut, 2628000

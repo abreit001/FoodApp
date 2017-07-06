@@ -1,13 +1,13 @@
-Black Beans
-Cannellini Beans
-Chickpea
-French Beans
-Green Beans 
-Hummus
-Kidney Beans
-Lentil
-Lima Beans
-Navy Beans
-Peas
-Pinto Beans
-Soybeans
+Black Beans, 94610000
+Cannellini Beans, 94610000
+Chickpea, 94610000
+French Beans, 94610000
+Green Beans, 94610000
+Hummus, 94610000
+Kidney Beans, 94610000
+Lentil, 94610000
+Lima Beans, 94610000
+Navy Beans, 94610000
+Peas, 94610000
+Pinto Beans, 94610000
+Soybeans, 94610000
