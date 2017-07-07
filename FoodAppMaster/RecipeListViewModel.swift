@@ -123,6 +123,11 @@ struct RecipesListViewModel {
         return RecipesListViewModel(recipes: recipesConcat, page: currentSearchPage)
     }
     
+    func recipe(id: String, completion: @escaping (Recipe?) -> Void) {
+        apiClient.recipe(id: id, completion: completion)
+        
+    }
+    
     func incrementedPage() -> RecipesListViewModel {
         return RecipesListViewModel(recipes: recipes, page: currentSearchPage + 1)
     }

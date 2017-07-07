@@ -16,7 +16,9 @@ class RecipesListViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var viewModel = RecipesListViewModel()
-    
+    let app = PublicMethods.sharedInstance
+    var bool = false
+    var query = ""
     var detailViewController: RecipeDetailViewController? = nil
     var loadingSpinner: UIActivityIndicatorView? // Spinner to show when we are loading more rows
     var loadingMore: Bool = false {
@@ -37,7 +39,8 @@ class RecipesListViewController: UIViewController {
             let controllers = split.viewControllers
             self.detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? RecipeDetailViewController
         }*/
-        
+        query = app.query
+        print(query)
         addLoadingIndicator()
     }
     
@@ -49,6 +52,7 @@ class RecipesListViewController: UIViewController {
         if let selectedRow = tableView?.indexPathForSelectedRow {
             tableView.deselectRow(at: selectedRow, animated: true)
         }
+                fetchRecipes(query: query)
     }
     
     
@@ -71,19 +75,61 @@ class RecipesListViewController: UIViewController {
     // MARK: - API
     
     func fetchRecipes(query: String) {
+        print("method start")
+        var finalRecipes = [Recipe]()
+        var count = 0
+        var ownedRecipes = [Recipe]()
         // Display an indicator that we're fetching from network
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
         
-        viewModel.recipes(matching: query) { recipes in
-            DispatchQueue.main.async {
-                // Update the tableview from the main thread
-                self.insertRecipes(recipes: recipes)
-                
-                // Hide the indicator
-                UIApplication.shared.isNetworkActivityIndicatorVisible = false
-                self.loadingMore = false
+        var gate = true
+        print("fetching recipes")
+        print("1")
+        self.viewModel.recipes(matching: query) { recipes in
+            print("2")
+            for item in recipes {
+                ownedRecipes.append(item)
+                print("3")
             }
+            gate = false
         }
+        while gate {}
+        gate = true
+        print("recipes fetched")
+        
+        print("converting recipes")
+        for item in ownedRecipes {
+            print("1")
+            self.viewModel.recipe(id: item.recipeId) { recipe in
+                print("2")
+                let ingredients = recipe?.ingredients
+                for ingredient in ingredients! {
+                    print("3")
+                    for thing in self.app.owned {
+                        if (ingredient.localizedCaseInsensitiveContains(thing.name)) {
+                            count += 1
+                        }
+                    }
+                }
+                
+                if Double(count) > Double((ingredients?.count)!) * 0.2 {
+                    finalRecipes.append(item)
+                }
+                count = 0
+                gate = false
+            }
+            while gate{}
+            gate = true
+        }
+        
+        
+        print("recipes converted")
+        print("length ", finalRecipes.count)
+        print("done!")
+        self.insertRecipes(recipes: finalRecipes)
+        // Hide the indicator
+        UIApplication.shared.isNetworkActivityIndicatorVisible = false
+        self.loadingMore = false
     }
     
     func insertRecipes(recipes: [Recipe]) {
@@ -98,6 +144,15 @@ class RecipesListViewController: UIViewController {
             }
             self.tableView.insertRows(at: indexPathsToInsert, with: .automatic)
             self.tableView.endUpdates()
+            
+            print("Something is here")
+            
+            for thing in app.useMe {
+                print("look!")
+                print(thing.name)
+            }
+            
+        
         }
     }
 }
@@ -145,8 +200,11 @@ extension RecipesListViewController {
             let query = searchBar.text {
             
             loadingMore = true
-            viewModel = viewModel.incrementedPage()
+            
+           // viewModel = viewModel.incrementedPage()
+            
             fetchRecipes(query: query)
+           
         }
     }
 }
@@ -166,3 +224,5 @@ extension RecipesListViewController: UISearchBarDelegate {
         }
     }
 }
+
+

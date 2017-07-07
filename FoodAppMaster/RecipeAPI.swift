@@ -27,7 +27,7 @@ class RecipeAPI {
     private init() {}
     static let shared: RecipeAPI = RecipeAPI()
     
-    private let apiKey = "10408e324c87241dbf252292473d1962"
+    private let apiKey = "8acfc23a19d40c9b3d4278621c2d145c"
     private let urlComponents = URLComponents(string: "http://food2fork.com/api/")! // base URL components of the web service
     private var imageDownloadTask: URLSessionDataTask?
     // 1) 10408e324c87241dbf252292473d1962
