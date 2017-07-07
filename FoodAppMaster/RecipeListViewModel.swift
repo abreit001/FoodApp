@@ -34,28 +34,13 @@ struct RecipesListViewModel {
     func title(at index: Int) -> String? {
         var title: String = (recipe(at: index)?.title)!.capitalized
         
-        title = htmlToText(encodedString: title)!
         title = catchNames(encodedString: title)!
-        
-        /*var i = 0
-        for codeUnit in title.utf8 {
-            if !(codeUnit >= 64 && codeUnit <= 122)  {
-                print(codeUnit)
-                print(title[title.index(title.startIndex, offsetBy: i)])
-            }
-            i += 1
-        }*/
-        return title
-    }
-    
-    func htmlToText(encodedString: String) -> String? {
-        let encodedData = encodedString.data(using: String.Encoding.utf8)!
         do {
-            return try NSAttributedString(data: encodedData, options: [NSDocumentTypeDocumentAttribute:NSHTMLTextDocumentType,NSCharacterEncodingDocumentAttribute:NSNumber(value: String.Encoding.utf8.rawValue)], documentAttributes: nil).string
-        } catch let error as NSError {
-            print(error.localizedDescription)
-            return nil
+            try title = title.convertHtmlSymbols()!
         }
+        catch {}
+
+        return title
     }
     
     func catchNames(encodedString: String) -> String? {
@@ -68,28 +53,55 @@ struct RecipesListViewModel {
             case "Nbsp" :
                 character = " "
                 break
+            case "#160" :
+                character = " "
+                break
             case "Amp" :
+                character = "&"
+                break
+            case "#38" :
                 character = "&"
                 break
             case "Quot" :
                 character = "\""
                 break
+            case "#34" :
+                character = "\""
+                break
             case "Lt" :
+                character = "<"
+                break
+            case "#60" :
                 character = "<"
                 break
             case "Gt" :
                 character = ">"
                 break
+            case "#62" :
+                character = ">"
+                break
             case "Iexcl" :
+                character = "¡"
+                break
+            case "#161" :
                 character = "¡"
                 break
             case "Copy" :
                 character = "©"
                 break
+            case "#169" :
+                character = "©"
+                break
             case "Reg" :
                 character = "®"
                 break
+            case "#174" :
+                character = "®"
+                break
             case "Iquest" :
+                character = "¿"
+                break
+            case "#191" :
                 character = "¿"
                 break
             default :
@@ -117,5 +129,13 @@ struct RecipesListViewModel {
     
     func reseted() -> RecipesListViewModel {
         return RecipesListViewModel()
+    }
+}
+
+extension String {
+    func convertHtmlSymbols() throws -> String? {
+        guard let data = data(using: .utf8) else { return nil }
+        
+        return try NSAttributedString(data: data, options: [NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType, NSCharacterEncodingDocumentAttribute: String.Encoding.utf8.rawValue], documentAttributes: nil).string
     }
 }
