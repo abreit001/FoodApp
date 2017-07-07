@@ -12,7 +12,7 @@ import os.log
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    //CAN YOU SEE THIS
+    //CAN YOU SEE THIS LOL
     var window: UIWindow?
     let sections = ["Dairy", "Meat", "Vegetables", "Fruits", "Fish and Seafood", "Baking and Grains", "Spices and Seasonings", "Nuts and Seeds", "Legumes", "Condiments and Sauces", "Desserts and Snacks", "Soup", "Beverages and Alcohol"]
     var ingredients = [[Ingredient]]()
