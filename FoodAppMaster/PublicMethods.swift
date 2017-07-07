@@ -120,6 +120,11 @@ class PublicMethods {
         }
         
         saveUseMe()
+        query = ""
+        for thing in useMe {
+            query.append(thing.name)
+            query.append(", ")
+        }
     }
     
     //MARK: Pantry Functions
