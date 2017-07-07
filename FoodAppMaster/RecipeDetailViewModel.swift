@@ -41,28 +41,55 @@ struct RecipeDetailViewModel {
             case "Nbsp" :
                 character = " "
                 break
+            case "#160" :
+                character = " "
+                break
             case "Amp" :
+                character = "&"
+                break
+            case "#38" :
                 character = "&"
                 break
             case "Quot" :
                 character = "\""
                 break
+            case "#34" :
+                character = "\""
+                break
             case "Lt" :
+                character = "<"
+                break
+            case "#60" :
                 character = "<"
                 break
             case "Gt" :
                 character = ">"
                 break
+            case "#62" :
+                character = ">"
+                break
             case "Iexcl" :
+                character = "¡"
+                break
+            case "#161" :
                 character = "¡"
                 break
             case "Copy" :
                 character = "©"
                 break
+            case "#169" :
+                character = "©"
+                break
             case "Reg" :
                 character = "®"
                 break
+            case "#174" :
+                character = "®"
+                break
             case "Iquest" :
+                character = "¿"
+                break
+            case "#191" :
                 character = "¿"
                 break
             default :
@@ -99,3 +126,4 @@ struct RecipeDetailViewModel {
         }
     }
 }
+

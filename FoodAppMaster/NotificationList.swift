@@ -30,7 +30,6 @@ class NotificationList {
         
         // Deliver the notification at the trigger date
         let dateComponents = Calendar.current.dateComponents([.year, .month, .day, .hour, .minute, .second], from: item.notificationDate!)
-        print (dateComponents)
         let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: false)
         
         // Schedule the notification.

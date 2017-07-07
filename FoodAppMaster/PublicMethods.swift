@@ -44,10 +44,6 @@ class PublicMethods {
         // add to owned
         owned.append(item)
         
-        print(Date(timeIntervalSinceNow: 0))
-        print(item.exp!)
-        print(item.notificationDate!)
-        
         // create the notifcation
         NotificationList.sharedInstance.addNotification(item)
     }

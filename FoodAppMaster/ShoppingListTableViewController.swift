@@ -100,37 +100,18 @@ class ShoppingListTableViewController: UITableViewController {
     }
 
     // Override to support editing the table view.
-    /*override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            // Alert the user
-            let alertController = UIAlertController(title: "Deleting " + ingredients[indexPath.section][indexPath.row].name, message: "Would you like add this item to your pantry?", preferredStyle: .alert)
-            
-            let shoppingListAction = UIAlertAction(title: "Add to Pantry", style: .default, handler: { (action) in
-                // Delete the row from the data source
-                self.ingredients[indexPath.section][indexPath.row].shoppingListed = false
-                tableView.reloadSections([indexPath.section], with: .fade)
-                // Add to shopping list
-                self.ingredients[indexPath.section][indexPath.row].selected = true
-                self.savePantry(section: indexPath.section)
-            })
-            alertController.addAction(shoppingListAction)
-            
-            let deleteAction = UIAlertAction(title: "Do Not Add to Pantry", style: .default, handler: { (action) in
-                // Delete the row from the data source
-                self.ingredients[indexPath.section][indexPath.row].shoppingListed = false
-                tableView.reloadRows(at: [indexPath], with: .fade)
-                self.savePantry(section: indexPath.section)
-            })
-            alertController.addAction(deleteAction)
-            
-            let cancelAction = UIAlertAction(title: "Cancel", style: .destructive, handler: nil)
-            alertController.addAction(cancelAction)
-            
-            present(alertController, animated: true, completion: nil)
-        } else if editingStyle == .insert {
+            // Delete the row from the data source
+            ingredients[indexPath.section][indexPath.row].shoppingListed = false
+            tableView.reloadRows(at: [indexPath], with: .fade)
+            app.saveIngredients(section: indexPath.section, ingredients: self.ingredients)
+            self.tableView.reloadSections([indexPath.section], with: .fade)
+        }
+        else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
-    }*/
+    }
 
     /*
     // Override to support rearranging the table view.
