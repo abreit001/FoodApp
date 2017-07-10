@@ -53,6 +53,12 @@
 		284906DB1F02B4A000A175A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 284906D91F02B4A000A175A1 /* LaunchScreen.storyboard */; };
 		284906E61F02B4A000A175A1 /* FoodAppMasterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284906E51F02B4A000A175A1 /* FoodAppMasterTests.swift */; };
 		284906F11F02B4A000A175A1 /* FoodAppMasterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284906F01F02B4A000A175A1 /* FoodAppMasterUITests.swift */; };
+		3589D6AE1F102F930098248B /* OvalLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3589D6A81F102F930098248B /* OvalLayer.swift */; };
+		3589D6AF1F102F930098248B /* TriangleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3589D6A91F102F930098248B /* TriangleLayer.swift */; };
+		3589D6B01F102F930098248B /* RectangleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3589D6AA1F102F930098248B /* RectangleLayer.swift */; };
+		3589D6B11F102F930098248B /* ArcLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3589D6AB1F102F930098248B /* ArcLayer.swift */; };
+		3589D6B21F102F930098248B /* HolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3589D6AC1F102F930098248B /* HolderView.swift */; };
+		3589D6B31F102F930098248B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3589D6AD1F102F930098248B /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +131,12 @@
 		284906EC1F02B4A000A175A1 /* FoodAppMasterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodAppMasterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		284906F01F02B4A000A175A1 /* FoodAppMasterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodAppMasterUITests.swift; sourceTree = "<group>"; };
 		284906F21F02B4A000A175A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3589D6A81F102F930098248B /* OvalLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OvalLayer.swift; path = "/Users/Bishop/Downloads/FoodAppMaster 6/FoodAppMaster/../../SBLoader - Finished/SBLoader/OvalLayer.swift"; sourceTree = "<absolute>"; };
+		3589D6A91F102F930098248B /* TriangleLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TriangleLayer.swift; path = "/Users/Bishop/Downloads/FoodAppMaster 6/FoodAppMaster/../../SBLoader - Finished/SBLoader/TriangleLayer.swift"; sourceTree = "<absolute>"; };
+		3589D6AA1F102F930098248B /* RectangleLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RectangleLayer.swift; path = "/Users/Bishop/Downloads/FoodAppMaster 6/FoodAppMaster/../../SBLoader - Finished/SBLoader/RectangleLayer.swift"; sourceTree = "<absolute>"; };
+		3589D6AB1F102F930098248B /* ArcLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArcLayer.swift; path = "/Users/Bishop/Downloads/FoodAppMaster 6/FoodAppMaster/../../SBLoader - Finished/SBLoader/ArcLayer.swift"; sourceTree = "<absolute>"; };
+		3589D6AC1F102F930098248B /* HolderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HolderView.swift; path = "/Users/Bishop/Downloads/FoodAppMaster 6/FoodAppMaster/../../SBLoader - Finished/SBLoader/HolderView.swift"; sourceTree = "<absolute>"; };
+		3589D6AD1F102F930098248B /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Colors.swift; path = "/Users/Bishop/Downloads/FoodAppMaster 6/FoodAppMaster/../../SBLoader - Finished/SBLoader/Colors.swift"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +214,12 @@
 				2842F6E51F02B572002CBEB8 /* RecipesListViewController.swift */,
 				2842F6E61F02B572002CBEB8 /* RecipeTableViewCell.swift */,
 				2842F6E71F02B572002CBEB8 /* RecipeTableViewController.swift */,
+				3589D6A81F102F930098248B /* OvalLayer.swift */,
+				3589D6A91F102F930098248B /* TriangleLayer.swift */,
+				3589D6AA1F102F930098248B /* RectangleLayer.swift */,
+				3589D6AB1F102F930098248B /* ArcLayer.swift */,
+				3589D6AC1F102F930098248B /* HolderView.swift */,
+				3589D6AD1F102F930098248B /* Colors.swift */,
 			);
 			name = "Recipes Tab";
 			sourceTree = "<group>";
@@ -431,12 +449,16 @@
 			files = (
 				2842F7011F02B572002CBEB8 /* RecipesListViewController.swift in Sources */,
 				2842F7281F0D45D1002CBEB8 /* PublicMethods.swift in Sources */,
+				3589D6B01F102F930098248B /* RectangleLayer.swift in Sources */,
+				3589D6B31F102F930098248B /* Colors.swift in Sources */,
 				2842F7071F02B572002CBEB8 /* ShoppingListTableViewCell.swift in Sources */,
 				2842F6F01F02B572002CBEB8 /* Ingredient.swift in Sources */,
 				284906D11F02B4A000A175A1 /* AppDelegate.swift in Sources */,
 				2842F6F81F02B572002CBEB8 /* Recipe.swift in Sources */,
 				2842F6FA1F02B572002CBEB8 /* RecipeCell.swift in Sources */,
 				2842F6FE1F02B572002CBEB8 /* RecipeImageCell.swift in Sources */,
+				3589D6B21F102F930098248B /* HolderView.swift in Sources */,
+				3589D6AE1F102F930098248B /* OvalLayer.swift in Sources */,
 				2842F6F41F02B572002CBEB8 /* InventoryTableViewController.swift in Sources */,
 				2842F6FF1F02B572002CBEB8 /* RecipeIngredientCell.swift in Sources */,
 				2842F71A1F02B5B7002CBEB8 /* Category.swift in Sources */,
@@ -449,11 +471,13 @@
 				2842F6FB1F02B572002CBEB8 /* RecipeDetailCell.swift in Sources */,
 				2842F6FC1F02B572002CBEB8 /* RecipeDetailViewController.swift in Sources */,
 				2842F6F31F02B572002CBEB8 /* InventoryTableViewCell.swift in Sources */,
+				3589D6AF1F102F930098248B /* TriangleLayer.swift in Sources */,
 				2842F6F21F02B572002CBEB8 /* IngredientTableViewController.swift in Sources */,
 				2842F7041F02B572002CBEB8 /* Setting.swift in Sources */,
 				2842F7021F02B572002CBEB8 /* RecipeTableViewCell.swift in Sources */,
 				2842F7051F02B572002CBEB8 /* SettingsTableViewCell.swift in Sources */,
 				2842F6F11F02B572002CBEB8 /* IngredientTableViewCell.swift in Sources */,
+				3589D6B11F102F930098248B /* ArcLayer.swift in Sources */,
 				2842F7161F02B5B7002CBEB8 /* AddTableViewCell.swift in Sources */,
 				2842F7081F02B572002CBEB8 /* ShoppingListTableViewController.swift in Sources */,
 				2842F7061F02B572002CBEB8 /* SettingsTableViewController.swift in Sources */,

@@ -53,6 +53,12 @@ class PublicMethods {
     //MARK: Change Ingredient Properties
     func addToPantry(item: Ingredient) {
         // Set selected/shoppingListed
+
+        print("ADDING TO PANTRY:")
+        for thing in useMe {
+            print(thing.name)
+        }
+        
         item.shoppingListed = false
         item.selected = true
         // Set expiration date/notification date
@@ -65,8 +71,7 @@ class PublicMethods {
         
         let length = useMe.count
         
-        if length < 1 {
-            
+        if length < 5 {
             useMe.append(item)
         } else {
         var count = -1
@@ -90,41 +95,110 @@ class PublicMethods {
             query.append(", ")
         }
         
+        print("ADDED TO PANTRY:")
+        for thing in useMe {
+            print(thing.name)
+        }
+        
+        
+        
         // create the notifcation
         NotificationList.sharedInstance.addNotification(item)
     }
     
+    func clearUseMe() {
+        
+        useMe = [Ingredient]()
+    }
+    
     func deleteFromQuery(name: String) {
         
+        // DELETE FROM USEME
+        print("DELETING FROM PANTRY:")
+        for thing in useMe {
+            print(thing.name)
+        }
         var count = -1
+        var indexFirst = -1
         for thing in useMe {
           count = count + 1
             if thing.name == name {
                 print("count ", count)
-                useMe.remove(at: count)
+                print(thing.name)
+                print("UseMe count is...", useMe.count)
+                 indexFirst = count
             }
         }
         
+        if useMe.count > 1 {
+            useMe.remove(at: indexFirst)
+        } else {
+            useMe = [Ingredient]()
+        }
+        
+        // DELETE FROM OWNED
         var count2 = -1
-        var index = 0
-        var minDate = Date(timeIntervalSinceReferenceDate: 999999999999999999.0)
+        var index2 = -1
         for thing in owned {
             count2 = count2 + 1
-            if thing.exp! < minDate{
-                minDate = thing.exp!
-                index = count2
+            if thing.name == name {
+                index2 = count2
             }
         }
-        if owned.count > 0 {
+        if owned.count > 1  {
+            owned.remove(at: index2)
+        } else {
+            owned = [Ingredient]()
+        }
+        
+        for thing in owned {
+            print("OWNED: ")
+            print(thing.name)
+        }
+        
+    // REPLACE IF NEEDED
+        var count3 = -1
+        var index = 0
+        var minDate = Date(timeIntervalSinceReferenceDate: 9999999999999999999999999.0)
+        for thing in owned {
+            count3 = count3 + 1
+            if thing.exp! < minDate && !(isInUseMe(name: thing.name)) {
+                minDate = thing.exp!
+                index = count3
+            }
+        }
+        if (owned.count > 0 && count3 >= 0) && !isInUseMe(name: owned[index].name) {
             useMe.append(owned[index])
         }
         
+        // SAVE AND UPDATE QUERY
         saveUseMe()
         query = ""
         for thing in useMe {
             query.append(thing.name)
             query.append(", ")
         }
+        
+        print("DELETED FROM PANTRY:")
+        for thing in useMe {
+            
+            print(thing.name)
+        }
+  
+    }
+    
+    func isInUseMe(name: String) -> Bool {
+        
+        var contained = false
+        
+        for item in useMe {
+            if item.name == name {
+                contained = true
+            }
+            
+        }
+       print("item is contained: ", contained)
+        return contained
     }
     
     //MARK: Pantry Functions

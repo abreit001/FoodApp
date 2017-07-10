@@ -33,7 +33,6 @@ class RecipesListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         //DELETE
         /*if let split = self.splitViewController {
             let controllers = split.viewControllers
@@ -76,6 +75,7 @@ class RecipesListViewController: UIViewController {
     
     func fetchRecipes(query: String) {
         print("method start")
+        print(app.useMe)
         var finalRecipes = [Recipe]()
         var count = 0
         var ownedRecipes = [Recipe]()
@@ -112,7 +112,7 @@ class RecipesListViewController: UIViewController {
                     }
                 }
                 
-                if Double(count) > Double((ingredients?.count)!) * 0.2 {
+                if Double(count) > Double((ingredients?.count)!) * 0.2 || true {
                     finalRecipes.append(item)
                 }
                 count = 0
