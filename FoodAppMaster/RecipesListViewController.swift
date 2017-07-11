@@ -151,7 +151,6 @@ extension RecipesListViewController {
     }
 }
 
-/*
 // MARK: - Search Bar Delegate
 extension RecipesListViewController: UISearchBarDelegate {
     // On return button launch the search
@@ -167,6 +166,3 @@ extension RecipesListViewController: UISearchBarDelegate {
         }
     }
 }
- */
-
-

@@ -24,13 +24,54 @@ class NotificationList {
     func addNotification(_ item: Ingredient) {
         let content = UNMutableNotificationContent()
         content.title = "Food App"
+        // get the number of days until expiration
+        let date1 = Calendar.current.startOfDay(for: Date.init())
+        let date2 = Calendar.current.startOfDay(for: item.exp!)
+        let daysToExpiration = Int(Calendar.current.dateComponents([.day], from: date1, to: date2).day!)
+        print(daysToExpiration)
+        var displayText = ""
+        if daysToExpiration == 0 {
+            displayText = "today"
+        }
+        else if daysToExpiration < 7 {
+            displayText = "in \(daysToExpiration) days"
+        }
+        else if daysToExpiration == 7 {
+            displayText = "in a week"
+        }
+        else if daysToExpiration < 14 {
+            displayText = "in less than two weeks"
+        }
+        else if daysToExpiration == 14 {
+            displayText = "in two weeks"
+        }
+        else if daysToExpiration < 21 {
+            displayText = "in less than three weeks"
+        }
+        else if daysToExpiration == 21 {
+            displayText = "in three weeks"
+        }
+        else if daysToExpiration < 31 {
+            displayText = "in less than a month"
+        }
+        else if daysToExpiration == 31 {
+            displayText = "in a month"
+        }
+        else {
+            let formatter = DateFormatter()
+            formatter.dateStyle = DateFormatter.Style.long
+            var formattedDate = formatter.string(from: item.exp!)
+            let end = formattedDate.index(formattedDate.endIndex, offsetBy: -6)
+            formattedDate = formattedDate.substring(to: end)
+            displayText = "on \(formattedDate)"
+        }
+        
         // text that will be displayed in the notification
-        content.body = "Your \"\(item.name)\" is expiring soon!"
+        content.body = "Your \"\(item.name)\" is expiring \(displayText)!"
         content.sound = UNNotificationSound.default()
         
         // Deliver the notification at the trigger date
         let dateComponents = Calendar.current.dateComponents([.year, .month, .day, .hour, .minute, .second], from: item.notificationDate!)
-        print (dateComponents)
         let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: false)
         
         // Schedule the notification.

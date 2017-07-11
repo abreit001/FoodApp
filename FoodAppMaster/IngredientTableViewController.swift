@@ -16,7 +16,7 @@ class IngredientTableViewController: UITableViewController {
     var ingredientCategory: Int?
     var ingredients = [Ingredient]()
     var sections = [String]()
-    var timer: Timer?
+    var selectedRow = -1
     let app = PublicMethods.sharedInstance
 
     override func viewDidLoad() {
@@ -75,6 +75,14 @@ class IngredientTableViewController: UITableViewController {
         else {
             cell.exp.textColor = .black
         }
+        
+        if selectedRow == indexPath.row {
+            cell.backgroundColor = UIColor(red: 9/255, green: 80/255, blue: 208/255, alpha: 10/100)
+        }
+        else {
+            cell.backgroundColor = UIColor.white
+        }
+        
         return cell
     }
     
@@ -119,6 +127,13 @@ class IngredientTableViewController: UITableViewController {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }
     }
+    
+    /*override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("Selected row at \(indexPath.row)")
+        selectedRow = indexPath.row
+        tableView.reloadRows(at: [indexPath], with: .fade)
+        tableView.scrollToRow(at: IndexPath(row: selectedRow, section: 0), at: .top, animated: false)
+    }*/
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if ingredients[indexPath.row].selected == true {

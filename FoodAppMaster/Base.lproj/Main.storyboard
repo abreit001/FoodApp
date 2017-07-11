@@ -70,8 +70,8 @@
         <!--Ingredients-->
         <scene sceneID="AxI-6F-VMj">
             <objects>
-                <tableViewController restorationIdentifier="ingredientsTableController" id="PlB-Gv-2kS" customClass="IngredientTableViewController" customModule="FoodAppMaster" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" allowsSelectionDuringEditing="YES" allowsMultipleSelectionDuringEditing="YES" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="WUG-qv-zE5">
+                <tableViewController restorationIdentifier="ingredientsTableController" storyboardIdentifier="IngredientTableViewController" id="PlB-Gv-2kS" customClass="IngredientTableViewController" customModule="FoodAppMaster" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="WUG-qv-zE5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -84,15 +84,15 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tj0-9k-8SZ">
-                                            <rect key="frame" x="19" y="12" width="226" height="21"/>
+                                            <rect key="frame" x="19" y="12" width="220" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f5t-jq-NFe">
-                                            <rect key="frame" x="253" y="12" width="103" height="21"/>
+                                            <rect key="frame" x="247" y="12" width="109" height="21"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="103" id="cAw-7Q-yeT"/>
+                                                <constraint firstAttribute="width" constant="109" id="Y8L-JV-VC5"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -100,11 +100,11 @@
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="Tj0-9k-8SZ" firstAttribute="baseline" secondItem="f5t-jq-NFe" secondAttribute="baseline" id="688-gy-TIF"/>
-                                        <constraint firstItem="f5t-jq-NFe" firstAttribute="leading" secondItem="Tj0-9k-8SZ" secondAttribute="trailing" constant="8" symbolic="YES" id="MBw-bf-Pqg"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="f5t-jq-NFe" secondAttribute="trailing" constant="11" id="iW2-K9-w7i"/>
-                                        <constraint firstItem="Tj0-9k-8SZ" firstAttribute="centerY" secondItem="Fqb-Kd-RdI" secondAttribute="centerY" id="sc7-5V-xAg"/>
-                                        <constraint firstItem="Tj0-9k-8SZ" firstAttribute="leading" secondItem="Fqb-Kd-RdI" secondAttribute="leadingMargin" constant="11" id="xgt-29-2UM"/>
+                                        <constraint firstItem="Tj0-9k-8SZ" firstAttribute="baseline" secondItem="f5t-jq-NFe" secondAttribute="baseline" id="0Jm-wu-Yci"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="f5t-jq-NFe" secondAttribute="trailing" constant="11" id="FyH-jo-ZzI"/>
+                                        <constraint firstItem="f5t-jq-NFe" firstAttribute="leading" secondItem="Tj0-9k-8SZ" secondAttribute="trailing" constant="8" symbolic="YES" id="nOA-WX-8yM"/>
+                                        <constraint firstItem="Tj0-9k-8SZ" firstAttribute="centerY" secondItem="Fqb-Kd-RdI" secondAttribute="centerY" id="r9z-CQ-TL5"/>
+                                        <constraint firstItem="Tj0-9k-8SZ" firstAttribute="leading" secondItem="Fqb-Kd-RdI" secondAttribute="leadingMargin" constant="11" id="u1C-fH-ITz"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -128,7 +128,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9kF-2v-UdV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="762" y="2454"/>
+            <point key="canvasLocation" x="760.79999999999995" y="2453.5232383808097"/>
         </scene>
         <!--Add-->
         <scene sceneID="ejv-8R-wPZ">
@@ -271,7 +271,7 @@
         <!--Settings-->
         <scene sceneID="cZI-84-eGx">
             <objects>
-                <tableViewController restorationIdentifier="settingsTableController" id="06W-Do-jRE" customClass="SettingsTableViewController" customModule="FoodAppMaster" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController restorationIdentifier="settingsTableController" storyboardIdentifier="SettingsTableViewController" id="06W-Do-jRE" customClass="SettingsTableViewController" customModule="FoodAppMaster" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="oss-1A-r2a">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -414,7 +414,7 @@
         <!--Settings-->
         <scene sceneID="Kne-b1-htE">
             <objects>
-                <navigationController restorationIdentifier="settingsNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="UmU-Rb-0Sg" sceneMemberID="viewController">
+                <navigationController restorationIdentifier="settingsNavigationController" storyboardIdentifier="SettingsNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="UmU-Rb-0Sg" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Settings" image="settings" id="k2s-Dz-62n">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-4"/>
                     </tabBarItem>

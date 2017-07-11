@@ -37,16 +37,19 @@ class PublicMethods {
         item.shoppingListed = false
         item.selected = true
         // Set expiration date/notification date
+        // item.exp = Date(timeIntervalSinceNow: item.expDuration!)
+        // let notificationDuration = (item.expDuration!) * 0.7
+        // item.notificationDate = Date(timeIntervalSinceNow: notificationDuration)
+        
         item.exp = Date(timeIntervalSinceNow: item.expDuration!)
-        let notificationDuration = (item.expDuration!) * 0.7
+        let notificationDuration = 10.0
         item.notificationDate = Date(timeIntervalSinceNow: notificationDuration)
+        
+        print(item.notificationDate!)
+        print(item.exp!)
         
         // add to owned
         owned.append(item)
-        
-        print(Date(timeIntervalSinceNow: 0))
-        print(item.exp!)
-        print(item.notificationDate!)
         
         // create the notifcation
         NotificationList.sharedInstance.addNotification(item)
