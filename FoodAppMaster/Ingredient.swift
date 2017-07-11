@@ -10,7 +10,7 @@ import UIKit
 import os.log
 
 class Ingredient: NSObject, NSCoding {
-    // HI THIS IS COLTON
+    
     //MARK: Properties
     var name: String
     var selected: Bool
