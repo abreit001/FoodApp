@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		280A0A8F1F153A6100CCE7DF /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 280A0A8E1F153A6100CCE7DF /* TesseractOCR.framework */; };
+		280A0A921F153AB400CCE7DF /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 280A0A911F153AB400CCE7DF /* tessdata */; };
+		280A0A951F153B1B00CCE7DF /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 280A0A941F153B1B00CCE7DF /* libstdc++.tbd */; };
 		2842F6F01F02B572002CBEB8 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2842F6D41F02B572002CBEB8 /* Ingredient.swift */; };
 		2842F6F11F02B572002CBEB8 /* IngredientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2842F6D51F02B572002CBEB8 /* IngredientTableViewCell.swift */; };
 		2842F6F21F02B572002CBEB8 /* IngredientTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2842F6D61F02B572002CBEB8 /* IngredientTableViewController.swift */; };
@@ -73,6 +76,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		280A0A8E1F153A6100CCE7DF /* TesseractOCR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TesseractOCR.framework; sourceTree = "<group>"; };
+		280A0A911F153AB400CCE7DF /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		280A0A941F153B1B00CCE7DF /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		280A0A961F153C6500CCE7DF /* FoodAppMaster-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FoodAppMaster-Bridging-Header.h"; sourceTree = "<group>"; };
 		2842F6D41F02B572002CBEB8 /* Ingredient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 		2842F6D51F02B572002CBEB8 /* IngredientTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientTableViewCell.swift; sourceTree = "<group>"; };
 		2842F6D61F02B572002CBEB8 /* IngredientTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientTableViewController.swift; sourceTree = "<group>"; };
@@ -132,6 +139,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				280A0A951F153B1B00CCE7DF /* libstdc++.tbd in Frameworks */,
+				280A0A8F1F153A6100CCE7DF /* TesseractOCR.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +161,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		280A0A901F153A9300CCE7DF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				280A0A911F153AB400CCE7DF /* tessdata */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		280A0A931F153B1B00CCE7DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				280A0A941F153B1B00CCE7DF /* libstdc++.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		280A0A9A1F153D0B00CCE7DF /* Scanning Tab */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Scanning Tab";
+			sourceTree = "<group>";
+		};
 		2842F7201F02B625002CBEB8 /* Text Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -233,6 +265,7 @@
 				284906E41F02B4A000A175A1 /* FoodAppMasterTests */,
 				284906EF1F02B4A000A175A1 /* FoodAppMasterUITests */,
 				284906CE1F02B4A000A175A1 /* Products */,
+				280A0A931F153B1B00CCE7DF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -251,6 +284,9 @@
 			children = (
 				284906D01F02B4A000A175A1 /* AppDelegate.swift */,
 				2842F7271F0D45D1002CBEB8 /* PublicMethods.swift */,
+				280A0A8E1F153A6100CCE7DF /* TesseractOCR.framework */,
+				280A0A901F153A9300CCE7DF /* Supporting Files */,
+				280A0A9A1F153D0B00CCE7DF /* Scanning Tab */,
 				2842F7211F02B63B002CBEB8 /* Inventory Tab */,
 				2842F7221F02B65C002CBEB8 /* Recipes Tab */,
 				2842F7231F02B668002CBEB8 /* Settings Tab */,
@@ -260,6 +296,7 @@
 				284906D91F02B4A000A175A1 /* LaunchScreen.storyboard */,
 				284906DC1F02B4A000A175A1 /* Info.plist */,
 				2842F7201F02B625002CBEB8 /* Text Files */,
+				280A0A961F153C6500CCE7DF /* FoodAppMaster-Bridging-Header.h */,
 			);
 			path = FoodAppMaster;
 			sourceTree = "<group>";
@@ -350,6 +387,7 @@
 				TargetAttributes = {
 					284906CC1F02B4A000A175A1 = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					284906E01F02B4A000A175A1 = {
@@ -398,6 +436,7 @@
 				284906DB1F02B4A000A175A1 /* LaunchScreen.storyboard in Resources */,
 				2842F7191F02B5B7002CBEB8 /* Beverages and Alcohol.txt in Resources */,
 				2842F70A1F02B572002CBEB8 /* Spices and Seasonings.txt in Resources */,
+				280A0A921F153AB400CCE7DF /* tessdata in Resources */,
 				2842F7181F02B5B7002CBEB8 /* Baking and Grains.txt in Resources */,
 				284906D81F02B4A000A175A1 /* Assets.xcassets in Resources */,
 				284906D61F02B4A000A175A1 /* Main.storyboard in Resources */,
@@ -610,10 +649,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = YES;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FoodAppMaster",
+				);
 				INFOPLIST_FILE = FoodAppMaster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_LDFLAGS[arch=*]" = "-lstdc++";
 				PRODUCT_BUNDLE_IDENTIFIER = SPE.FoodAppMaster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FoodAppMaster/FoodAppMaster-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -622,10 +671,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = YES;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FoodAppMaster",
+				);
 				INFOPLIST_FILE = FoodAppMaster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_LDFLAGS[arch=*]" = "-lstdc++";
 				PRODUCT_BUNDLE_IDENTIFIER = SPE.FoodAppMaster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FoodAppMaster/FoodAppMaster-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
