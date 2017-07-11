@@ -53,12 +53,12 @@
 		284906DB1F02B4A000A175A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 284906D91F02B4A000A175A1 /* LaunchScreen.storyboard */; };
 		284906E61F02B4A000A175A1 /* FoodAppMasterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284906E51F02B4A000A175A1 /* FoodAppMasterTests.swift */; };
 		284906F11F02B4A000A175A1 /* FoodAppMasterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284906F01F02B4A000A175A1 /* FoodAppMasterUITests.swift */; };
-		353E79771F15353D00465F28 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353E79741F15353D00465F28 /* ScanViewController.swift */; };
 		353E79821F1535B100465F28 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353E79811F1535B100465F28 /* CoreImage.framework */; };
 		353E798B1F15381400465F28 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 353E798A1F15381400465F28 /* libstdc++.6.0.9.tbd */; };
 		353E798D1F153A1500465F28 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 353E798C1F153A1500465F28 /* libstdc++.dylib */; };
 		353E79941F15406800465F28 /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353E79931F15406800465F28 /* TesseractOCR.framework */; };
 		353E79961F15413E00465F28 /* LoveInASnap in Resources */ = {isa = PBXBuildFile; fileRef = 353E79951F15413E00465F28 /* LoveInASnap */; };
+		353E79981F154CB300465F28 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353E79971F154CB300465F28 /* ScanViewController.swift */; };
 		3589D6AE1F102F930098248B /* OvalLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3589D6A81F102F930098248B /* OvalLayer.swift */; };
 		3589D6AF1F102F930098248B /* TriangleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3589D6A91F102F930098248B /* TriangleLayer.swift */; };
 		3589D6B01F102F930098248B /* RectangleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3589D6AA1F102F930098248B /* RectangleLayer.swift */; };
@@ -137,7 +137,6 @@
 		284906EC1F02B4A000A175A1 /* FoodAppMasterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodAppMasterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		284906F01F02B4A000A175A1 /* FoodAppMasterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodAppMasterUITests.swift; sourceTree = "<group>"; };
 		284906F21F02B4A000A175A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		353E79741F15353D00465F28 /* ScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScanViewController.swift; path = "../../../Downloads/LoveInASnap 2/LoveInASnap/ScanViewController.swift"; sourceTree = "<group>"; };
 		353E79811F1535B100465F28 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		353E79881F15380100465F28 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
 		353E798A1F15381400465F28 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
@@ -145,6 +144,7 @@
 		353E798E1F153E5800465F28 /* FoodAppMaster-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FoodAppMaster-Bridging-Header.h"; sourceTree = "<group>"; };
 		353E79931F15406800465F28 /* TesseractOCR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TesseractOCR.framework; sourceTree = "<group>"; };
 		353E79951F15413E00465F28 /* LoveInASnap */ = {isa = PBXFileReference; lastKnownFileType = folder; path = LoveInASnap; sourceTree = "<group>"; };
+		353E79971F154CB300465F28 /* ScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
 		3589D6A81F102F930098248B /* OvalLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OvalLayer.swift; path = "/Users/Bishop/Downloads/FoodAppMaster 6/FoodAppMaster/../../SBLoader - Finished/SBLoader/OvalLayer.swift"; sourceTree = "<absolute>"; };
 		3589D6A91F102F930098248B /* TriangleLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TriangleLayer.swift; path = "/Users/Bishop/Downloads/FoodAppMaster 6/FoodAppMaster/../../SBLoader - Finished/SBLoader/TriangleLayer.swift"; sourceTree = "<absolute>"; };
 		3589D6AA1F102F930098248B /* RectangleLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RectangleLayer.swift; path = "/Users/Bishop/Downloads/FoodAppMaster 6/FoodAppMaster/../../SBLoader - Finished/SBLoader/RectangleLayer.swift"; sourceTree = "<absolute>"; };
@@ -327,7 +327,7 @@
 			isa = PBXGroup;
 			children = (
 				353E79931F15406800465F28 /* TesseractOCR.framework */,
-				353E79741F15353D00465F28 /* ScanViewController.swift */,
+				353E79971F154CB300465F28 /* ScanViewController.swift */,
 				353E79951F15413E00465F28 /* LoveInASnap */,
 			);
 			name = "Scanner Tab";
@@ -516,7 +516,6 @@
 				2842F6FC1F02B572002CBEB8 /* RecipeDetailViewController.swift in Sources */,
 				2842F6F31F02B572002CBEB8 /* InventoryTableViewCell.swift in Sources */,
 				3589D6AF1F102F930098248B /* TriangleLayer.swift in Sources */,
-				353E79771F15353D00465F28 /* ScanViewController.swift in Sources */,
 				2842F6F21F02B572002CBEB8 /* IngredientTableViewController.swift in Sources */,
 				2842F7041F02B572002CBEB8 /* Setting.swift in Sources */,
 				2842F7021F02B572002CBEB8 /* RecipeTableViewCell.swift in Sources */,
@@ -526,6 +525,7 @@
 				2842F7161F02B5B7002CBEB8 /* AddTableViewCell.swift in Sources */,
 				2842F7081F02B572002CBEB8 /* ShoppingListTableViewController.swift in Sources */,
 				2842F7061F02B572002CBEB8 /* SettingsTableViewController.swift in Sources */,
+				353E79981F154CB300465F28 /* ScanViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
