@@ -89,10 +89,13 @@ class IngredientTableViewController: UITableViewController {
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
+            
             // Alert the user
             let alertController = UIAlertController(title: "Deleting " + ingredients[indexPath.row].name, message: "Would you like add this item to your shopping list?", preferredStyle: .alert)
             
             let shoppingListAction = UIAlertAction(title: "Add to Shopping List", style: .default, handler: { (action) in
+                //Delete from query
+                self.app.deleteFromQuery(name: self.ingredients[indexPath.row].name)
                 // Delete the row from the data source
                 self.ingredients[indexPath.row].selected = false
                 tableView.reloadRows(at: [indexPath], with: .fade)
@@ -107,6 +110,8 @@ class IngredientTableViewController: UITableViewController {
             alertController.addAction(shoppingListAction)
             
             let deleteAction = UIAlertAction(title: "Do Not Add to Shopping List", style: .default, handler: { (action) in
+                //Delete from query
+                self.app.deleteFromQuery(name: self.ingredients[indexPath.row].name)
                 // Delete the row from the data source
                 self.ingredients[indexPath.row].selected = false
                 tableView.reloadRows(at: [indexPath], with: .fade)
