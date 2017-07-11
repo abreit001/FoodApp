@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RecipesListViewController: UIViewController {
+class RecipesListViewController: UIViewController, HolderViewDelegate {
     
     private let showDetailSegue = "showDetail"
     
@@ -18,7 +18,7 @@ class RecipesListViewController: UIViewController {
     var viewModel = RecipesListViewModel()
     let app = PublicMethods.sharedInstance
     var bool = false
-    var query = ""
+    var query = [Ingredient]()
     var detailViewController: RecipeDetailViewController? = nil
     var loadingSpinner: UIActivityIndicatorView? // Spinner to show when we are loading more rows
     var loadingMore: Bool = false {
@@ -33,13 +33,7 @@ class RecipesListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //DELETE
-        /*if let split = self.splitViewController {
-            let controllers = split.viewControllers
-            self.detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? RecipeDetailViewController
-        }*/
-        query = app.query
-        print(query)
+        query = app.useMe
         addLoadingIndicator()
     }
     
@@ -51,9 +45,73 @@ class RecipesListViewController: UIViewController {
         if let selectedRow = tableView?.indexPathForSelectedRow {
             tableView.deselectRow(at: selectedRow, animated: true)
         }
-                fetchRecipes(query: query)
+              // addHolderView()
+    
+        
     }
     
+    //////////////////////////////////////////
+    //MARK: Loader Animation
+    var holderView = HolderView(frame: CGRect.zero)
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        //call()
+        
+
+        for ingredient in query {
+            fetchRecipes(query: ingredient.name)
+        }
+        
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
+    func addHolderView() {
+        let boxSize: CGFloat = 100.0
+        holderView.frame = CGRect(x: view.bounds.width / 2 - boxSize / 2,
+                                  y: view.bounds.height / 2 - boxSize / 2,
+                                  width: boxSize,
+                                  height: boxSize)
+        holderView.parentFrame = view.frame
+        holderView.delegate = self
+        view.addSubview(holderView)
+        holderView.addOval()
+    }
+    
+    func animateLabel() {
+        // 1
+        holderView.removeFromSuperview()
+        view.backgroundColor = Colors.blue
+        
+        // 2
+        let label: UILabel = UILabel(frame: view.frame)
+        label.textColor = Colors.white
+        label.font = UIFont(name: "HelveticaNeue-Thin", size: 50.0)
+        label.textAlignment = NSTextAlignment.center
+        label.text = "Show my meals!"
+        label.transform = label.transform.scaledBy(x: 0.25, y: 0.25)
+        view.addSubview(label)
+        
+        // 3
+        UIView.animate(withDuration: 0.4, delay: 0.0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.1, options: UIViewAnimationOptions(),
+                       animations: ({
+                        label.transform = label.transform.scaledBy(x: 4.0, y: 4.0)
+                       }), completion: { finished in
+                        self.next()
+        })
+    }
+    
+    func next() {
+        view.backgroundColor = Colors.white
+       // view.subviews.map({ $0.removeFromSuperview() })
+        holderView.removeFromSuperview()
+    }
+    
+    
+    //////////////////////////////////////////
     
     // MARK: - Segues
     
@@ -112,7 +170,7 @@ class RecipesListViewController: UIViewController {
                     }
                 }
                 
-                if Double(count) > Double((ingredients?.count)!) * 0.2 || true {
+                if Double(count) > Double((ingredients?.count)!) * 0.1  || true {
                     finalRecipes.append(item)
                 }
                 count = 0

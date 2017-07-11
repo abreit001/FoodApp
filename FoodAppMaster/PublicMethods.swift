@@ -18,7 +18,6 @@ class PublicMethods {
     var sections = [String]()
     var owned = [Ingredient]()
     var useMe = [Ingredient]()
-    var query = ""
     
     //MARK: Archiving Paths
     
@@ -43,21 +42,11 @@ class PublicMethods {
             saveUseMe()
         }
         
-        query = ""
-        for thing in useMe {
-            query.append(thing.name)
-            query.append(", ")
-        }
     }
     
     //MARK: Change Ingredient Properties
     func addToPantry(item: Ingredient) {
         // Set selected/shoppingListed
-
-        print("ADDING TO PANTRY:")
-        for thing in useMe {
-            print(thing.name)
-        }
         
         item.shoppingListed = false
         item.selected = true
@@ -89,18 +78,6 @@ class PublicMethods {
             }
         }
         saveUseMe()
-        query = ""
-        for thing in useMe {
-            query.append(thing.name)
-            query.append(", ")
-        }
-        
-        print("ADDED TO PANTRY:")
-        for thing in useMe {
-            print(thing.name)
-        }
-        
-        
         
         // create the notifcation
         NotificationList.sharedInstance.addNotification(item)
@@ -114,18 +91,14 @@ class PublicMethods {
     func deleteFromQuery(name: String) {
         
         // DELETE FROM USEME
-        print("DELETING FROM PANTRY:")
-        for thing in useMe {
-            print(thing.name)
-        }
+        
+        if isInUseMe(name: name) {
+        
         var count = -1
         var indexFirst = -1
         for thing in useMe {
           count = count + 1
             if thing.name == name {
-                print("count ", count)
-                print(thing.name)
-                print("UseMe count is...", useMe.count)
                  indexFirst = count
             }
         }
@@ -134,6 +107,7 @@ class PublicMethods {
             useMe.remove(at: indexFirst)
         } else {
             useMe = [Ingredient]()
+        }
         }
         
         // DELETE FROM OWNED
@@ -151,10 +125,6 @@ class PublicMethods {
             owned = [Ingredient]()
         }
         
-        for thing in owned {
-            print("OWNED: ")
-            print(thing.name)
-        }
         
     // REPLACE IF NEEDED
         var count3 = -1
@@ -173,18 +143,12 @@ class PublicMethods {
         
         // SAVE AND UPDATE QUERY
         saveUseMe()
-        query = ""
-        for thing in useMe {
-            query.append(thing.name)
-            query.append(", ")
-        }
         
-        print("DELETED FROM PANTRY:")
+        print("deleting")
         for thing in useMe {
             
             print(thing.name)
         }
-  
     }
     
     func isInUseMe(name: String) -> Bool {
