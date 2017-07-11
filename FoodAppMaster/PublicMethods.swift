@@ -45,6 +45,13 @@ class PublicMethods {
         
     }
     
+    func addRestriction(restriction: String) {
+        
+        
+        
+    }
+    
+    
     //MARK: Change Ingredient Properties
     func addToPantry(item: Ingredient) {
         // Set selected/shoppingListed
