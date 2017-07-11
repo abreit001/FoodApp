@@ -205,7 +205,7 @@ extension ScanViewController: UITextFieldDelegate {
     moveViewUp()
   }
   
-  @IBAction func textFieldEndEditing(_ sender: AnyObject) {
+  @IBAction private func textFieldEndEditing(_ sender: AnyObject) {
     view.endEditing(true)
     moveViewDown()
   }
