@@ -245,6 +245,7 @@
 		2842F7231F02B668002CBEB8 /* Settings Tab */ = {
 			isa = PBXGroup;
 			children = (
+				284906D91F02B4A000A175A1 /* LaunchScreen.storyboard */,
 				2842F6E81F02B572002CBEB8 /* Setting.swift */,
 				2842F6E91F02B572002CBEB8 /* SettingsTableViewCell.swift */,
 				2842F6EA1F02B572002CBEB8 /* SettingsTableViewController.swift */,
@@ -289,7 +290,6 @@
 		284906CF1F02B4A000A175A1 /* FoodAppMaster */ = {
 			isa = PBXGroup;
 			children = (
-				353E795D1F1530AF00465F28 /* Scanner Tab */,
 				284906D01F02B4A000A175A1 /* AppDelegate.swift */,
 				2842F7271F0D45D1002CBEB8 /* PublicMethods.swift */,
 				2842F7211F02B63B002CBEB8 /* Inventory Tab */,
@@ -298,7 +298,7 @@
 				2842F7241F02B682002CBEB8 /* Shopping List Tab */,
 				284906D71F02B4A000A175A1 /* Assets.xcassets */,
 				284906D41F02B4A000A175A1 /* Main.storyboard */,
-				284906D91F02B4A000A175A1 /* LaunchScreen.storyboard */,
+				353E795D1F1530AF00465F28 /* Scanner Tab */,
 				284906DC1F02B4A000A175A1 /* Info.plist */,
 				2842F7201F02B625002CBEB8 /* Text Files */,
 			);
