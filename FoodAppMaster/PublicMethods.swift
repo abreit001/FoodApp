@@ -18,7 +18,25 @@ class PublicMethods {
     var sections = [String]()
     var owned = [Ingredient]()
     var useMe = [Ingredient]()
-    var no = [Ingredient]()
+    var no = [String]()
+    var settings = [String]()
+    
+    let vegetarian = ["meat", "beef", "chicken", "pork", "steak", "venison", "lamb", "bacon", "duck", "turkey", "ham", "anchovies", "barramundi", "salmon", "tuna", "carp", "caviar", "cod", "haddock", "herring", "mackerel", "sardines", "pike", "swordfish", "trout", "fish"]
+    let vegan = ["meat", "beef", "chicken", "pork", "steak", "venison", "lamb", "bacon", "duck", "turkey", "ham", "milk", "cheese", "dairy", "cream", "eggs", "anchovies", "barramundi", "salmon", "tuna", "carp", "caviar", "cod", "haddock", "herring", "mackerel", "sardines", "pike", "swordfish", "trout", "fish"]
+    let glutenFree = ["wheat", "bread", "rye", "barley", "yeast", "malt", "yogurt"]
+    let dairyFree = ["milk", "cheese", "dairy", "cream", "eggs"]
+    let halal = ["pork", "venison"]
+    let kosher = ["pork", "venison", "shellfish", "lobster", "crab", "shrimp","scallops"]
+    let milk = ["milk", "cheese", "dairy", "cream", "yogurt"]
+    let eggs = ["eggs"]
+    let fish = ["anchovies", "barramundi", "salmon", "tuna", "carp", "caviar", "cod", "haddock", "herring", "mackerel", "sardines", "pike", "swordfish", "trout", "fish"]
+    let shellfish = ["shellfish", "lobster", "crab", "shrimp","scallops"]
+    let treeNuts = ["almond", "cashew", "chestnut", "hazelnut", "macadamia", "macaroon", "pecan", "pine", "pistachio", "walnut"]
+    let peanuts = ["peanut"]
+    let wheat = ["wheat", "bread", "rye", "barley"]
+    let soy = ["soy"]
+    
+    
     
     //MARK: Archiving Paths
     
@@ -47,9 +65,255 @@ class PublicMethods {
     
     func addRestriction(restriction: String) {
         
+        settings.append(restriction)
         
+        no = [String]()
         
+        for thing in settings {
+        
+            switch thing {
+                
+            case "Vegetarian":
+                for item in vegetarian {
+                    if !isRestricted(ingredient: item) {
+                        no.append(item)
+                    }
+                }
+                break
+            case "Vegan":
+                for item in vegan {
+                    if !isRestricted(ingredient: item) {
+                        no.append(item)
+                    }
+                }
+                break
+            case "Gluten Free":
+                for item in glutenFree {
+                    if !isRestricted(ingredient: item) {
+                        no.append(item)
+                    }
+                }
+                break
+            case "Dairy Free":
+                for item in dairyFree {
+                    if !isRestricted(ingredient: item) {
+                        no.append(item)
+                    }
+                }
+                break
+            case "Halal":
+                for item in halal {
+                    if !isRestricted(ingredient: item) {
+                        no.append(item)
+                    }
+                }
+                break
+            case "Kosher":
+                for item in kosher {
+                    if !isRestricted(ingredient: item) {
+                        no.append(item)
+                    }
+                }
+                break
+            case "Milk":
+                for item in milk {
+                    if !isRestricted(ingredient: item) {
+                        no.append(item)
+                    }
+                }
+                break
+            case "Eggs":
+                for item in eggs {
+                    if !isRestricted(ingredient: item) {
+                        no.append(item)
+                    }
+                }
+                break
+            case "Fish":
+                for item in fish {
+                    if !isRestricted(ingredient: item) {
+                        no.append(item)
+                    }
+                }
+                break
+            case "Shellfish":
+                for item in shellfish {
+                    if !isRestricted(ingredient: item) {
+                        no.append(item)
+                    }
+                }
+                break
+            case "Tree Nuts":
+                for item in treeNuts {
+                    if !isRestricted(ingredient: item) {
+                        no.append(item)
+                    }
+                }
+                break
+            case "Peanuts":
+                for item in peanuts {
+                    if !isRestricted(ingredient: item) {
+                        no.append(item)
+                    }
+                }
+                break
+            case "Wheat":
+                for item in wheat {
+                    if !isRestricted(ingredient: item) {
+                        no.append(item)
+                    }
+                }
+                break
+            case "Soybeans":
+                for item in soy {
+                    if !isRestricted(ingredient: item) {
+                        no.append(item)
+                    }
+                }
+                break
+            default:
+                print("uh-oh")
+                
+            }
+        }
     }
+    
+    func isRestricted(ingredient: String) -> Bool {
+        
+        var restricted = false
+        
+        for thing in no {
+            if (ingredient.localizedCaseInsensitiveContains(thing)) {
+                restricted = true
+            }
+            
+        }
+       return restricted
+    }
+    
+    func removeRestriction(restriction: String) {
+        
+        var count = -1
+        var index = -1
+        for thing in settings {
+            count = count + 1
+            if thing == restriction {
+                index = count
+            }
+        }
+        settings.remove(at: index)
+        
+        no = [String]()
+        
+        for thing in settings {
+            
+            switch thing {
+                
+            case "Vegetarian":
+                for item in vegetarian {
+                    if !isRestricted(ingredient: item) {
+                    no.append(item)
+                    }
+                }
+                break
+            case "Vegan":
+                for item in vegan {
+                    if !isRestricted(ingredient: item) {
+                        no.append(item)
+                    }
+                }
+                break
+            case "Gluten Free":
+                for item in glutenFree {
+                    if !isRestricted(ingredient: item) {
+                        no.append(item)
+                    }
+                }
+                break
+            case "Dairy Free":
+                for item in dairyFree {
+                    if !isRestricted(ingredient: item) {
+                        no.append(item)
+                    }
+                }
+                break
+            case "Halal":
+                for item in halal {
+                    if !isRestricted(ingredient: item) {
+                        no.append(item)
+                    }
+                }
+                break
+            case "Kosher":
+                for item in kosher {
+                    if !isRestricted(ingredient: item) {
+                        no.append(item)
+                    }
+                }
+                break
+            case "Milk":
+                for item in milk {
+                    if !isRestricted(ingredient: item) {
+                        no.append(item)
+                    }
+                }
+                break
+            case "Eggs":
+                for item in eggs {
+                    if !isRestricted(ingredient: item) {
+                        no.append(item)
+                    }
+                }
+                break
+            case "Fish":
+                for item in fish {
+                    if !isRestricted(ingredient: item) {
+                        no.append(item)
+                    }
+                }
+                break
+            case "Shellfish":
+                for item in shellfish {
+                    if !isRestricted(ingredient: item) {
+                        no.append(item)
+                    }
+                }
+                break
+            case "Tree Nuts":
+                for item in treeNuts {
+                    if !isRestricted(ingredient: item) {
+                        no.append(item)
+                    }
+                }
+                break
+            case "Peanuts":
+                for item in peanuts {
+                    if !isRestricted(ingredient: item) {
+                        no.append(item)
+                    }
+                }
+                break
+            case "Wheat":
+                for item in wheat {
+                    if !isRestricted(ingredient: item) {
+                        no.append(item)
+                    }
+                }
+                break
+            case "Soybeans":
+                for item in soy {
+                    if !isRestricted(ingredient: item) {
+                        no.append(item)
+                    }
+                }
+                break
+            default:
+                print("uh-oh")
+                
+            }
+        }
+    }
+    
     
     
     //MARK: Change Ingredient Properties
@@ -68,7 +332,7 @@ class PublicMethods {
         
         let length = useMe.count
         
-        if length < 5 {
+        if length < 3 {
             useMe.append(item)
         } else {
         var count = -1
