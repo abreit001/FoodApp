@@ -18,6 +18,7 @@ class PublicMethods {
     var sections = [String]()
     var owned = [Ingredient]()
     var useMe = [Ingredient]()
+    var no = [Ingredient]()
     
     //MARK: Archiving Paths
     
