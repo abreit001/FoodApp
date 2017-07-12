@@ -66,7 +66,7 @@ class AddTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if ingredients[indexPath.row].selected == true {
+        if ingredients[indexPath.row].selected {
             return 0
         }
         else {

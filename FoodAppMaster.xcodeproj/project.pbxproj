@@ -53,11 +53,13 @@
 		284906DB1F02B4A000A175A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 284906D91F02B4A000A175A1 /* LaunchScreen.storyboard */; };
 		284906E61F02B4A000A175A1 /* FoodAppMasterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284906E51F02B4A000A175A1 /* FoodAppMasterTests.swift */; };
 		284906F11F02B4A000A175A1 /* FoodAppMasterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284906F01F02B4A000A175A1 /* FoodAppMasterUITests.swift */; };
-		353E79821F1535B100465F28 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353E79811F1535B100465F28 /* CoreImage.framework */; };
+		2884E7D01F1551B300543DBB /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 2884E7CF1F1551B300543DBB /* tessdata */; };
+		2884E7D21F15564700543DBB /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2884E7D11F15564700543DBB /* ScannerViewController.swift */; };
+		2884E7D41F16735700543DBB /* FoundItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2884E7D31F16735700543DBB /* FoundItemsTableViewController.swift */; };
+		2884E7D61F1673A200543DBB /* FoundItemsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2884E7D51F1673A200543DBB /* FoundItemsTableViewCell.swift */; };
 		353E798B1F15381400465F28 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 353E798A1F15381400465F28 /* libstdc++.6.0.9.tbd */; };
 		353E798D1F153A1500465F28 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 353E798C1F153A1500465F28 /* libstdc++.dylib */; };
 		353E79941F15406800465F28 /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353E79931F15406800465F28 /* TesseractOCR.framework */; };
-		353E79961F15413E00465F28 /* LoveInASnap in Resources */ = {isa = PBXBuildFile; fileRef = 353E79951F15413E00465F28 /* LoveInASnap */; };
 		353E79981F154CB300465F28 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353E79971F154CB300465F28 /* ScanViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -131,13 +133,15 @@
 		284906EC1F02B4A000A175A1 /* FoodAppMasterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodAppMasterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		284906F01F02B4A000A175A1 /* FoodAppMasterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodAppMasterUITests.swift; sourceTree = "<group>"; };
 		284906F21F02B4A000A175A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		353E79811F1535B100465F28 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		2884E7CF1F1551B300543DBB /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; name = tessdata; path = LoveInASnap/tessdata; sourceTree = "<group>"; };
+		2884E7D11F15564700543DBB /* ScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		2884E7D31F16735700543DBB /* FoundItemsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoundItemsTableViewController.swift; sourceTree = "<group>"; };
+		2884E7D51F1673A200543DBB /* FoundItemsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoundItemsTableViewCell.swift; sourceTree = "<group>"; };
 		353E79881F15380100465F28 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
 		353E798A1F15381400465F28 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
 		353E798C1F153A1500465F28 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		353E798E1F153E5800465F28 /* FoodAppMaster-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FoodAppMaster-Bridging-Header.h"; sourceTree = "<group>"; };
 		353E79931F15406800465F28 /* TesseractOCR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TesseractOCR.framework; sourceTree = "<group>"; };
-		353E79951F15413E00465F28 /* LoveInASnap */ = {isa = PBXFileReference; lastKnownFileType = folder; path = LoveInASnap; sourceTree = "<group>"; };
 		353E79971F154CB300465F28 /* ScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -149,7 +153,6 @@
 				353E79941F15406800465F28 /* TesseractOCR.framework in Frameworks */,
 				353E798D1F153A1500465F28 /* libstdc++.dylib in Frameworks */,
 				353E798B1F15381400465F28 /* libstdc++.6.0.9.tbd in Frameworks */,
-				353E79821F1535B100465F28 /* CoreImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,7 +251,6 @@
 			isa = PBXGroup;
 			children = (
 				353E798C1F153A1500465F28 /* libstdc++.dylib */,
-				353E79811F1535B100465F28 /* CoreImage.framework */,
 				284906CF1F02B4A000A175A1 /* FoodAppMaster */,
 				284906E41F02B4A000A175A1 /* FoodAppMasterTests */,
 				284906EF1F02B4A000A175A1 /* FoodAppMasterUITests */,
@@ -308,9 +310,12 @@
 		353E795D1F1530AF00465F28 /* Scanner Tab */ = {
 			isa = PBXGroup;
 			children = (
+				2884E7CF1F1551B300543DBB /* tessdata */,
 				353E79931F15406800465F28 /* TesseractOCR.framework */,
 				353E79971F154CB300465F28 /* ScanViewController.swift */,
-				353E79951F15413E00465F28 /* LoveInASnap */,
+				2884E7D11F15564700543DBB /* ScannerViewController.swift */,
+				2884E7D31F16735700543DBB /* FoundItemsTableViewController.swift */,
+				2884E7D51F1673A200543DBB /* FoundItemsTableViewCell.swift */,
 			);
 			name = "Scanner Tab";
 			sourceTree = "<group>";
@@ -441,12 +446,12 @@
 				284906DB1F02B4A000A175A1 /* LaunchScreen.storyboard in Resources */,
 				2842F7191F02B5B7002CBEB8 /* Beverages and Alcohol.txt in Resources */,
 				2842F70A1F02B572002CBEB8 /* Spices and Seasonings.txt in Resources */,
+				2884E7D01F1551B300543DBB /* tessdata in Resources */,
 				2842F7181F02B5B7002CBEB8 /* Baking and Grains.txt in Resources */,
 				284906D81F02B4A000A175A1 /* Assets.xcassets in Resources */,
 				284906D61F02B4A000A175A1 /* Main.storyboard in Resources */,
 				2842F6F51F02B572002CBEB8 /* Legumes.txt in Resources */,
 				2842F70B1F02B572002CBEB8 /* Vegetables.txt in Resources */,
-				353E79961F15413E00465F28 /* LoveInASnap in Resources */,
 				2842F6F71F02B572002CBEB8 /* Nuts and Seeds.txt in Resources */,
 				2842F71C1F02B5B7002CBEB8 /* Dairy.txt in Resources */,
 			);
@@ -486,6 +491,7 @@
 				2842F71A1F02B5B7002CBEB8 /* Category.swift in Sources */,
 				2842F7171F02B5B7002CBEB8 /* AddTableViewController.swift in Sources */,
 				2842F6FD1F02B572002CBEB8 /* RecipeDetailViewModel.swift in Sources */,
+				2884E7D21F15564700543DBB /* ScannerViewController.swift in Sources */,
 				2842F7031F02B572002CBEB8 /* RecipeTableViewController.swift in Sources */,
 				2842F7261F06D19D002CBEB8 /* NotificationList.swift in Sources */,
 				2842F7001F02B572002CBEB8 /* RecipeListViewModel.swift in Sources */,
@@ -497,10 +503,12 @@
 				2842F7041F02B572002CBEB8 /* Setting.swift in Sources */,
 				2842F7021F02B572002CBEB8 /* RecipeTableViewCell.swift in Sources */,
 				2842F7051F02B572002CBEB8 /* SettingsTableViewCell.swift in Sources */,
+				2884E7D61F1673A200543DBB /* FoundItemsTableViewCell.swift in Sources */,
 				2842F6F11F02B572002CBEB8 /* IngredientTableViewCell.swift in Sources */,
 				2842F7161F02B5B7002CBEB8 /* AddTableViewCell.swift in Sources */,
 				2842F7081F02B572002CBEB8 /* ShoppingListTableViewController.swift in Sources */,
 				2842F7061F02B572002CBEB8 /* SettingsTableViewController.swift in Sources */,
+				2884E7D41F16735700543DBB /* FoundItemsTableViewController.swift in Sources */,
 				353E79981F154CB300465F28 /* ScanViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
