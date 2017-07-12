@@ -43,6 +43,7 @@ class PublicMethods {
     static let DocumentsDirectory = FileManager().urls(for: .documentDirectory, in: .userDomainMask).first!
     static let ArchiveURL = PublicMethods.DocumentsDirectory.appendingPathComponent("useMe")
     static let noArchiveURL = PublicMethods.DocumentsDirectory.appendingPathComponent("no")
+    static let ownedArchiveURL = PublicMethods.DocumentsDirectory.appendingPathComponent("owned")
     
     // Instance for use in other classes
     class var sharedInstance : PublicMethods {
@@ -66,6 +67,12 @@ class PublicMethods {
         }
         else {
             saveNo()
+        }
+        if let savedOwned = loadOwned() {
+            owned = savedOwned
+        }
+        else {
+            saveOwned()
         }
         
     }
@@ -368,6 +375,7 @@ class PublicMethods {
             }
         }
         saveUseMe()
+        saveOwned()
         
         // create the notifcation
         NotificationList.sharedInstance.addNotification(item)
@@ -433,6 +441,7 @@ class PublicMethods {
         
         // SAVE AND UPDATE QUERY
         saveUseMe()
+        saveOwned()
         
         print("deleting")
         for thing in useMe {
@@ -530,5 +539,21 @@ class PublicMethods {
     func loadNo() -> [String]? {
         return NSKeyedUnarchiver.unarchiveObject(withFile: PublicMethods.noArchiveURL.path) as? [String]
     }
+    
+    func saveOwned() {
+        let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(owned, toFile: PublicMethods.ownedArchiveURL.path)
+        if isSuccessfulSave {
+            os_log("useMe successfully saved.", log: OSLog.default, type: .debug)
+        }
+        else {
+            os_log("Failed to save useMe...", log: OSLog.default, type: .error)
+        }
+        
+    }
+    
+    func loadOwned() -> [Ingredient]? {
+        return NSKeyedUnarchiver.unarchiveObject(withFile: PublicMethods.ownedArchiveURL.path) as? [Ingredient]
+    }
+
     
 }
