@@ -25,9 +25,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         }
         
         // Load any saved items, otherwise load sample data.
-        if let saved = PublicMethods.sharedInstance.loadAllIngredients() {
-            print("Found saved data")
-            self.ingredients = saved
+        if false {//let saved = PublicMethods.sharedInstance.loadAllIngredients() {
+            //print("Found saved data")
+            //self.ingredients = saved
         }
         else {
             // Load the sample data.
