@@ -45,6 +45,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         
         center.delegate = self
         
+        let plistTypeKey = "switchType"
+        let plistTitleKey = "switchName"
+        let plistIdentifierKey = "switchIdentifier"
+        let plistDefaultKey = "switchDefaultState"
+        let defaults = [plistTypeKey: "Toggle Switch", plistTitleKey: "Notifications", plistIdentifierKey: "notification_switch", plistDefaultKey: "On"]       // Create some default settings
+        UserDefaults.standard.register(defaults: defaults)
         return true
     }
     

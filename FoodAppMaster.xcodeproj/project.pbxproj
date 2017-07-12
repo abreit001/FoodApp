@@ -62,7 +62,7 @@
 		353E798B1F15381400465F28 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 353E798A1F15381400465F28 /* libstdc++.6.0.9.tbd */; };
 		353E798D1F153A1500465F28 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 353E798C1F153A1500465F28 /* libstdc++.dylib */; };
 		353E79941F15406800465F28 /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353E79931F15406800465F28 /* TesseractOCR.framework */; };
-
+		7B6E01001F16A73B008822BD /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7B6E00FF1F16A73B008822BD /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,7 +146,7 @@
 		353E798C1F153A1500465F28 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		353E798E1F153E5800465F28 /* FoodAppMaster-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FoodAppMaster-Bridging-Header.h"; sourceTree = "<group>"; };
 		353E79931F15406800465F28 /* TesseractOCR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TesseractOCR.framework; sourceTree = "<group>"; };
-
+		7B6E00FF1F16A73B008822BD /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,6 +238,7 @@
 				2842F6E91F02B572002CBEB8 /* SettingsTableViewCell.swift */,
 				2842F6EA1F02B572002CBEB8 /* SettingsTableViewController.swift */,
 				2842F7251F06D19D002CBEB8 /* NotificationList.swift */,
+				7B6E00FF1F16A73B008822BD /* Settings.bundle */,
 			);
 			name = "Settings Tab";
 			sourceTree = "<group>";
@@ -458,6 +459,7 @@
 				2842F6F51F02B572002CBEB8 /* Legumes.txt in Resources */,
 				2842F70B1F02B572002CBEB8 /* Vegetables.txt in Resources */,
 				2842F6F71F02B572002CBEB8 /* Nuts and Seeds.txt in Resources */,
+				7B6E01001F16A73B008822BD /* Settings.bundle in Resources */,
 				2842F71C1F02B5B7002CBEB8 /* Dairy.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

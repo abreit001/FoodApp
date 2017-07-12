@@ -17,7 +17,21 @@ class SettingsTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let defaults = UserDefaults.standard
+        defaults.synchronize()
         
+        func applicationWillEnterForeground(notification: NSNotification) {
+            let defaults = UserDefaults.standard
+            defaults.synchronize()
+            refreshFields()
+        }
+        
+        func refreshFields() {      // update all the fields
+            let defaults = UserDefaults.standard
+            DispatchQueue.main.async(execute: { () -> Void in
+                self.     = defaults.stringForKey(plistTitleKey)
+            })
+        }
         // Load any saved items, otherwise load sample data.
         if let savedSettings = loadSettings() {
             items += savedSettings
