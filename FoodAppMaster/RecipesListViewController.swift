@@ -51,6 +51,8 @@ class RecipesListViewController: UIViewController {
     }
     
     //////////////////////////////////////////
+
+    //MARK: Loader Animation
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -66,11 +68,10 @@ class RecipesListViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-        
+
     //////////////////////////////////////////
     
     // MARK: - Segues
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == showDetailSegue {
             if let indexPath = self.tableView.indexPathForSelectedRow,
@@ -83,7 +84,6 @@ class RecipesListViewController: UIViewController {
             }
         }
     }
-    
     
     // MARK: - API
     
@@ -116,17 +116,26 @@ class RecipesListViewController: UIViewController {
             print("1")
             self.viewModel.recipe(id: item.recipeId) { recipe in
                 print("2")
+                var recipe = recipe
+                var banned = false
                 let ingredients = recipe?.ingredients
                 for ingredient in ingredients! {
                     print("3")
+                    if self.app.isRestricted(ingredient: ingredient) {
+                     banned = true
+                    }
+                    
                     for thing in self.app.owned {
                         if (ingredient.localizedCaseInsensitiveContains(thing.name)) {
                             count += 1
+                            if thing.priority! > 0 {
+                                recipe?.priority = (recipe?.priority)! + thing.priority!
+                            }
                         }
                     }
                 }
                 
-                if Double(count) > Double((ingredients?.count)!) * 0.1  || true {
+                if Double(count) > Double((ingredients?.count)!) * 0.1  && !banned {
                     finalRecipes.append(item)
                 }
                 count = 0
@@ -136,10 +145,10 @@ class RecipesListViewController: UIViewController {
             gate = true
         }
         
-        
         print("recipes converted")
         print("length ", finalRecipes.count)
         print("done!")
+        finalRecipes.sort { $0.priority! > $1.priority!}
         self.insertRecipes(recipes: finalRecipes)
         // Hide the indicator
         UIApplication.shared.isNetworkActivityIndicatorVisible = false
@@ -158,13 +167,6 @@ class RecipesListViewController: UIViewController {
             }
             self.tableView.insertRows(at: indexPathsToInsert, with: .automatic)
             self.tableView.endUpdates()
-            
-            print("Something is here")
-            
-            for thing in app.useMe {
-                print("look!")
-                print(thing.name)
-            }
             
         
         }

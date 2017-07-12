@@ -13,6 +13,7 @@ class SettingsTableViewController: UITableViewController {
     
     var section = ["General", "Dietary Restrictions", "Allergies"]
     var items = [[Setting]]()
+    let app = PublicMethods.sharedInstance
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,9 +74,19 @@ class SettingsTableViewController: UITableViewController {
             for settingItem in settingArray {
                 if settingItem.setting == cell.setting.text! {
                     settingItem.isOn = !settingItem.isOn
+                    if settingItem.isOn {
+                     app.addRestriction(restriction: settingItem.setting)
+                    }
+                    else {
+                     app.removeRestriction(restriction: settingItem.setting)
+                    }
+                    
                 }
             }
         }
+        
+        
+        
         // check if notifications are toggled
         if cell.setting.text == "Notifications" && cell.toggle.isOn == true {
             print("Notifications are on!")
