@@ -51,6 +51,7 @@ class RecipesListViewController: UIViewController {
     }
     
     //////////////////////////////////////////
+
     //MARK: Loader Animation
     
     override func viewDidAppear(_ animated: Bool) {
@@ -67,8 +68,7 @@ class RecipesListViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
-    
+
     //////////////////////////////////////////
     
     // MARK: - Segues

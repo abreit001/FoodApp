@@ -11,12 +11,12 @@ import UserNotifications
 import os.log
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-    //CAN YOU SEE THIS LOL
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
+
     var window: UIWindow?
     let sections = ["Dairy", "Meat", "Vegetables", "Fruits", "Fish and Seafood", "Baking and Grains", "Spices and Seasonings", "Nuts and Seeds", "Legumes", "Condiments and Sauces", "Desserts and Snacks", "Soup", "Beverages and Alcohol"]
     var ingredients = [[Ingredient]]()
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         // Initialize ingredients array
@@ -43,7 +43,71 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             // Enable or disable features based on authorization
         }
         
+        center.delegate = self
+        
         return true
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        print("Did receive response")
+        
+        let identifier = response.notification.request.identifier
+        
+        // Find the item's place in the list
+        var category = 0
+        var item = 0
+        for section in 0..<sections.count {
+            for i in 0..<ingredients[section].count {
+                if ingredients[section][i].name == identifier {
+                    category = section
+                    item = i
+                }
+            }
+        }
+        print("CATEGORY: \(category)")
+        print("ITEM NUMBER: \(item)")
+        
+        // Navigate to correct view
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let rootViewController = self.window?.rootViewController as! UITabBarController
+        let inventory = rootViewController.viewControllers?[0] as! UINavigationController
+        inventory.popToRootViewController(animated: false)
+        rootViewController.selectedViewController = inventory
+        let categoryDetailView = storyboard.instantiateViewController(withIdentifier: "IngredientTableViewController") as! IngredientTableViewController
+        categoryDetailView.ingredientCategory = category
+        inventory.pushViewController(categoryDetailView, animated: true)
+        
+        // Select the correct row
+        let indexPath = IndexPath(row: item, section: 0)
+        categoryDetailView.selectedRow = item
+        categoryDetailView.tableView.reloadRows(at: [indexPath], with: .fade)
+        categoryDetailView.tableView.scrollToRow(at: indexPath, at: .middle, animated: true)
+        
+        // check if the row is within the first seven rows
+        var firstIndex = true
+        var count = 0
+        for i in 0...item {
+            if categoryDetailView.ingredients[i].selected {
+                count += 1
+            }
+            if count > 7 {
+                firstIndex = false
+                break
+            }
+        }
+        
+        if !firstIndex {
+            var point = categoryDetailView.tableView.contentOffset
+            point .y += 200
+            categoryDetailView.tableView.contentOffset = point
+        }
+        
+        completionHandler()
+    }
+    
+    func userNotificationCenter(_: UNUserNotificationCenter, willPresent: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        print("Will present")
+        completionHandler([.alert,.badge])
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

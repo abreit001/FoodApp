@@ -56,5 +56,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Upload receipt photos </string>
+	<key>NSCameraUsageDescription</key>
+	<string>Take photos of your receipts</string>
 </dict>
 </plist>
