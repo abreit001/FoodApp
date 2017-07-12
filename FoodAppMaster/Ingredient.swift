@@ -79,12 +79,9 @@ class Ingredient: NSObject, NSCoding {
         let expDuration = aDecoder.decodeObject(forKey: PropertyKey.expDuration) as? TimeInterval
         let exp = aDecoder.decodeObject(forKey: PropertyKey.exp) as? Date
         let notificationDate = aDecoder.decodeObject(forKey: PropertyKey.notificationDate) as? Date
-        var priority = aDecoder.decodeObject(forKey: PropertyKey.priority) as? Int
-       // if priority == nil {
-      //      priority = 0
-       // }
+        let priority = aDecoder.decodeObject(forKey: PropertyKey.priority) as? Int
         // Must call designated initializer.
-        self.init(name: name, selected: selected, shoppingListed: shoppingListed, expDuration: expDuration!, exp: exp, notificationDate: notificationDate, priority: priority!)
+        self.init(name: name, selected: selected, shoppingListed: shoppingListed, expDuration: expDuration!, exp: exp, notificationDate: notificationDate, priority: priority ?? 0)
     }
 
 }
