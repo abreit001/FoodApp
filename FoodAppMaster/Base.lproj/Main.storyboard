@@ -267,7 +267,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1836" y="-197"/>
+            <point key="canvasLocation" x="2222" y="-223"/>
         </scene>
         <!--Settings-->
         <scene sceneID="cZI-84-eGx">
@@ -321,7 +321,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="44N-m6-zeo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2936.8000000000002" y="1645.7271364317842"/>
+            <point key="canvasLocation" x="3697" y="1646"/>
         </scene>
         <!--Pantry-->
         <scene sceneID="vAm-0p-BPX">
@@ -410,7 +410,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cBy-94-P78" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2221.5999999999999" y="1645.7271364317842"/>
+            <point key="canvasLocation" x="2953" y="1646"/>
         </scene>
         <!--Settings-->
         <scene sceneID="Kne-b1-htE">
@@ -431,7 +431,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="81L-sI-zRx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2937" y="770"/>
+            <point key="canvasLocation" x="3697" y="770"/>
         </scene>
         <!--Shopping List-->
         <scene sceneID="9O3-5p-dNa">
@@ -452,7 +452,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yHI-BJ-j1f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2221.5999999999999" y="769.56521739130437"/>
+            <point key="canvasLocation" x="2953" y="770"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="HEd-8w-io6">
@@ -584,6 +584,59 @@
             </objects>
             <point key="canvasLocation" x="1497" y="3261"/>
         </scene>
+        <!--Add Items-->
+        <scene sceneID="zcB-Zc-Uvy">
+            <objects>
+                <tableViewController id="cep-Dz-leX" customClass="ScanAddTableViewController" customModule="FoodAppMaster" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="1LG-Jk-O76">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="ISk-8H-WaY">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ScanAddTableViewCell" id="oqp-oF-35T" customClass="ScanAddTableViewCell" customModule="FoodAppMaster" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oqp-oF-35T" id="nfK-N5-XJs">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfD-dx-J6B">
+                                            <rect key="frame" x="19" y="12" width="317" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="name" destination="pfD-dx-J6B" id="Hc9-0O-jyd"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="cep-Dz-leX" id="krh-N6-8ym"/>
+                            <outlet property="delegate" destination="cep-Dz-leX" id="0ba-jR-t1G"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Add Items" id="xwA-R4-8yU">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="5AB-De-2Dl">
+                            <connections>
+                                <action selector="cancel:" destination="cep-Dz-leX" id="2oV-uH-Y9j"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="rx8-7y-e43"/>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xUN-bN-seU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2222" y="4101"/>
+        </scene>
         <!--Recipes List View Controller-->
         <scene sceneID="REd-Oy-xia">
             <objects>
@@ -706,25 +759,41 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W42-TF-g9u" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3669.5999999999999" y="1645.7271364317842"/>
+            <point key="canvasLocation" x="2222" y="1646"/>
         </scene>
         <!--Found Items Table View Controller-->
         <scene sceneID="w9f-cc-6qd">
             <objects>
                 <tableViewController id="be1-Wf-ObK" customClass="FoundItemsTableViewController" customModule="FoodAppMaster" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="C9n-y5-3Va">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uwJ-lQ-yCS">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="91"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <string key="text">We found the following ingredients.
+Tap "Add" to add items we missed.
+When you're finished, tap "Add to Pantry"</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Fny-Zx-65M">
+                            <rect key="frame" x="0.0" y="163" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="Add to Pantry"/>
+                        </button>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FoundItemsTableViewCell" id="l4T-mh-dGt" customClass="FoundItemsTableViewCell" customModule="FoodAppMaster" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FoundItemsTableViewCell" id="uSc-Y5-rKU" customClass="FoundItemsTableViewCell" customModule="FoodAppMaster" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="119" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="l4T-mh-dGt" id="bSG-Fj-BDf">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uSc-Y5-rKU" id="M8q-ht-3nr">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SSV-Fj-TZy">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UgN-lt-gVT">
                                             <rect key="frame" x="19" y="12" width="317" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -732,13 +801,13 @@
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="SSV-Fj-TZy" firstAttribute="centerY" secondItem="bSG-Fj-BDf" secondAttribute="centerY" id="GJO-ge-Sca"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="SSV-Fj-TZy" secondAttribute="trailing" constant="31" id="bJU-bf-Gig"/>
-                                        <constraint firstItem="SSV-Fj-TZy" firstAttribute="leading" secondItem="bSG-Fj-BDf" secondAttribute="leadingMargin" constant="11" id="fRg-n7-l6a"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="UgN-lt-gVT" secondAttribute="trailing" constant="31" id="PTe-DZ-J1L"/>
+                                        <constraint firstItem="UgN-lt-gVT" firstAttribute="leading" secondItem="M8q-ht-3nr" secondAttribute="leadingMargin" constant="11" id="PhH-NP-oIg"/>
+                                        <constraint firstItem="UgN-lt-gVT" firstAttribute="centerY" secondItem="M8q-ht-3nr" secondAttribute="centerY" id="aTd-Ad-xgx"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="name" destination="SSV-Fj-TZy" id="IUN-uy-40E"/>
+                                    <outlet property="name" destination="UgN-lt-gVT" id="GT9-p6-xWC"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -747,10 +816,29 @@
                             <outlet property="delegate" destination="be1-Wf-ObK" id="Jzy-Yg-quI"/>
                         </connections>
                     </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="GiF-58-D4p">
+                        <barButtonItem key="rightBarButtonItem" title="Add" id="tMX-vY-2TN">
+                            <connections>
+                                <segue destination="x6c-ge-N0S" kind="presentation" id="mAU-dp-cJm"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aH3-3w-QQ3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationBar contentMode="scaleToFill" id="ef7-vg-yUG">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <items>
+                        <navigationItem title="Found Ingredients" id="hbb-T1-iag">
+                            <barButtonItem key="rightBarButtonItem" title="Add" id="YkK-Hc-yd3"/>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
             </objects>
-            <point key="canvasLocation" x="3670" y="2454"/>
+            <point key="canvasLocation" x="2221.5999999999999" y="2453.5232383808097"/>
         </scene>
         <!--Scan-->
         <scene sceneID="CuX-cj-SMe">
@@ -769,7 +857,25 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eZg-1i-TKr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3670" y="770"/>
+            <point key="canvasLocation" x="2222" y="770"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ox5-wa-Fps">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="x6c-ge-N0S" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="khB-ud-nyV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cep-Dz-leX" kind="relationship" relationship="rootViewController" id="IJD-OO-NfW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Et-5P-S3V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2221.5999999999999" y="3260.4197901049479"/>
         </scene>
     </scenes>
     <resources>

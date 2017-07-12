@@ -57,10 +57,11 @@
 		2884E7D21F15564700543DBB /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2884E7D11F15564700543DBB /* ScannerViewController.swift */; };
 		2884E7D41F16735700543DBB /* FoundItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2884E7D31F16735700543DBB /* FoundItemsTableViewController.swift */; };
 		2884E7D61F1673A200543DBB /* FoundItemsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2884E7D51F1673A200543DBB /* FoundItemsTableViewCell.swift */; };
+		2884E7D81F168E2B00543DBB /* ScanAddTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2884E7D71F168E2B00543DBB /* ScanAddTableViewCell.swift */; };
+		2884E7DA1F168E3D00543DBB /* ScanAddTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2884E7D91F168E3D00543DBB /* ScanAddTableViewController.swift */; };
 		353E798B1F15381400465F28 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 353E798A1F15381400465F28 /* libstdc++.6.0.9.tbd */; };
 		353E798D1F153A1500465F28 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 353E798C1F153A1500465F28 /* libstdc++.dylib */; };
 		353E79941F15406800465F28 /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353E79931F15406800465F28 /* TesseractOCR.framework */; };
-		353E79981F154CB300465F28 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353E79971F154CB300465F28 /* ScanViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,12 +138,13 @@
 		2884E7D11F15564700543DBB /* ScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 		2884E7D31F16735700543DBB /* FoundItemsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoundItemsTableViewController.swift; sourceTree = "<group>"; };
 		2884E7D51F1673A200543DBB /* FoundItemsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoundItemsTableViewCell.swift; sourceTree = "<group>"; };
+		2884E7D71F168E2B00543DBB /* ScanAddTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanAddTableViewCell.swift; sourceTree = "<group>"; };
+		2884E7D91F168E3D00543DBB /* ScanAddTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanAddTableViewController.swift; sourceTree = "<group>"; };
 		353E79881F15380100465F28 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
 		353E798A1F15381400465F28 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
 		353E798C1F153A1500465F28 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		353E798E1F153E5800465F28 /* FoodAppMaster-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FoodAppMaster-Bridging-Header.h"; sourceTree = "<group>"; };
 		353E79931F15406800465F28 /* TesseractOCR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TesseractOCR.framework; sourceTree = "<group>"; };
-		353E79971F154CB300465F28 /* ScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -312,10 +314,11 @@
 			children = (
 				2884E7CF1F1551B300543DBB /* tessdata */,
 				353E79931F15406800465F28 /* TesseractOCR.framework */,
-				353E79971F154CB300465F28 /* ScanViewController.swift */,
 				2884E7D11F15564700543DBB /* ScannerViewController.swift */,
 				2884E7D31F16735700543DBB /* FoundItemsTableViewController.swift */,
 				2884E7D51F1673A200543DBB /* FoundItemsTableViewCell.swift */,
+				2884E7D91F168E3D00543DBB /* ScanAddTableViewController.swift */,
+				2884E7D71F168E2B00543DBB /* ScanAddTableViewCell.swift */,
 			);
 			name = "Scanner Tab";
 			sourceTree = "<group>";
@@ -484,8 +487,10 @@
 				2842F6F01F02B572002CBEB8 /* Ingredient.swift in Sources */,
 				284906D11F02B4A000A175A1 /* AppDelegate.swift in Sources */,
 				2842F6F81F02B572002CBEB8 /* Recipe.swift in Sources */,
+				2884E7D81F168E2B00543DBB /* ScanAddTableViewCell.swift in Sources */,
 				2842F6FA1F02B572002CBEB8 /* RecipeCell.swift in Sources */,
 				2842F6FE1F02B572002CBEB8 /* RecipeImageCell.swift in Sources */,
+				2884E7DA1F168E3D00543DBB /* ScanAddTableViewController.swift in Sources */,
 				2842F6F41F02B572002CBEB8 /* InventoryTableViewController.swift in Sources */,
 				2842F6FF1F02B572002CBEB8 /* RecipeIngredientCell.swift in Sources */,
 				2842F71A1F02B5B7002CBEB8 /* Category.swift in Sources */,
@@ -509,7 +514,6 @@
 				2842F7081F02B572002CBEB8 /* ShoppingListTableViewController.swift in Sources */,
 				2842F7061F02B572002CBEB8 /* SettingsTableViewController.swift in Sources */,
 				2884E7D41F16735700543DBB /* FoundItemsTableViewController.swift in Sources */,
-				353E79981F154CB300465F28 /* ScanViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
