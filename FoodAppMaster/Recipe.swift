@@ -20,6 +20,7 @@ struct Recipe {
     let socialRank: Double
     let ingredients: [String]?  // Only present on the Search requests
     let page: Int?              // Only on the Get requests
+    var priority: Int?
 }
 
 // Recipe JSON Parsing
@@ -63,5 +64,6 @@ extension Recipe {
         self.socialRank = socialRank
         self.ingredients = json["ingredients"] as? [String]
         self.page = json["page"] as? Int
+        self.priority = 0
     }
 }
