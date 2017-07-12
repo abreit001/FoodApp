@@ -106,29 +106,8 @@ class RecipeTableViewController: UITableViewController {
     
     private func loadData() {
         // Load all images
-        let icon1 = UIImage(named: "breakfast")
-        let icon2 = UIImage(named: "lunch")
-        let icon3 = UIImage(named: "dinner")
-        let icon4 = UIImage(named: "dessert")
-    
-        // Initialize category names
-        guard let category1 = Category(name: "Breakfast", icon: icon1!) else {
-            fatalError("Unable to instantiate category1")
-        }
-        
-        guard let category2 = Category(name: "Lunch", icon: icon2!) else {
-            fatalError("Unable to instantiate category2")
-        }
-        
-        guard let category3 = Category(name: "Dinner", icon: icon3!) else {
-            fatalError("Unable to instantiate category3")
-        }
-        
-        guard let category4 = Category(name: "Dessert", icon: icon4!) else {
-            fatalError("Unable to instantiate category4")
-        }
-        
-        categories += [category1, category2, category3, category4]
+        let icon1 = UIImage(named: "glass")
+
     }
 
 }
