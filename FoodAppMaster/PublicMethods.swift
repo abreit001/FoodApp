@@ -42,6 +42,7 @@ class PublicMethods {
     
     static let DocumentsDirectory = FileManager().urls(for: .documentDirectory, in: .userDomainMask).first!
     static let ArchiveURL = PublicMethods.DocumentsDirectory.appendingPathComponent("useMe")
+    static let noArchiveURL = PublicMethods.DocumentsDirectory.appendingPathComponent("no")
     
     // Instance for use in other classes
     class var sharedInstance : PublicMethods {
@@ -59,6 +60,12 @@ class PublicMethods {
         }
         else {
             saveUseMe()
+        }
+        if let savedNo = loadNo() {
+            no = savedNo
+        }
+        else {
+            saveNo()
         }
         
     }
@@ -176,6 +183,7 @@ class PublicMethods {
                 
             }
         }
+        saveNo()
     }
     
     func isRestricted(ingredient: String) -> Bool {
@@ -201,7 +209,9 @@ class PublicMethods {
                 index = count
             }
         }
-        settings.remove(at: index)
+        if count >= 0 {
+            settings.remove(at: index)
+        }
         
         no = [String]()
         
@@ -312,6 +322,7 @@ class PublicMethods {
                 
             }
         }
+        saveNo()
     }
     
     
@@ -496,6 +507,21 @@ class PublicMethods {
     
     func loadUseMe() -> [Ingredient]? {
         return NSKeyedUnarchiver.unarchiveObject(withFile: PublicMethods.ArchiveURL.path) as? [Ingredient]
+    }
+    
+    func saveNo() {
+        let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(no, toFile: PublicMethods.noArchiveURL.path)
+        if isSuccessfulSave {
+            os_log("useMe successfully saved.", log: OSLog.default, type: .debug)
+        }
+        else {
+            os_log("Failed to save useMe...", log: OSLog.default, type: .error)
+        }
+        
+    }
+    
+    func loadNo() -> [String]? {
+        return NSKeyedUnarchiver.unarchiveObject(withFile: PublicMethods.noArchiveURL.path) as? [String]
     }
     
 }

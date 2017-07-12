@@ -93,6 +93,11 @@ class IngredientTableViewController: UITableViewController {
                 tableView.reloadRows(at: [indexPath], with: .fade)
                 // Add to shopping list
                 self.ingredients[indexPath.row].shoppingListed = true
+                // Update Priority
+                let timeLeft = self.ingredients[indexPath.row].exp?.timeIntervalSince(Date.init())
+                if  Int(timeLeft!) < 259200 {
+                    self.ingredients[indexPath.row].priority = self.ingredients[indexPath.row].priority! + 1
+                }
                 // Reset expiration and notification dates
                 self.ingredients[indexPath.row].exp = Date(timeIntervalSinceReferenceDate: 0)
                 self.ingredients[indexPath.row].notificationDate = Date(timeIntervalSinceReferenceDate: 0)
@@ -107,6 +112,11 @@ class IngredientTableViewController: UITableViewController {
                 // Delete the row from the data source
                 self.ingredients[indexPath.row].selected = false
                 tableView.reloadRows(at: [indexPath], with: .fade)
+                // Update Priority
+                let timeLeft = self.ingredients[indexPath.row].exp?.timeIntervalSince(Date.init())
+                if  Int(timeLeft!) < 259200 {
+                    self.ingredients[indexPath.row].priority = self.ingredients[indexPath.row].priority! + 1
+                }
                 // Reset expiration and notification dates
                 self.ingredients[indexPath.row].exp = Date(timeIntervalSinceReferenceDate: 0)
                 self.ingredients[indexPath.row].notificationDate = Date(timeIntervalSinceReferenceDate: 0)

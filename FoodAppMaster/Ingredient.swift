@@ -18,7 +18,7 @@ class Ingredient: NSObject, NSCoding {
     var expDuration: TimeInterval?
     var exp: Date?
     var notificationDate: Date?
-    
+    var priority: Int?
     
     //MARK: Archiving Paths
     
@@ -33,6 +33,7 @@ class Ingredient: NSObject, NSCoding {
         static let expDuration = "expDuration"
         static let exp = "exp"
         static let notificationDate = "notificationDate"
+        static let priority = "priority"
     }
     
     //MARK: Initialization
@@ -45,9 +46,10 @@ class Ingredient: NSObject, NSCoding {
         self.expDuration = expDuration
         self.exp = Date(timeIntervalSinceReferenceDate: 0)
         self.notificationDate = Date(timeIntervalSinceReferenceDate: 0)
+        self.priority = 0
     }
     
-    init?(name: String, selected: Bool, shoppingListed: Bool, expDuration: TimeInterval, exp: Date?, notificationDate: Date?) {
+    init?(name: String, selected: Bool, shoppingListed: Bool, expDuration: TimeInterval, exp: Date?, notificationDate: Date?, priority: Int) {
         // Initialize stored properties.
         self.name = name
         self.selected = selected
@@ -55,6 +57,7 @@ class Ingredient: NSObject, NSCoding {
         self.expDuration = expDuration
         self.exp = exp
         self.notificationDate = notificationDate
+        self.priority = priority
     }
     
     //MARK: NSCoding
@@ -66,6 +69,7 @@ class Ingredient: NSObject, NSCoding {
         aCoder.encode(expDuration, forKey: PropertyKey.expDuration)
         aCoder.encode(exp, forKey: PropertyKey.exp)
         aCoder.encode(notificationDate, forKey: PropertyKey.notificationDate)
+        aCoder.encode(priority, forKey: PropertyKey.priority)
     }
     
     required convenience init?(coder aDecoder: NSCoder) {
@@ -75,8 +79,12 @@ class Ingredient: NSObject, NSCoding {
         let expDuration = aDecoder.decodeObject(forKey: PropertyKey.expDuration) as? TimeInterval
         let exp = aDecoder.decodeObject(forKey: PropertyKey.exp) as? Date
         let notificationDate = aDecoder.decodeObject(forKey: PropertyKey.notificationDate) as? Date
+        var priority = aDecoder.decodeObject(forKey: PropertyKey.priority) as? Int
+       // if priority == nil {
+      //      priority = 0
+       // }
         // Must call designated initializer.
-        self.init(name: name, selected: selected, shoppingListed: shoppingListed, expDuration: expDuration!, exp: exp, notificationDate: notificationDate)
+        self.init(name: name, selected: selected, shoppingListed: shoppingListed, expDuration: expDuration!, exp: exp, notificationDate: notificationDate, priority: priority!)
     }
 
 }

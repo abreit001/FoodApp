@@ -95,6 +95,7 @@ class RecipesListViewController: UIViewController {
         var finalRecipes = [Recipe]()
         var count = 0
         var ownedRecipes = [Recipe]()
+        var priority = 0
         // Display an indicator that we're fetching from network
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
         
@@ -129,12 +130,20 @@ class RecipesListViewController: UIViewController {
                     for thing in self.app.owned {
                         if (ingredient.localizedCaseInsensitiveContains(thing.name)) {
                             count += 1
+                            if thing.priority! > 0 {
+                                priority = priority + 1
+                            }
                         }
                     }
                 }
                 
                 if Double(count) > Double((ingredients?.count)!) * 0.1  && !banned {
+                    if priority > 0 {
+                        finalRecipes.insert(item, at: 0)
+                    }
+                    else {
                     finalRecipes.append(item)
+                    }
                 }
                 count = 0
                 gate = false
