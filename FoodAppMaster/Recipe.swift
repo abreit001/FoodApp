@@ -22,7 +22,7 @@ struct Recipe {
     let page: Int?              // Only on the Get requests
     var priority: Int?
 }
-
+//
 // Recipe JSON Parsing
 extension Recipe {
     init?(json: [String: Any]) {
