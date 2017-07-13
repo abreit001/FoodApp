@@ -79,8 +79,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="notImage" translatesAutoresizingMaskIntoConstraints="NO" id="74g-k7-gDb">
+                                <rect key="frame" x="120" y="125" width="135" height="136"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GiF-XP-mfx">
-                                <rect key="frame" x="0.0" y="235" width="375" height="80"/>
+                                <rect key="frame" x="0.0" y="269" width="375" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="45"/>
                                 <state key="normal" title="Find Me Recipes!">
@@ -91,14 +95,6 @@
                                     <segue destination="HY0-61-bZW" kind="show" id="Amq-yN-qJZ"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="knotImage" translatesAutoresizingMaskIntoConstraints="NO" id="hBM-OY-psZ">
-                                <rect key="frame" x="16" y="323" width="343" height="275"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="notImage" translatesAutoresizingMaskIntoConstraints="NO" id="74g-k7-gDb">
-                                <rect key="frame" x="120" y="91" width="135" height="136"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -864,7 +860,6 @@ When you're finished, tap "Add to Pantry"</string>
     </scenes>
     <resources>
         <image name="inventory" width="25" height="25"/>
-        <image name="knotImage" width="525" height="588"/>
         <image name="list" width="20" height="20"/>
         <image name="notImage" width="256" height="256"/>
         <image name="recipe-icon" width="35" height="35"/>
