@@ -14,13 +14,13 @@ class SettingsTableViewController: UITableViewController {
     var section = ["Dietary Restrictions", "Allergies"]
     var items = [[Setting]]()
     let app = PublicMethods.sharedInstance
-
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Load any saved items, otherwise load sample data.
-        if let savedSettings = loadSettings() {
-            items += savedSettings
+                // Load any saved items, otherwise load sample data.
+        if false {//let savedSettings = loadSettings() {
+            //items += savedSettings
         }
         else {
             // Load the default data.
