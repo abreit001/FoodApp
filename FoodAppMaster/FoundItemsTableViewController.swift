@@ -83,6 +83,21 @@ class FoundItemsTableViewController: UITableViewController {
         }    
     }
 
+    //MARK: Actions
+    
+    @IBAction func unwindToFindItemsList(sender: UIStoryboardSegue) {
+        if let sourceViewController = sender.source as? ScanAddTableViewController {
+            for i in 0..<sourceViewController.selected.count {
+                for j in 0..<sourceViewController.selected[i].count {
+                    if sourceViewController.selected[i][j] {
+                        foundItems[i][j] = true
+                    }
+                }
+            }
+            tableView.reloadData()
+        }
+    }
+    
     // MARK: - Navigation
     
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -91,16 +106,18 @@ class FoundItemsTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
         super.prepare(for: segue, sender: sender)
         // Get the new view controller using segue.destinationViewController.
-        guard let navController = segue.destination as? UINavigationController else {
-            fatalError("Unexpected destination: \(segue.destination)")
+        if segue.identifier == "addItems" {
+            guard let navController = segue.destination as? UINavigationController else {
+                fatalError("Unexpected destination: \(segue.destination)")
+            }
+            guard let addViewController = navController.viewControllers.first as? ScanAddTableViewController  else {
+                fatalError("Unexpected destination: \(String(describing: navController.viewControllers.first))")
+            }
+            
+            // Pass the selected object to the new view controller.
+            addViewController.ingredients = self.ingredients
+            addViewController.foundItems = self.foundItems
         }
-        guard let addViewController = navController.viewControllers.first as? ScanAddTableViewController  else {
-            fatalError("Unexpected destination: \(String(describing: navController.viewControllers.first))")
-        }
-        
-        // Pass the selected object to the new view controller.
-        addViewController.ingredients = self.ingredients
-        addViewController.foundItems = self.foundItems
 
     }
 
