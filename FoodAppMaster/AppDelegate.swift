@@ -25,9 +25,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         }
         
         // Load any saved items, otherwise load sample data.
-        if false {//let saved = PublicMethods.sharedInstance.loadAllIngredients() {
-            //print("Found saved data")
-            //self.ingredients = saved
+        if let saved = PublicMethods.sharedInstance.loadAllIngredients() {
+            print("Found saved data")
+            self.ingredients = saved
         }
         else {
             // Load the sample data.
@@ -69,6 +69,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         
         // Navigate to correct view
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        self.window?.rootViewController?.dismiss(animated: true, completion: nil)
+        
         let rootViewController = self.window?.rootViewController as! UITabBarController
         let inventory = rootViewController.viewControllers?[0] as! UINavigationController
         inventory.popToRootViewController(animated: false)

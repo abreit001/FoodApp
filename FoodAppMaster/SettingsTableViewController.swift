@@ -11,7 +11,7 @@ import os.log
 
 class SettingsTableViewController: UITableViewController {
     
-    var section = ["General", "Dietary Restrictions", "Allergies"]
+    var section = ["Dietary Restrictions", "Allergies"]
     var items = [[Setting]]()
     let app = PublicMethods.sharedInstance
 
@@ -85,18 +85,6 @@ class SettingsTableViewController: UITableViewController {
             }
         }
         
-        
-        
-        // check if notifications are toggled
-        if cell.setting.text == "Notifications" && cell.toggle.isOn == true {
-            print("Notifications are on!")
-        }
-        
-        // if notifications are turned off, turn off notifications
-        else if cell.setting.text == "Notifications" && cell.toggle.isOn == false {
-            print("Notifications are off!")
-        }
-        
         saveSettings()
         print(cell.setting.text!)
     }
@@ -116,23 +104,21 @@ class SettingsTableViewController: UITableViewController {
     {
         items.append([Setting]())
         items.append([Setting]())
-        items.append([Setting]())
         
-        items[0].append(Setting(setting: "Notifications", isOn: false)!)
-        items[1].append(Setting(setting: "Vegetarian", isOn: false)!)
-        items[1].append(Setting(setting: "Vegan", isOn: false)!)
-        items[1].append(Setting(setting: "Gluten Free", isOn: false)!)
-        items[1].append(Setting(setting: "Dairy Free", isOn: false)!)
-        items[1].append(Setting(setting: "Halal", isOn: false)!)
-        items[1].append(Setting(setting: "Kosher", isOn: false)!)
-        items[2].append(Setting(setting: "Milk", isOn: false)!)
-        items[2].append(Setting(setting: "Eggs", isOn: false)!)
-        items[2].append(Setting(setting: "Fish", isOn: false)!)
-        items[2].append(Setting(setting: "Shellfish", isOn: false)!)
-        items[2].append(Setting(setting: "Tree Nuts", isOn: false)!)
-        items[2].append(Setting(setting: "Peanuts", isOn: false)!)
-        items[2].append(Setting(setting: "Wheat", isOn: false)!)
-        items[2].append(Setting(setting: "Soybeans", isOn: false)!)
+        items[0].append(Setting(setting: "Vegetarian", isOn: false)!)
+        items[0].append(Setting(setting: "Vegan", isOn: false)!)
+        items[0].append(Setting(setting: "Gluten Free", isOn: false)!)
+        items[0].append(Setting(setting: "Dairy Free", isOn: false)!)
+        items[0].append(Setting(setting: "Halal", isOn: false)!)
+        items[0].append(Setting(setting: "Kosher", isOn: false)!)
+        items[1].append(Setting(setting: "Milk", isOn: false)!)
+        items[1].append(Setting(setting: "Eggs", isOn: false)!)
+        items[1].append(Setting(setting: "Fish", isOn: false)!)
+        items[1].append(Setting(setting: "Shellfish", isOn: false)!)
+        items[1].append(Setting(setting: "Tree Nuts", isOn: false)!)
+        items[1].append(Setting(setting: "Peanuts", isOn: false)!)
+        items[1].append(Setting(setting: "Wheat", isOn: false)!)
+        items[1].append(Setting(setting: "Soybeans", isOn: false)!)
     }
     
     private func saveSettings()
