@@ -65,7 +65,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sGy-kK-ctT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="762" y="1646"/>
+            <point key="canvasLocation" x="761" y="1612"/>
         </scene>
         <!--Recipe Button View Controller-->
         <scene sceneID="sZf-Yx-zi5">
@@ -79,10 +79,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="notImage" translatesAutoresizingMaskIntoConstraints="NO" id="74g-k7-gDb">
-                                <rect key="frame" x="120" y="125" width="135" height="136"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GiF-XP-mfx">
                                 <rect key="frame" x="0.0" y="269" width="375" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -95,6 +91,10 @@
                                     <segue destination="HY0-61-bZW" kind="show" id="Amq-yN-qJZ"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="notImage" translatesAutoresizingMaskIntoConstraints="NO" id="74g-k7-gDb">
+                                <rect key="frame" x="-222" y="-43" width="197" height="177"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -102,7 +102,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dzv-Bv-tX1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1496.8" y="1645.7271364317842"/>
+            <point key="canvasLocation" x="1497" y="1612"/>
         </scene>
         <!--Ingredients-->
         <scene sceneID="AxI-6F-VMj">
