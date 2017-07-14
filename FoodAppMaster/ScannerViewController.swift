@@ -37,8 +37,6 @@ class ScannerViewController: UIViewController, UINavigationControllerDelegate, U
     //MARK: Actions
     
     @IBAction func backgroundTapped(_ sender: UIButton) {
-        print("tapped")
-        
         let imagePickerActionSheet = UIAlertController(title: "Upload or Take Photo", message: nil, preferredStyle: .actionSheet)
         // 3
         if UIImagePickerController.isSourceTypeAvailable(.camera) {
@@ -65,7 +63,7 @@ class ScannerViewController: UIViewController, UINavigationControllerDelegate, U
         // 6
         present(imagePickerActionSheet, animated: true, completion: nil)
     }
-
+    
     //MARK: Private Functions
     
     func scaleImage(_ image: UIImage, maxDimension: CGFloat) -> UIImage {
@@ -159,16 +157,16 @@ class ScannerViewController: UIViewController, UINavigationControllerDelegate, U
     }
     
     /*func addActivityIndicator() {
-        activityIndicator = UIView(frame: view.bounds)
-        activityIndicator.backgroundColor = UIColor.white
-        activityIndicator.alpha = 1
-        
-        view.addSubview(activityIndicator)
-        view.bringSubview(toFront: activityIndicator)
-        UIView.animate(withDuration: 2.0, delay: 0, options: [.repeat, .autoreverse], animations: {
-            self.activityIndicator.alpha = 0.5
-        }, completion: nil)
-    }*/
+     activityIndicator = UIView(frame: view.bounds)
+     activityIndicator.backgroundColor = UIColor.white
+     activityIndicator.alpha = 1
+     
+     view.addSubview(activityIndicator)
+     view.bringSubview(toFront: activityIndicator)
+     UIView.animate(withDuration: 2.0, delay: 0, options: [.repeat, .autoreverse], animations: {
+     self.activityIndicator.alpha = 0.5
+     }, completion: nil)
+     }*/
     
     //MARK: Delegate Methods
     
@@ -182,5 +180,23 @@ class ScannerViewController: UIViewController, UINavigationControllerDelegate, U
         dismiss(animated: true, completion: {
             self.performImageRecognition(scaledImage)
         })
+    }
+    
+    //MARK: Actions
+    
+    @IBAction func unwindToScanner(sender: UIStoryboardSegue) {
+        if let sourceViewController = sender.source as? FoundItemsTableViewController {
+            for i in 0..<sourceViewController.foundItems.count {
+                for j in 0..<sourceViewController.foundItems[i].count {
+                    if sourceViewController.foundItems[i][j] {
+                        // Add to pantry
+                        app.addToPantry(item: ingredients[i][j])
+                    }
+                }
+            }
+            for i in 0..<sourceViewController.foundItems.count {
+                app.saveIngredients(section: i, ingredients: ingredients[i])
+            }
+        }
     }
 }
