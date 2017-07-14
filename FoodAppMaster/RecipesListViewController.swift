@@ -15,6 +15,7 @@ class RecipesListViewController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     
+    var activityIndicator : UIActivityIndicatorView!
     var viewModel = RecipesListViewModel()
     let app = PublicMethods.sharedInstance
     var bool = false
@@ -45,7 +46,7 @@ class RecipesListViewController: UIViewController {
         if let selectedRow = tableView?.indexPathForSelectedRow {
             tableView.deselectRow(at: selectedRow, animated: true)
         }
-              // addHolderView()
+              addActivityIndicator()
     
         
     }
@@ -63,6 +64,7 @@ class RecipesListViewController: UIViewController {
             fetchRecipes(query: ingredient.name)
         }
         
+        removeActivityIndicator()
     }
     
     override func didReceiveMemoryWarning() {
@@ -114,6 +116,7 @@ class RecipesListViewController: UIViewController {
         print("converting recipes")
         for item in ownedRecipes {
             print("1")
+            print(item.title)
             self.viewModel.recipe(id: item.recipeId) { recipe in
                 print("2")
                 var recipe = recipe
@@ -135,9 +138,15 @@ class RecipesListViewController: UIViewController {
                     }
                 }
                 
-                if Double(count) > Double((ingredients?.count)!) * 0.1  && !banned {
+                print("count:", count)
+                print("ingredients:", ingredients?.count ?? "doesn't exist!")
+                
+                if Double(count) > Double((ingredients?.count)!) * 0.01 && !banned {
                     finalRecipes.append(item)
+                } else {
+                    print("failed to append")
                 }
+                
                 count = 0
                 gate = false
             }
@@ -171,6 +180,20 @@ class RecipesListViewController: UIViewController {
         
         }
     }
+    
+    func addActivityIndicator() {
+        activityIndicator = UIActivityIndicatorView(frame: view.bounds)
+        activityIndicator.activityIndicatorViewStyle = .whiteLarge
+        activityIndicator.backgroundColor = UIColor(white: 0, alpha: 0.25)
+        activityIndicator.startAnimating()
+        view.addSubview(activityIndicator)
+    }
+    
+    func removeActivityIndicator() {
+        activityIndicator.removeFromSuperview()
+        activityIndicator = nil
+    }
+    
 }
 
 
