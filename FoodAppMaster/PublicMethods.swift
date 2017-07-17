@@ -345,8 +345,8 @@ class PublicMethods {
         let notificationDuration = (item.expDuration!) * 0.7
         item.notificationDate = Date(timeIntervalSinceNow: notificationDuration)
         
-        print(item.notificationDate!)
-        print(item.exp!)
+        print(item.name, "notification date: ", String(describing: item.notificationDate!))
+        print(item.name, "expiration date:   ", String(describing: item.exp!))
         
         // add to owned
         owned.append(item)

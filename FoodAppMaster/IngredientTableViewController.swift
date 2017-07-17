@@ -69,7 +69,8 @@ class IngredientTableViewController: UITableViewController {
         formatter.dateStyle = DateFormatter.Style.medium
         cell.exp.text = formatter.string(from: current.exp!)
         // turn red after the user has been notified of its impending expiration
-        if Calendar.current.component(.day, from: current.notificationDate!) >= Calendar.current.component(.day, from: Date.init()) {
+        // Calendar.current.component(.day, from: current.notificationDate!) >= Calendar.current.component(.day, from: Date.init())
+        if current.notificationDate! <= Date.init() {
             cell.exp.textColor = .red
         }
         else {
