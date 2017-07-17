@@ -61,7 +61,6 @@
 		353E798B1F15381400465F28 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 353E798A1F15381400465F28 /* libstdc++.6.0.9.tbd */; };
 		353E798D1F153A1500465F28 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 353E798C1F153A1500465F28 /* libstdc++.dylib */; };
 		353E79941F15406800465F28 /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353E79931F15406800465F28 /* TesseractOCR.framework */; };
-		3576EC681F16BC1B00E8DE64 /* RecipeButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3576EC671F16BC1B00E8DE64 /* RecipeButtonViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,7 +120,7 @@
 		2842F7151F02B5B7002CBEB8 /* Fruits.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Fruits.txt; sourceTree = "<group>"; };
 		2842F7251F06D19D002CBEB8 /* NotificationList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationList.swift; sourceTree = "<group>"; };
 		2842F7271F0D45D1002CBEB8 /* PublicMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicMethods.swift; sourceTree = "<group>"; };
-		284906CD1F02B4A000A175A1 /* FoodAppMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodAppMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		284906CD1F02B4A000A175A1 /* Rype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		284906D01F02B4A000A175A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		284906D51F02B4A000A175A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		284906D71F02B4A000A175A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -144,7 +143,6 @@
 		353E798C1F153A1500465F28 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		353E798E1F153E5800465F28 /* FoodAppMaster-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FoodAppMaster-Bridging-Header.h"; sourceTree = "<group>"; };
 		353E79931F15406800465F28 /* TesseractOCR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TesseractOCR.framework; sourceTree = "<group>"; };
-		3576EC671F16BC1B00E8DE64 /* RecipeButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecipeButtonViewController.swift; path = ../RecipeButtonViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,7 +222,6 @@
 				2842F6E41F02B572002CBEB8 /* RecipeListViewModel.swift */,
 				2842F6E51F02B572002CBEB8 /* RecipesListViewController.swift */,
 				2842F6E61F02B572002CBEB8 /* RecipeTableViewCell.swift */,
-				3576EC671F16BC1B00E8DE64 /* RecipeButtonViewController.swift */,
 			);
 			name = "Recipes Tab";
 			sourceTree = "<group>";
@@ -265,7 +262,7 @@
 		284906CE1F02B4A000A175A1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				284906CD1F02B4A000A175A1 /* FoodAppMaster.app */,
+				284906CD1F02B4A000A175A1 /* Rype.app */,
 				284906E11F02B4A000A175A1 /* FoodAppMasterTests.xctest */,
 				284906EC1F02B4A000A175A1 /* FoodAppMasterUITests.xctest */,
 			);
@@ -349,7 +346,7 @@
 			);
 			name = FoodAppMaster;
 			productName = FoodAppMaster;
-			productReference = 284906CD1F02B4A000A175A1 /* FoodAppMaster.app */;
+			productReference = 284906CD1F02B4A000A175A1 /* Rype.app */;
 			productType = "com.apple.product-type.application";
 		};
 		284906E01F02B4A000A175A1 /* FoodAppMasterTests */ = {
@@ -493,7 +490,6 @@
 				2842F6FE1F02B572002CBEB8 /* RecipeImageCell.swift in Sources */,
 				2884E7DA1F168E3D00543DBB /* ScanAddTableViewController.swift in Sources */,
 				2842F6F41F02B572002CBEB8 /* InventoryTableViewController.swift in Sources */,
-				3576EC681F16BC1B00E8DE64 /* RecipeButtonViewController.swift in Sources */,
 				2842F6FF1F02B572002CBEB8 /* RecipeIngredientCell.swift in Sources */,
 				2842F71A1F02B5B7002CBEB8 /* Category.swift in Sources */,
 				2842F7171F02B5B7002CBEB8 /* AddTableViewController.swift in Sources */,
@@ -680,7 +676,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				"OTHER_LDFLAGS[arch=*]" = "-lstdc++";
 				PRODUCT_BUNDLE_IDENTIFIER = SPE.FoodApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
+				PRODUCT_NAME = Rype;
 				SWIFT_OBJC_BRIDGING_HEADER = "FoodAppMaster-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -703,7 +700,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				"OTHER_LDFLAGS[arch=*]" = "-lstdc++";
 				PRODUCT_BUNDLE_IDENTIFIER = SPE.FoodApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
+				PRODUCT_NAME = Rype;
 				SWIFT_OBJC_BRIDGING_HEADER = "FoodAppMaster-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};

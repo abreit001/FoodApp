@@ -23,7 +23,7 @@ class NotificationList {
     
     func addNotification(_ item: Ingredient) {
         let content = UNMutableNotificationContent()
-        content.title = "Food App"
+        content.title = "Rype"
         // get the number of days until expiration
         let date1 = Calendar.current.startOfDay(for: Date.init())
         let date2 = Calendar.current.startOfDay(for: item.exp!)

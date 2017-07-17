@@ -345,10 +345,6 @@ class PublicMethods {
         let notificationDuration = (item.expDuration!) * 0.7
         item.notificationDate = Date(timeIntervalSinceNow: notificationDuration)
         
-        // item.exp = Date(timeIntervalSinceNow: item.expDuration!)
-        // let notificationDuration = 10.0
-        // item.notificationDate = Date(timeIntervalSinceNow: notificationDuration)
-        
         print(item.notificationDate!)
         print(item.exp!)
         

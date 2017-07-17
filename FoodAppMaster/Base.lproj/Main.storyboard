@@ -13,13 +13,13 @@
         <!--Pantry-->
         <scene sceneID="pX1-VK-BcU">
             <objects>
-                <tableViewController restorationIdentifier="pantryTableController" id="beb-R9-iXe" customClass="InventoryTableViewController" customModule="FoodAppMaster" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController restorationIdentifier="pantryTableController" id="beb-R9-iXe" customClass="InventoryTableViewController" customModule="Rype" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ldu-a6-CFy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="InventoryTableViewCell" rowHeight="90" id="38b-si-Yt5" customClass="InventoryTableViewCell" customModule="FoodAppMaster" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="InventoryTableViewCell" rowHeight="90" id="38b-si-Yt5" customClass="InventoryTableViewCell" customModule="Rype" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="38b-si-Yt5" id="ALb-3y-uaX">
@@ -65,18 +65,18 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sGy-kK-ctT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="762" y="1646"/>
+            <point key="canvasLocation" x="761" y="1646"/>
         </scene>
         <!--Ingredients-->
         <scene sceneID="AxI-6F-VMj">
             <objects>
-                <tableViewController restorationIdentifier="ingredientsTableController" storyboardIdentifier="IngredientTableViewController" id="PlB-Gv-2kS" customClass="IngredientTableViewController" customModule="FoodAppMaster" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController restorationIdentifier="ingredientsTableController" storyboardIdentifier="IngredientTableViewController" id="PlB-Gv-2kS" customClass="IngredientTableViewController" customModule="Rype" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="WUG-qv-zE5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="IngredientTableViewCell" id="Gyz-CC-Mqg" customClass="IngredientTableViewCell" customModule="FoodAppMaster" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="IngredientTableViewCell" id="Gyz-CC-Mqg" customClass="IngredientTableViewCell" customModule="Rype" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Gyz-CC-Mqg" id="Fqb-Kd-RdI">
@@ -84,13 +84,13 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tj0-9k-8SZ">
-                                            <rect key="frame" x="19" y="12" width="220" height="21"/>
+                                            <rect key="frame" x="19" y="11" width="220" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f5t-jq-NFe">
-                                            <rect key="frame" x="247" y="12" width="109" height="21"/>
+                                            <rect key="frame" x="247" y="11" width="109" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="109" id="Y8L-JV-VC5"/>
                                             </constraints>
@@ -133,21 +133,21 @@
         <!--Add-->
         <scene sceneID="ejv-8R-wPZ">
             <objects>
-                <tableViewController title="Add" id="FCH-lH-d9t" customClass="AddTableViewController" customModule="FoodAppMaster" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Add" id="FCH-lH-d9t" customClass="AddTableViewController" customModule="Rype" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="RdY-FA-3tq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="AddTableViewCell" editingAccessoryType="checkmark" id="Gt2-zk-JNc" customClass="AddTableViewCell" customModule="FoodAppMaster" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="AddTableViewCell" editingAccessoryType="checkmark" id="Gt2-zk-JNc" customClass="AddTableViewCell" customModule="Rype" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Gt2-zk-JNc" id="DT8-mw-ZP0">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pjc-1w-bJq">
-                                            <rect key="frame" x="19" y="12" width="317" height="21"/>
+                                            <rect key="frame" x="19" y="11" width="317" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -215,12 +215,12 @@
         <!--Settings-->
         <scene sceneID="cZI-84-eGx">
             <objects>
-                <tableViewController restorationIdentifier="settingsTableController" storyboardIdentifier="SettingsTableViewController" id="06W-Do-jRE" customClass="SettingsTableViewController" customModule="FoodAppMaster" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController restorationIdentifier="settingsTableController" storyboardIdentifier="SettingsTableViewController" id="06W-Do-jRE" customClass="SettingsTableViewController" customModule="Rype" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="oss-1A-r2a">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <label key="tableFooterView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="0Xg-gj-kmo">
+                        <label key="tableFooterView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0Xg-gj-kmo">
                             <rect key="frame" x="0.0" y="72" width="375" height="116"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <string key="text">Powered By Food2Fork.com
@@ -232,7 +232,7 @@ Inspired by SuperCook</string>
                             <nil key="highlightedColor"/>
                         </label>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SettingsTableViewCell" id="p17-Sn-VIK" customClass="SettingsTableViewCell" customModule="FoodAppMaster" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SettingsTableViewCell" id="p17-Sn-VIK" customClass="SettingsTableViewCell" customModule="Rype" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="p17-Sn-VIK" id="rj1-ef-Vyb">
@@ -240,7 +240,7 @@ Inspired by SuperCook</string>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bq2-pe-i4t">
-                                            <rect key="frame" x="19" y="12" width="282" height="21"/>
+                                            <rect key="frame" x="19" y="11" width="282" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -322,13 +322,13 @@ Inspired by SuperCook</string>
         <!--Shopping List-->
         <scene sceneID="tBF-yA-Z40">
             <objects>
-                <tableViewController restorationIdentifier="shoppingListTableController" storyboardIdentifier="ShoppingListTableViewController" id="sUM-Su-x8d" customClass="ShoppingListTableViewController" customModule="FoodAppMaster" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController restorationIdentifier="shoppingListTableController" storyboardIdentifier="ShoppingListTableViewController" id="sUM-Su-x8d" customClass="ShoppingListTableViewController" customModule="Rype" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelectionDuringEditing="YES" allowsMultipleSelection="YES" allowsMultipleSelectionDuringEditing="YES" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="l4N-t1-3QL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ShoppingListTableViewCell" focusStyle="custom" id="qEk-cj-q5e" customClass="ShoppingListTableViewCell" customModule="FoodAppMaster" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ShoppingListTableViewCell" focusStyle="custom" id="qEk-cj-q5e" customClass="ShoppingListTableViewCell" customModule="Rype" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qEk-cj-q5e" id="BYP-JN-pIo">
@@ -429,21 +429,21 @@ Inspired by SuperCook</string>
         <!--Recipe Detail View Controller-->
         <scene sceneID="u2e-99-fYa">
             <objects>
-                <tableViewController storyboardIdentifier="RecipeDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Uo5-uY-bcG" customClass="RecipeDetailViewController" customModule="FoodAppMaster" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="RecipeDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Uo5-uY-bcG" customClass="RecipeDetailViewController" customModule="Rype" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Wzw-WS-3Qo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="RecipeImageCellIdentifier" rowHeight="264" id="tJe-hC-eeA" customClass="RecipeImageCell" customModule="FoodAppMaster" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="RecipeImageCellIdentifier" rowHeight="264" id="tJe-hC-eeA" customClass="RecipeImageCell" customModule="Rype" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="264"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tJe-hC-eeA" id="qUQ-gB-NPt">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="263"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="264"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ibu-IL-Byr">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="264"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="263"/>
                                         </imageView>
                                     </subviews>
                                     <constraints>
@@ -457,7 +457,7 @@ Inspired by SuperCook</string>
                                     <outlet property="recipeImageView" destination="ibu-IL-Byr" id="9QQ-6J-q31"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RecipeIngredientCellIdentifier" textLabel="4Ca-Gc-yjD" style="IBUITableViewCellStyleDefault" id="JtY-CX-WcQ" customClass="RecipeIngredientCell" customModule="FoodAppMaster" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RecipeIngredientCellIdentifier" textLabel="4Ca-Gc-yjD" style="IBUITableViewCellStyleDefault" id="JtY-CX-WcQ" customClass="RecipeIngredientCell" customModule="Rype" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="292" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JtY-CX-WcQ" id="obs-WY-KeZ">
@@ -474,11 +474,11 @@ Inspired by SuperCook</string>
                                     </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RecipeDetailCellIdentifier" rowHeight="88" id="c9l-ZI-ba5" customClass="RecipeDetailCell" customModule="FoodAppMaster" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RecipeDetailCellIdentifier" rowHeight="88" id="c9l-ZI-ba5" customClass="RecipeDetailCell" customModule="Rype" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="336" width="375" height="88"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="c9l-ZI-ba5" id="Lde-Ug-hG3">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="87.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7D-d0-liq">
@@ -541,7 +541,7 @@ Inspired by SuperCook</string>
         <!--Add Items-->
         <scene sceneID="zcB-Zc-Uvy">
             <objects>
-                <tableViewController id="cep-Dz-leX" customClass="ScanAddTableViewController" customModule="FoodAppMaster" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="cep-Dz-leX" customClass="ScanAddTableViewController" customModule="Rype" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="1LG-Jk-O76">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -552,11 +552,11 @@ Inspired by SuperCook</string>
                             <textInputTraits key="textInputTraits"/>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ScanAddTableViewCell" id="oqp-oF-35T" customClass="ScanAddTableViewCell" customModule="FoodAppMaster" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ScanAddTableViewCell" id="oqp-oF-35T" customClass="ScanAddTableViewCell" customModule="Rype" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oqp-oF-35T" id="nfK-N5-XJs">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfD-dx-J6B">
@@ -603,7 +603,7 @@ Inspired by SuperCook</string>
         <!--Recipes List View Controller-->
         <scene sceneID="REd-Oy-xia">
             <objects>
-                <viewController id="HY0-61-bZW" customClass="RecipesListViewController" customModule="FoodAppMaster" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="HY0-61-bZW" customClass="RecipesListViewController" customModule="Rype" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IhD-5p-yU6"/>
                         <viewControllerLayoutGuide type="bottom" id="GWd-Vr-RWs"/>
@@ -624,7 +624,7 @@ Inspired by SuperCook</string>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexColor" red="0.92156862750000001" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="RecipeCellIdentifier" textLabel="SUr-lW-w32" imageView="fH3-pf-KYc" style="IBUITableViewCellStyleDefault" id="tof-S8-faK" customClass="RecipeCell" customModule="FoodAppMaster" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="RecipeCellIdentifier" textLabel="SUr-lW-w32" imageView="fH3-pf-KYc" style="IBUITableViewCellStyleDefault" id="tof-S8-faK" customClass="RecipeCell" customModule="Rype" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tof-S8-faK" id="RwI-OD-wxz">
@@ -719,7 +719,7 @@ Inspired by SuperCook</string>
         <!--Receipt Scanner-->
         <scene sceneID="oPN-Nn-Icc">
             <objects>
-                <viewController id="HII-ab-rtC" customClass="ScannerViewController" customModule="FoodAppMaster" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="HII-ab-rtC" customClass="ScannerViewController" customModule="Rype" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mC7-Vi-okm"/>
                         <viewControllerLayoutGuide type="bottom" id="XNI-ip-AfS"/>
@@ -766,7 +766,7 @@ Inspired by SuperCook</string>
         <!--Found Items Table View Controller-->
         <scene sceneID="w9f-cc-6qd">
             <objects>
-                <tableViewController id="be1-Wf-ObK" customClass="FoundItemsTableViewController" customModule="FoodAppMaster" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="be1-Wf-ObK" customClass="FoundItemsTableViewController" customModule="Rype" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="C9n-y5-3Va">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -781,7 +781,7 @@ Inspired by SuperCook</string>
                             </connections>
                         </button>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FoundItemsTableViewCell" id="uSc-Y5-rKU" customClass="FoundItemsTableViewCell" customModule="FoodAppMaster" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FoundItemsTableViewCell" id="uSc-Y5-rKU" customClass="FoundItemsTableViewCell" customModule="Rype" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uSc-Y5-rKU" id="M8q-ht-3nr">
@@ -789,7 +789,7 @@ Inspired by SuperCook</string>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UgN-lt-gVT">
-                                            <rect key="frame" x="19" y="12" width="317" height="21"/>
+                                            <rect key="frame" x="19" y="11" width="317" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
