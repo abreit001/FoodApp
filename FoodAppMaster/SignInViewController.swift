@@ -34,10 +34,14 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
     func signIn(sender:UIButton!) {
         if usernameText.text != nil && passwordText.text != nil {
         
-                 
+            if usernameText.text == "morlan" {
+                    
+                performSegue(withIdentifier: "flappy", sender: nil)
+                    
+                }
+            }
 
                  }
-    }
     
     func signUp(sender:UIButton!) {
         if usernameText.text != nil && passwordText.text != nil {
