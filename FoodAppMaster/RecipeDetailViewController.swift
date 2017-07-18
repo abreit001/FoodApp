@@ -36,6 +36,7 @@ class RecipeDetailViewController: UITableViewController {
     
     var viewModel: RecipeDetailViewModel?
     var image: UIImage?
+    let app = PublicMethods.sharedInstance
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,6 +46,7 @@ class RecipeDetailViewController: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        app.semaphore = false
         //navigationController?.isNavigationBarHidden = false
     }
     

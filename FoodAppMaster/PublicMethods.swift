@@ -20,6 +20,7 @@ class PublicMethods {
     var useMe = [Ingredient]()
     var no = [String]()
     var settings = [String]()
+    var semaphore = true
     
     let vegetarian = ["meat", "beef", "chicken", "pork", "steak", "venison", "lamb", "bacon", "duck", "turkey", "ham", "anchovies", "barramundi", "salmon", "tuna", "carp", "caviar", "cod", "haddock", "herring", "mackerel", "sardines", "pike", "swordfish", "trout", "fish"]
     let vegan = ["meat", "beef", "chicken", "pork", "steak", "venison", "lamb", "bacon", "duck", "turkey", "ham", "milk", "cheese", "dairy", "cream", "eggs", "anchovies", "barramundi", "salmon", "tuna", "carp", "caviar", "cod", "haddock", "herring", "mackerel", "sardines", "pike", "swordfish", "trout", "fish"]

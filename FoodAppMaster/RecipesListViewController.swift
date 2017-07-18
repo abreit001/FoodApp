@@ -59,10 +59,12 @@ class RecipesListViewController: UIViewController {
         super.viewDidAppear(animated)
         //call()
         
-
+        if app.semaphore {
         for ingredient in query {
             fetchRecipes(query: ingredient.name)
         }
+        }
+        app.semaphore = true
         
         removeActivityIndicator()
     }

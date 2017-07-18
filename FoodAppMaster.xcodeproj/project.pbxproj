@@ -61,6 +61,7 @@
 		353E798B1F15381400465F28 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 353E798A1F15381400465F28 /* libstdc++.6.0.9.tbd */; };
 		353E798D1F153A1500465F28 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 353E798C1F153A1500465F28 /* libstdc++.dylib */; };
 		353E79941F15406800465F28 /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353E79931F15406800465F28 /* TesseractOCR.framework */; };
+		354029BB1F1D4B23003F0138 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354029BA1F1D4B23003F0138 /* SignInViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -143,6 +144,7 @@
 		353E798C1F153A1500465F28 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		353E798E1F153E5800465F28 /* FoodAppMaster-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FoodAppMaster-Bridging-Header.h"; sourceTree = "<group>"; };
 		353E79931F15406800465F28 /* TesseractOCR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TesseractOCR.framework; sourceTree = "<group>"; };
+		354029BA1F1D4B23003F0138 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -279,6 +281,7 @@
 				2842F7231F02B668002CBEB8 /* Settings Tab */,
 				353E795D1F1530AF00465F28 /* Scanner Tab */,
 				2842F7241F02B682002CBEB8 /* Shopping List Tab */,
+				354029B91F1D4AE2003F0138 /* SignIn Tab */,
 				284906D71F02B4A000A175A1 /* Assets.xcassets */,
 				284906D91F02B4A000A175A1 /* LaunchScreen.storyboard */,
 				284906D41F02B4A000A175A1 /* Main.storyboard */,
@@ -327,6 +330,14 @@
 				353E79881F15380100465F28 /* libstdc++.tbd */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		354029B91F1D4AE2003F0138 /* SignIn Tab */ = {
+			isa = PBXGroup;
+			children = (
+				354029BA1F1D4B23003F0138 /* SignInViewController.swift */,
+			);
+			name = "SignIn Tab";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -490,6 +501,7 @@
 				2842F6FE1F02B572002CBEB8 /* RecipeImageCell.swift in Sources */,
 				2884E7DA1F168E3D00543DBB /* ScanAddTableViewController.swift in Sources */,
 				2842F6F41F02B572002CBEB8 /* InventoryTableViewController.swift in Sources */,
+				354029BB1F1D4B23003F0138 /* SignInViewController.swift in Sources */,
 				2842F6FF1F02B572002CBEB8 /* RecipeIngredientCell.swift in Sources */,
 				2842F71A1F02B5B7002CBEB8 /* Category.swift in Sources */,
 				2842F7171F02B5B7002CBEB8 /* AddTableViewController.swift in Sources */,

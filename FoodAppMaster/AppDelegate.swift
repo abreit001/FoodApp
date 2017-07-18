@@ -11,7 +11,7 @@ import UserNotifications
 import os.log
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate, UITextFieldDelegate {
 
     var window: UIWindow?
     let sections = ["Dairy", "Meat", "Vegetables", "Fruits", "Fish and Seafood", "Baking and Grains", "Spices and Seasonings", "Nuts and Seeds", "Legumes", "Condiments and Sauces", "Desserts and Snacks", "Soup", "Beverages and Alcohol"]
