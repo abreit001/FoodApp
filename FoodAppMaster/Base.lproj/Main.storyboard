@@ -271,7 +271,9 @@ Inspired by SuperCook</string>
                             <outlet property="delegate" destination="06W-Do-jRE" id="3T3-Hd-yum"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Settings" id="JZn-qf-hMD"/>
+                    <navigationItem key="navigationItem" title="Settings" id="JZn-qf-hMD">
+                        <barButtonItem key="rightBarButtonItem" title="Sign In" id="IBP-62-oxA"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="44N-m6-zeo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
