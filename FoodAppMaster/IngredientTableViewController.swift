@@ -78,7 +78,14 @@ class IngredientTableViewController: UITableViewController {
         }
         
         if selectedRow == indexPath.row {
-            cell.backgroundColor = UIColor(red: 9/255, green: 80/255, blue: 208/255, alpha: 10/100)
+            UIView.animate(withDuration: 4, animations: {
+                cell.contentView.backgroundColor = UIColor(red: 9/255, green: 80/255, blue: 208/255, alpha: 10/100)
+            }, completion: { _ in
+                UIView.animate(withDuration: 2) {
+                    cell.contentView.backgroundColor = UIColor.white
+                }
+            })
+            selectedRow = -1
         }
         else {
             cell.backgroundColor = UIColor.white
@@ -110,6 +117,10 @@ class IngredientTableViewController: UITableViewController {
                 // Reset expiration and notification dates
                 self.ingredients[indexPath.row].exp = Date(timeIntervalSinceReferenceDate: 0)
                 self.ingredients[indexPath.row].notificationDate = Date(timeIntervalSinceReferenceDate: 0)
+                // Remove notification
+                let center = UNUserNotificationCenter.current()
+                center.removePendingNotificationRequests(withIdentifiers: [self.ingredients[indexPath.row].name])
+                center.removeDeliveredNotifications(withIdentifiers: [self.ingredients[indexPath.row].name])
                 // Save data
                 self.app.saveIngredients(section: self.ingredientCategory!, ingredients: self.ingredients)
             })
@@ -129,6 +140,10 @@ class IngredientTableViewController: UITableViewController {
                 // Reset expiration and notification dates
                 self.ingredients[indexPath.row].exp = Date(timeIntervalSinceReferenceDate: 0)
                 self.ingredients[indexPath.row].notificationDate = Date(timeIntervalSinceReferenceDate: 0)
+                // Remove notification
+                let center = UNUserNotificationCenter.current()
+                center.removePendingNotificationRequests(withIdentifiers: [self.ingredients[indexPath.row].name])
+                center.removeDeliveredNotifications(withIdentifiers: [self.ingredients[indexPath.row].name])
                 // Save data
                 self.app.saveIngredients(section: self.ingredientCategory!, ingredients: self.ingredients)
             })
@@ -143,13 +158,6 @@ class IngredientTableViewController: UITableViewController {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }
     }
-    
-    /*override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("Selected row at \(indexPath.row)")
-        selectedRow = indexPath.row
-        tableView.reloadRows(at: [indexPath], with: .fade)
-        tableView.scrollToRow(at: IndexPath(row: selectedRow, section: 0), at: .top, animated: false)
-    }*/
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if ingredients[indexPath.row].selected == true {

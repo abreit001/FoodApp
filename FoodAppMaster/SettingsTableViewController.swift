@@ -11,6 +11,7 @@ import os.log
 
 class SettingsTableViewController: UITableViewController {
     
+    //MARK: Properties
     var section = ["Dietary Restrictions", "Allergies"]
     var items = [[Setting]]()
     let app = PublicMethods.sharedInstance
@@ -62,6 +63,8 @@ class SettingsTableViewController: UITableViewController {
         return cell
     }
     
+    //MARK: Actions
+    
     @IBAction func switched(_ sender: UISwitch) {
         // Figure out which switch it is
         // Call the correct method based on this
@@ -88,16 +91,6 @@ class SettingsTableViewController: UITableViewController {
         saveSettings()
         print(cell.setting.text!)
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
     
     //MARK: Private Functions
     private func loadData()
