@@ -62,6 +62,12 @@
 		353E798D1F153A1500465F28 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 353E798C1F153A1500465F28 /* libstdc++.dylib */; };
 		353E79941F15406800465F28 /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353E79931F15406800465F28 /* TesseractOCR.framework */; };
 		354029BB1F1D4B23003F0138 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354029BA1F1D4B23003F0138 /* SignInViewController.swift */; };
+		354AF5F61F1E96A200426E4B /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 354AF5F51F1E96A200426E4B /* GameScene.sks */; };
+		354AF5F81F1E96A800426E4B /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354AF5F71F1E96A800426E4B /* GameScene.swift */; };
+		354AF5FA1F1E96AD00426E4B /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354AF5F91F1E96AD00426E4B /* GameViewController.swift */; };
+		354AF5FC1F1E96B300426E4B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 354AF5FB1F1E96B300426E4B /* Images.xcassets */; };
+		354AF5FE1F1E96B800426E4B /* bird.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 354AF5FD1F1E96B800426E4B /* bird.atlas */; };
+		354AF6021F1E96E400426E4B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 354AF6011F1E96E400426E4B /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -145,6 +151,12 @@
 		353E798E1F153E5800465F28 /* FoodAppMaster-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FoodAppMaster-Bridging-Header.h"; sourceTree = "<group>"; };
 		353E79931F15406800465F28 /* TesseractOCR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TesseractOCR.framework; sourceTree = "<group>"; };
 		354029BA1F1D4B23003F0138 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		354AF5F51F1E96A200426E4B /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		354AF5F71F1E96A800426E4B /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		354AF5F91F1E96AD00426E4B /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		354AF5FB1F1E96B300426E4B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		354AF5FD1F1E96B800426E4B /* bird.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = bird.atlas; sourceTree = "<group>"; };
+		354AF6011F1E96E400426E4B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = FlappyBird/Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -282,6 +294,7 @@
 				353E795D1F1530AF00465F28 /* Scanner Tab */,
 				2842F7241F02B682002CBEB8 /* Shopping List Tab */,
 				354029B91F1D4AE2003F0138 /* SignIn Tab */,
+				354AF6011F1E96E400426E4B /* Info.plist */,
 				284906D71F02B4A000A175A1 /* Assets.xcassets */,
 				284906D91F02B4A000A175A1 /* LaunchScreen.storyboard */,
 				284906D41F02B4A000A175A1 /* Main.storyboard */,
@@ -336,6 +349,11 @@
 			isa = PBXGroup;
 			children = (
 				354029BA1F1D4B23003F0138 /* SignInViewController.swift */,
+				354AF5F51F1E96A200426E4B /* GameScene.sks */,
+				354AF5F71F1E96A800426E4B /* GameScene.swift */,
+				354AF5F91F1E96AD00426E4B /* GameViewController.swift */,
+				354AF5FB1F1E96B300426E4B /* Images.xcassets */,
+				354AF5FD1F1E96B800426E4B /* bird.atlas */,
 			);
 			name = "SignIn Tab";
 			sourceTree = "<group>";
@@ -456,6 +474,7 @@
 				2842F71E1F02B5B7002CBEB8 /* Fish and Seafood.txt in Resources */,
 				2842F71F1F02B5B7002CBEB8 /* Fruits.txt in Resources */,
 				284906DB1F02B4A000A175A1 /* LaunchScreen.storyboard in Resources */,
+				354AF6021F1E96E400426E4B /* Info.plist in Resources */,
 				2842F7191F02B5B7002CBEB8 /* Beverages and Alcohol.txt in Resources */,
 				2842F70A1F02B572002CBEB8 /* Spices and Seasonings.txt in Resources */,
 				2884E7D01F1551B300543DBB /* tessdata in Resources */,
@@ -464,7 +483,10 @@
 				284906D61F02B4A000A175A1 /* Main.storyboard in Resources */,
 				2842F6F51F02B572002CBEB8 /* Legumes.txt in Resources */,
 				2842F70B1F02B572002CBEB8 /* Vegetables.txt in Resources */,
+				354AF5FC1F1E96B300426E4B /* Images.xcassets in Resources */,
 				2842F6F71F02B572002CBEB8 /* Nuts and Seeds.txt in Resources */,
+				354AF5F61F1E96A200426E4B /* GameScene.sks in Resources */,
+				354AF5FE1F1E96B800426E4B /* bird.atlas in Resources */,
 				2842F71C1F02B5B7002CBEB8 /* Dairy.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -490,6 +512,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				354AF5FA1F1E96AD00426E4B /* GameViewController.swift in Sources */,
 				2842F7011F02B572002CBEB8 /* RecipesListViewController.swift in Sources */,
 				2842F7281F0D45D1002CBEB8 /* PublicMethods.swift in Sources */,
 				2842F7071F02B572002CBEB8 /* ShoppingListTableViewCell.swift in Sources */,
@@ -518,6 +541,7 @@
 				2842F7021F02B572002CBEB8 /* RecipeTableViewCell.swift in Sources */,
 				2842F7051F02B572002CBEB8 /* SettingsTableViewCell.swift in Sources */,
 				2884E7D61F1673A200543DBB /* FoundItemsTableViewCell.swift in Sources */,
+				354AF5F81F1E96A800426E4B /* GameScene.swift in Sources */,
 				2842F6F11F02B572002CBEB8 /* IngredientTableViewCell.swift in Sources */,
 				2842F7161F02B5B7002CBEB8 /* AddTableViewCell.swift in Sources */,
 				2842F7081F02B572002CBEB8 /* ShoppingListTableViewController.swift in Sources */,
