@@ -58,7 +58,6 @@
 		2884E7D61F1673A200543DBB /* FoundItemsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2884E7D51F1673A200543DBB /* FoundItemsTableViewCell.swift */; };
 		2884E7D81F168E2B00543DBB /* ScanAddTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2884E7D71F168E2B00543DBB /* ScanAddTableViewCell.swift */; };
 		2884E7DA1F168E3D00543DBB /* ScanAddTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2884E7D91F168E3D00543DBB /* ScanAddTableViewController.swift */; };
-		28DF32E61F1E6A8C003A6DA0 /* AccountInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DF32E51F1E6A8B003A6DA0 /* AccountInfoViewController.swift */; };
 		353E798B1F15381400465F28 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 353E798A1F15381400465F28 /* libstdc++.6.0.9.tbd */; };
 		353E798D1F153A1500465F28 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 353E798C1F153A1500465F28 /* libstdc++.dylib */; };
 		353E79941F15406800465F28 /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353E79931F15406800465F28 /* TesseractOCR.framework */; };
@@ -140,7 +139,6 @@
 		2884E7D51F1673A200543DBB /* FoundItemsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoundItemsTableViewCell.swift; sourceTree = "<group>"; };
 		2884E7D71F168E2B00543DBB /* ScanAddTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanAddTableViewCell.swift; sourceTree = "<group>"; };
 		2884E7D91F168E3D00543DBB /* ScanAddTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanAddTableViewController.swift; sourceTree = "<group>"; };
-		28DF32E51F1E6A8B003A6DA0 /* AccountInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountInfoViewController.swift; sourceTree = "<group>"; };
 		353E79881F15380100465F28 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
 		353E798A1F15381400465F28 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
 		353E798C1F153A1500465F28 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
@@ -338,7 +336,6 @@
 			isa = PBXGroup;
 			children = (
 				354029BA1F1D4B23003F0138 /* SignInViewController.swift */,
-				28DF32E51F1E6A8B003A6DA0 /* AccountInfoViewController.swift */,
 			);
 			name = "SignIn Tab";
 			sourceTree = "<group>";
@@ -517,7 +514,6 @@
 				2842F6FC1F02B572002CBEB8 /* RecipeDetailViewController.swift in Sources */,
 				2842F6F31F02B572002CBEB8 /* InventoryTableViewCell.swift in Sources */,
 				2842F6F21F02B572002CBEB8 /* IngredientTableViewController.swift in Sources */,
-				28DF32E61F1E6A8C003A6DA0 /* AccountInfoViewController.swift in Sources */,
 				2842F7041F02B572002CBEB8 /* Setting.swift in Sources */,
 				2842F7021F02B572002CBEB8 /* RecipeTableViewCell.swift in Sources */,
 				2842F7051F02B572002CBEB8 /* SettingsTableViewCell.swift in Sources */,
