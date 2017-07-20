@@ -14,9 +14,24 @@ class InventoryTableViewController: UITableViewController {
     var categories = [Category]()
     var sections = [String]()
     let app = PublicMethods.sharedInstance
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        let launchedBefore = UserDefaults.standard.bool(forKey: "launchedBefore")
+        if launchedBefore  {
+            print("Not first launch.")
+            // The following line should be commented UNLESS it is to reset the default such that it is the first time the app is launched.
+            UserDefaults.standard.set(false, forKey: "launchedBefore")
+        } else {
+            print("First launch, setting UserDefault.")
+            let alertController = UIAlertController(title: "Welcome!", message: "Hi! Welcome to Rype, the smart kitchen assistant that helps you to buy, cook and eat as sustainably as possible! Rype tracks your purchasing and consumption habits and helps you to make the cooking and purchasing decisions that minimize your food waste. In addition to your habits, Rype knows the expiration dates of the food you purchase when you add it to your pantry and uses this data to determine the best recipes for you to make with the food available to you. Add items to your pantry manually, or take a photo of your reciept and our optical character recognition software will do it automatically for you! Rype also contains a shopping list function to help you keep track of what you should buy, and when! Rype is combatible with almost every dietary lifestyle or restriction, and you can set your preferences for recipe suggestions in the settings tab! Enjoy, and happy green eating!", preferredStyle: .alert)
+            
+            let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alertController.addAction(defaultAction)
+            
+            present(alertController, animated: true, completion: nil)
+            UserDefaults.standard.set(true, forKey: "launchedBefore")
+        }
         
         sections = app.sections
         
