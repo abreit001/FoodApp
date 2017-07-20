@@ -77,6 +77,7 @@ class FoundItemsTableViewController: UITableViewController {
             // Delete the row from the data source
             foundItems[indexPath.section][indexPath.row] = false
             tableView.reloadRows(at: [indexPath], with: .fade)
+            tableView.reloadSections([indexPath.section], with: .fade)
         }
         else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
